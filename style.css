@@ -1,7 +1,7 @@
-* {
+/** {
 	box-sizing:border-box;
 	border: 1px solid red;
-}
+}*/
 
 html {font-size:14px;),
 
@@ -23,7 +23,7 @@ html {font-size:14px;),
 	  overflow:auto;
 }
 
-.overlay {
+.overlay { /*portfolio circle hover overlay*/
 	position:absolute;
 	border-radius:50%;
 	height:100px;
@@ -37,7 +37,7 @@ html {font-size:14px;),
 	opacity:1;
 }
 
-.overlayText {
+.overlayText { /*portfolio overlay text*/
 	color:white;
 	font-size: 1rem;
 	position:absolute;
@@ -61,9 +61,6 @@ html {font-size:14px;),
 	  overflow:auto;
 }
 
-footer {
-	overflow:auto;
-}
 .socialImg {
   background-color: #cccccc;
   float:left; 
