@@ -11,14 +11,42 @@ body {
 	background-image:url('img/wheat.png');
 	size:cover;
 	background-repeat:repeat;
+	margin:0px;
 }
 
 .container {
+	width:100%;
 	overflow:auto;
+	text-align:center;
 }
+
+a {
+	text-decoration:none;
+	color:inherit;
+}
+
+a.hover (
+	)
 
 div {
 	color:white;
+}
+
+nav {
+	background-color: RGBA(0,0,0,0.5);
+}
+
+ul {
+	display:inline-block;
+}
+
+li {
+	display:inline-block;
+	float:left;
+	list-style-type:none;
+	padding-top:10px;
+	margin:10px;
+	font-size:1.5rem;
 }
 
 header {
