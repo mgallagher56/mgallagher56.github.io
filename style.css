@@ -2,3 +2,14 @@
 	box-sizing:border-box;
 	border: 1px solid red;
 }
+
+.circleImg {
+	background-image: url('https://www.thebalance.com/thmb/xdaHH5q9Wd4kpvlnJxj6WVbayu0=/400x0/portfolio-175431947-5ad433371f4e13003890fcdc.jpg'); /* The image used */
+	  background-color: #cccccc; /* Used if the image is unavailable */
+	  height: 100px; /* You must set a specified height */
+	  width:100px;
+	  border-radius:50%;
+	  background-position: center; /* Center the image */
+	  background-repeat: no-repeat; /* Do not repeat the image */
+	  background-size: cover; /* Resize the background image to cover the entire container */
+}
