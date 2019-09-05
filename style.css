@@ -3,8 +3,12 @@
 	border: 1px solid red;
 }
 
+html {font-size:14px;),
+
+}
+
 .circleImg {
-	background-image: url('https://www.thebalance.com/thmb/xdaHH5q9Wd4kpvlnJxj6WVbayu0=/400x0/portfolio-175431947-5ad433371f4e13003890fcdc.jpg'); /* The image used */
+	background-image: url('https://www.thebalance.com/thmb/xdaHH5q9Wd4kpvlnJxj6WVbayu0=/400x0/portfolio-175431947-5ad433371f4e13003890fcdc.jpg');
 	  background-color: #cccccc; /* Used if the image is unavailable */
 	  height: 100px; /* You must set a specified height */
 	  width:100px;
@@ -12,4 +16,26 @@
 	  background-position: center; /* Center the image */
 	  background-repeat: no-repeat; /* Do not repeat the image */
 	  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.overlay {
+	position:relative;
+	border-radius:50%;
+	height:100px;
+	width:100px;
+	opacity:0;
+	transition:0.5s ease;
+	background-color: #000;
+}
+
+.overlay:hover {
+	opacity:1;
+}
+
+.overlayText {
+	color:white;
+	font-size: 1rem;
+	position:absolute;
+	top:25%;
+	left:25%;
 }
