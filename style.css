@@ -1,10 +1,10 @@
-* {
+/** {
 	box-sizing:border-box;
 	border: 1px solid red;
-}
+}*/
 
-html {font-size:14px;),
-
+html {
+	font-size:14px;)
 }
 
 body {
@@ -12,6 +12,7 @@ body {
 	size:cover;
 	background-repeat:repeat;
 	margin:0px;
+	overflow:auto;
 }
 
 .container {
@@ -61,12 +62,20 @@ li {
 
 header {
 	padding-top:100px;
+	height:500px;
 }
 
 .intro {
-	background-color:black;
+	background-color:none;
 }
 
+h1 {
+	font-size:4rem;
+}
+
+h3 {
+	font-size:3rem;
+}
 
 .circleImg {
 	background-image: url('https://www.thebalance.com/thmb/xdaHH5q9Wd4kpvlnJxj6WVbayu0=/400x0/portfolio-175431947-5ad433371f4e13003890fcdc.jpg');
