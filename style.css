@@ -7,15 +7,19 @@ html {font-size:14px;),
 
 }
 
+.container {
+	overflow:auto;
+}
+
 .circleImg {
 	background-image: url('https://www.thebalance.com/thmb/xdaHH5q9Wd4kpvlnJxj6WVbayu0=/400x0/portfolio-175431947-5ad433371f4e13003890fcdc.jpg');
-	  background-color: #cccccc; /* Used if the image is unavailable */
-	  height: 100px; /* You must set a specified height */
+	  background-color: #cccccc;
+	  height: 100px; 
 	  width:100px;
 	  border-radius:50%;
-	  background-position: center; /* Center the image */
-	  background-repeat: no-repeat; /* Do not repeat the image */
-	  background-size: cover; /* Resize the background image to cover the entire container */
+	  background-position: center; 
+	  background-repeat: no-repeat; 
+	  background-size: cover; 
 	  overflow:auto;
 }
 
@@ -46,13 +50,34 @@ html {font-size:14px;),
 }
 
 .profileImg {
-	background-image:url('https://cdn.breakerlink.com/images/car_logos/JPG/256/min/mg-min.jpg');
-	  background-color: #cccccc; /* Used if the image is unavailable */
-	  height: 100px; /* You must set a specified height */
+	  background-image:url('https://cdn.breakerlink.com/images/car_logos/JPG/256/min/mg-min.jpg');
+	  background-color: #cccccc;
+	  height: 100px; 
 	  width:100px;
 	  border-radius:50%;
-	  background-position: center; /* Center the image */
-	  background-repeat: no-repeat; /* Do not repeat the image */
-	  background-size: cover; /* Resize the background image to cover the entire container */
+	  background-position: center; 
+	  background-repeat: no-repeat; 
+	  background-size: cover; 
 	  overflow:auto;
+}
+
+footer {
+	overflow:auto;
+}
+.socialImg {
+  background-color: #cccccc;
+  float:left; 
+  height: 40px; 
+  width:40px;
+  border-radius:50%;
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover; 
+  overflow:auto;
+}
+
+.social {
+	display:inline;
+	float:left;
+	margin-left:20px;
 }
