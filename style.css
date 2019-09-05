@@ -16,10 +16,11 @@ html {font-size:14px;),
 	  background-position: center; /* Center the image */
 	  background-repeat: no-repeat; /* Do not repeat the image */
 	  background-size: cover; /* Resize the background image to cover the entire container */
+	  overflow:auto;
 }
 
 .overlay {
-	position:relative;
+	position:fixed;
 	border-radius:50%;
 	height:100px;
 	width:100px;
@@ -39,3 +40,4 @@ html {font-size:14px;),
 	top:25%;
 	left:25%;
 }
+
