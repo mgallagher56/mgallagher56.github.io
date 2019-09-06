@@ -1,7 +1,7 @@
-/** {
+* {
 	box-sizing:border-box;
 	border: 1px solid red;
-}*/
+}
 	
 html {
 	font-size:14px;
@@ -53,6 +53,7 @@ nav {
 ul {
 	display:inline-block;
 	padding-bottom:20px;
+	margin:0;
 }
 
 li {
@@ -122,32 +123,34 @@ header {
 	padding-left:25px;
 	padding-bottom-:5px;
 	padding-right:25px;
-	font-size:2.3vw;
+	font-size:2.3rem;
 	transition:ease 0.5s;
 	border: black solid 3px;
-	background-color:;
 }
 
 .circleImg {
 	background-image: url('https://www.thebalance.com/thmb/xdaHH5q9Wd4kpvlnJxj6WVbayu0=/400x0/portfolio-175431947-5ad433371f4e13003890fcdc.jpg');
 	  background-color: #cccccc;
-	  height: 100px; 
-	  width:100px;
+	  height: 150px; 
+	  width:150px;
 	  border-radius:50%;
 	  background-position: center; 
 	  background-repeat: no-repeat; 
 	  background-size: cover; 
 	  overflow:auto;
+	  margin:0 auto;
+	  margin-top:20px;
 }
 
 .overlay { /*portfolio circle hover overlay*/
 	position:absolute;
 	border-radius:50%;
-	height:100px;
-	width:100px;
+	height:150px;
+	width:150px;
 	opacity:0;
 	transition:0.5s ease;
-	background-color: #000;
+	background-color: RGBA(0,0,0,.7);
+	
 }
 
 .overlay:hover {
@@ -158,9 +161,21 @@ header {
 	color:white;
 	font-size: 1rem;
 	position:absolute;
-	top:25%;
-	left:25%;
+	top:20%;
+	left:50px;
+	opacity:1;
 }
+
+.portfolioBox {
+	float:left;
+	width:33.3%;
+}
+
+.projectButton {
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
 
 .profile {
 	overflow:auto;
