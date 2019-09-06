@@ -255,19 +255,22 @@ i {
 .aboutMe {
 	background-image:url('img/code.png');
 	background-repeat:repeat-x;
-	margin-top:30px;
+	padding-top:50px;
 	background-color:white;
 }
 
 .aboutMe p {
-	color:red;
+	color:black;
 	text-align:center;
 	font-size:2rem;
 }
 
 .aboutMe h1 {
-	background-color:;
-	color:red;
+	background-color:black;
+	color:white;
+	width:20%;
+	margin:0 auto;
+	margin-bottom:30px;
 }
 
 .profileImg {
