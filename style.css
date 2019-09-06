@@ -1,18 +1,42 @@
-* {
+/** {
 	box-sizing:border-box;
 	border: 1px solid red;
-}
+}*/
 	
 html {
 	font-size:14px;
 }
-	
+
+
 body {
-	background-image:url('img/wheat.png');
-	size:cover;
-	background-repeat:repeat;
+
+	background-image: url("img/wheat.png");
+	min-height: 500px; 
+	background-attachment: fixed;
+	background-position: top;
+	background-repeat: repeat;
+	background-size: repeat;
+	
 	margin:0px;
 	overflow:auto;
+}
+
+.fullscreen-bg {
+    position: static;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 900px;
 }
 
 .container {
@@ -29,8 +53,8 @@ a {
 
 a:hover {
 	transition:ease 0.5s;
-	color: #963E43;
-	border-top:solid 2px #876160;
+	color: #FBB025;
+	border-top:solid 2px #FC630E;
 	padding-top:20px;
 	border-radius:0px;
 	overflow:auto;
@@ -67,9 +91,14 @@ li {
 
 header {
 	padding-top:0px;
-	height:540px;
+	height:900px;
 	width:100%;
 	overflow:auto;
+/*	background-image:url('img/binary.jpg');*/
+	background-color:RGBA(255,255,255,.8);
+	background-repeat:repeat;
+	background-size:cover;
+	
 }
 
 .intro {
@@ -95,10 +124,10 @@ header {
 
 .intro h3 {
 	position:absolute;
-	top:230px;
+	top:225px;
 	left:30%;
 	transform:rotate(-7.5deg)skewX(-20deg);
-	font-size:3rem;
+	font-size:3.2rem;
 	margin-top:10px;
 }
 
@@ -125,7 +154,30 @@ header {
 	padding-right:25px;
 	font-size:2.3rem;
 	transition:ease 0.5s;
-	border: black solid 3px;
+	border: #FC630E solid 3px;
+}
+
+i {
+	border: solid #840CE1;
+	border-width: 0 10px 10px 0;
+	display: inline-block;
+	padding: 10px;
+	position:absolute;
+	top:95%;
+	left:49%;
+}
+
+.down {
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+
+.seePortfolio {
+	color:#FC630E;
+	position:absolute;
+	top:90%;
+	left:47%;
+	
 }
 
 .circleImg {
@@ -139,7 +191,7 @@ header {
 	  background-size: cover; 
 	  overflow:auto;
 	  margin:0 auto;
-	  margin-top:20px;
+	  margin-top:30px;
 }
 
 .overlay { /*portfolio circle hover overlay*/
@@ -169,11 +221,33 @@ header {
 .portfolioBox {
 	float:left;
 	width:33.3%;
+	background-image:url('img/abstract.png');
+	background-size:270px 220px;
+	background-position:40% -10px;
+	background-repeat:no-repeat;
+	margin-top:20px;
 }
 
 .projectButton {
-	margin-top:20px;
+	margin-top:40px;
 	margin-bottom:20px;
+	color:white;
+	background-color:#840CE1;
+	padding-top:10px;
+	padding-left:20px;
+	padding-bottom:10px;
+	padding-right:20px;
+	font-size:1.3rem;
+}
+
+.projectButton:hover {
+	transition:ease 0.5s;
+	background:RGBA(255,255,255,1);
+	padding-top:10px;
+	padding-left:30px;
+	padding-bottom:10px;
+	padding-right:30px;
+	color:black;
 }
 
 
@@ -187,7 +261,7 @@ header {
 	  height: 100px; 
 	  width:100px;
 	  border-radius:50%;
-	  background-position: center; 
+	   background-position: center; 
 	  background-repeat: no-repeat; 
 	  background-size: cover; 
 	  overflow:auto;
