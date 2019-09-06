@@ -250,21 +250,31 @@ i {
 	color:black;
 }
 
+.aboutMe {background-color:white;
+	background-image:url('');
+	repeat:repeat;
+	background-size:cover;
+	margin-top:30px;
+}
 
-.profile {
-	overflow:auto;
+.aboutMe p {
+	color:red;
+	text-align:center;
+	font-size:2rem;
+}
+
+.aboutMe h1 {
+	color:red;
 }
 
 .profileImg {
-	  background-image:url('https://cdn.breakerlink.com/images/car_logos/JPG/256/min/mg-min.jpg');
+	  background-image:url('img/me.jpg');
 	  background-color: #cccccc;
-	  height: 100px; 
-	  width:100px;
+	  height: 250px; 
+	  width:250px;
 	  border-radius:50%;
-	   background-position: center; 
-	  background-repeat: no-repeat; 
-	  background-size: cover; 
-	  overflow:auto;
+	  background-size: cover;
+	  margin:0 auto;
 }
 
 .socialImg {
@@ -273,8 +283,6 @@ i {
   height: 40px; 
   width:40px;
   border-radius:50%;
-  background-position: center; 
-  background-repeat: no-repeat;
   background-size: cover; 
   overflow:auto;
 }
