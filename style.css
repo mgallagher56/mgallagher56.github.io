@@ -2,11 +2,11 @@
 	box-sizing:border-box;
 	border: 1px solid red;
 }*/
-
+	
 html {
-	font-size:14px;)
+	font-size:14px;
 }
-
+	
 body {
 	background-image:url('img/wheat.png');
 	size:cover;
@@ -33,6 +33,7 @@ a:hover {
 	border-top:solid 2px #876160;
 	padding-top:20px;
 	border-radius:0px;
+	overflow:auto;
 }
 
 
@@ -41,14 +42,17 @@ div {
 }
 
 nav {
+	overflow:hidden;
 	position:fixed;
 	width:100%;
+	height:100px;
 	background-color: RGBA(27,49,67,.8);
+	z-index: 9999;
 }
 
 ul {
 	display:inline-block;
-	margin:0px;
+	padding-bottom:20px;
 }
 
 li {
@@ -56,25 +60,72 @@ li {
 	float:left;
 	list-style-type:none;
 	margin:10px;
-	font-size:1.5rem;
+	font-size:2rem;
 	padding-top:20px;
 }
 
 header {
-	padding-top:100px;
-	height:500px;
+	padding-top:0px;
+	height:540px;
+	width:100%;
+	overflow:auto;
 }
 
 .intro {
-	background-color:none;
+	position:relative;
+	background-image:url('img/textBackground.png');
+	background-size:100% 500px;
+	background-repeat:no-repeat;
+	background-position:10%;
+	padding:80px 0px 350px 0px;
+	margin-top:100px;
 }
 
-h1 {
-	font-size:4rem;
+
+.intro h1 {
+	position:absolute;
+	top:190px;
+	left:22%;
+	transform:rotate(-7.5deg)skewX(-20deg);
+	font-size:3.3rem;
+	background-color:transparent;
+	margin:0;
 }
 
-h3 {
+.intro h3 {
+	position:absolute;
+	top:230px;
+	left:30%;
+	transform:rotate(-7.5deg)skewX(-20deg);
 	font-size:3rem;
+	margin-top:10px;
+}
+
+.moreInfo {
+	position:absolute;
+	top:300px;
+	left:45%;
+	transform:rotate(-7.5deg)skewX(-20deg);
+	background-color:transparent;
+	border: 3px white solid;
+	padding-top:5px;
+	padding-left:20px;
+	padding-bottom-:5px;
+	padding-right:20px;
+	font-size:2rem;
+	color:#FC630E;
+}
+
+.moreInfo:hover {
+	color:white;
+	padding-top:5px;
+	padding-left:25px;
+	padding-bottom-:5px;
+	padding-right:25px;
+	font-size:2.3vw;
+	transition:ease 0.5s;
+	border: black solid 3px;
+	background-color:;
 }
 
 .circleImg {
@@ -144,3 +195,5 @@ h3 {
 	float:left;
 	margin-left:20px;
 }
+
+	
