@@ -1,7 +1,7 @@
-/** {
+* {
 	box-sizing:border-box;
-	border: 1px solid red;
-}*/
+	/*border: 1px solid red;*/
+}
 	
 html {
 	font-size:14px;
@@ -78,6 +78,7 @@ ul {
 	display:inline-block;
 	padding-bottom:20px;
 	margin:0;
+	padding:0;
 }
 
 li {
@@ -238,6 +239,7 @@ i {
 	padding-bottom:10px;
 	padding-right:20px;
 	font-size:1.3rem;
+	border-radius:3px;
 }
 
 .projectButton:hover {
@@ -250,11 +252,11 @@ i {
 	color:black;
 }
 
-.aboutMe {background-color:white;
-	background-image:url('');
-	repeat:repeat;
-	background-size:cover;
+.aboutMe {
+	background-image:url('img/code.png');
+	background-repeat:repeat-x;
 	margin-top:30px;
+	background-color:white;
 }
 
 .aboutMe p {
@@ -264,6 +266,7 @@ i {
 }
 
 .aboutMe h1 {
+	background-color:;
 	color:red;
 }
 
