@@ -164,8 +164,9 @@ i {
 	display: inline-block;
 	padding: 10px;
 	position:absolute;
-	top:90%;
+	top:85%;
 	left:49%;
+	
 }
 
 .down {
@@ -223,8 +224,8 @@ i {
 	float:left;
 	width:33.3%;
 	background-image:url('img/abstract.png');
-	background-size:270px 220px;
-	background-position:40% -10px;
+	background-size:220px 280px;
+	background-position:50% -30px;
 	background-repeat:no-repeat;
 	margin-top:20px;
 }
@@ -257,6 +258,7 @@ i {
 	background-repeat:repeat-x;
 	padding-top:50px;
 	background-color:white;
+	margin-top:20px;
 }
 
 .aboutMe p {
@@ -283,6 +285,10 @@ i {
 	  margin:0 auto;
 }
 
+footer h1 {
+	margin:20px 0px 0px 0px;
+}
+
 .email {
 	color:white;
 	background-color:#840CE1;
@@ -292,6 +298,7 @@ i {
 	padding-right:20px;
 	font-size:1.3rem;
 	border-radius:3px;
+	margin-top:20px;
 }
 
 .email:hover {
@@ -315,6 +322,7 @@ i {
 	margin-bottom:10px;
 	align:center;
 	margin-left:15%;
+	margin-top:20px;
 }
 
 .socialImg2 {
@@ -327,22 +335,19 @@ i {
 	background-size: cover; 
 	margin-bottom:10px;
 	margin-left:20%;
+	margin-top:20px;
 }
 
 .socialBox {
 	position:relative;
 	right:42%;
-
 }
 
 .social {
 	float:right;
 	margin-left:40px;
-	height:200px;
 }
 
 h5 {
 	font-size:1.2rem;
 }
-
-	
