@@ -9,13 +9,11 @@ html {font-size:14px;),
 
 body {
 	background-image:url('img/wheat.png');
-	size:cover;
-	background-repeat:repeat;
-	margin:0px;
+	color:white;
 }
 
 .container {
-	width:100%;
+	width:60%;
 	overflow:auto;
 	text-align:center;
 }
@@ -33,11 +31,6 @@ a:hover {
 	border-radius:0px;
 }
 
-
-div {
-	color:white;
-}
-
 nav {
 	position:fixed;
 	width:100%;
@@ -45,7 +38,7 @@ nav {
 }
 
 ul {
-	display:inline-block;
+	
 	margin:0px;
 }
 
