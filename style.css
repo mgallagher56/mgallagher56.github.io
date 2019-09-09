@@ -1,7 +1,7 @@
-/** {
+* {
 	box-sizing:border-box;
-	border: 1px solid red;
-}*/
+/*	border: 1px solid red;
+*/}
 	
 html {
 	font-size:14px;
@@ -10,7 +10,7 @@ html {
 
 body {
 
-	background-image: url("img/wheat.png");
+	background-image: url("img/black.png");
 	min-height: 500px; 
 	background-attachment: fixed;
 	background-position: top;
@@ -78,6 +78,7 @@ ul {
 	display:inline-block;
 	padding-bottom:20px;
 	margin:0;
+	padding:0;
 }
 
 li {
@@ -163,8 +164,9 @@ i {
 	display: inline-block;
 	padding: 10px;
 	position:absolute;
-	top:95%;
+	top:85%;
 	left:49%;
+	
 }
 
 .down {
@@ -222,8 +224,8 @@ i {
 	float:left;
 	width:33.3%;
 	background-image:url('img/abstract.png');
-	background-size:270px 220px;
-	background-position:40% -10px;
+	background-size:220px 280px;
+	background-position:50% -30px;
 	background-repeat:no-repeat;
 	margin-top:20px;
 }
@@ -238,6 +240,7 @@ i {
 	padding-bottom:10px;
 	padding-right:20px;
 	font-size:1.3rem;
+	border-radius:3px;
 }
 
 .projectButton:hover {
@@ -250,39 +253,101 @@ i {
 	color:black;
 }
 
+.aboutMe {
+	background-image:url('img/code.png');
+	background-repeat:repeat-x;
+	padding-top:50px;
+	background-color:white;
+	margin-top:20px;
+}
 
-.profile {
-	overflow:auto;
+.aboutMe p {
+	color:black;
+	text-align:center;
+	font-size:2rem;
+}
+
+.aboutMe h1 {
+	background-color:black;
+	color:white;
+	width:20%;
+	margin:0 auto;
+	margin-bottom:30px;
 }
 
 .profileImg {
-	  background-image:url('https://cdn.breakerlink.com/images/car_logos/JPG/256/min/mg-min.jpg');
+	  background-image:url('img/me.jpg');
 	  background-color: #cccccc;
-	  height: 100px; 
-	  width:100px;
+	  height: 250px; 
+	  width:250px;
 	  border-radius:50%;
-	   background-position: center; 
-	  background-repeat: no-repeat; 
-	  background-size: cover; 
-	  overflow:auto;
+	  background-size: cover;
+	  margin:0 auto;
+}
+
+footer h1 {
+	margin:20px 0px 0px 0px;
+}
+
+.email {
+	color:white;
+	background-color:#840CE1;
+	padding-top:10px;
+	padding-left:20px;
+	padding-bottom:10px;
+	padding-right:20px;
+	font-size:1.3rem;
+	border-radius:3px;
+	margin-top:20px;
+}
+
+.email:hover {
+	transition:ease 0.5s;
+	background:RGBA(255,255,255,1);
+	padding-top:10px;
+	padding-left:30px;
+	padding-bottom:10px;
+	padding-right:30px;
+	color:black;
 }
 
 .socialImg {
-  background-color: #cccccc;
-  float:left; 
-  height: 40px; 
-  width:40px;
-  border-radius:50%;
-  background-position: center; 
-  background-repeat: no-repeat;
-  background-size: cover; 
-  overflow:auto;
+	background-image:url('img/GitHub.png');
+	background-color: #cccccc;
+	float:left; 
+	height: 40px; 
+	width:40px;
+	border-radius:50%;
+	background-size: cover; 
+	margin-bottom:10px;
+	align:center;
+	margin-left:15%;
+	margin-top:20px;
+}
+
+.socialImg2 {
+	background-image:url('img/linkedin.png');
+	background-color: #cccccc;
+	float:left; 
+	height: 40px; 
+	width:40px;
+	border-radius:50%;
+	background-size: cover; 
+	margin-bottom:10px;
+	margin-left:20%;
+	margin-top:20px;
+}
+
+.socialBox {
+	position:relative;
+	right:42%;
 }
 
 .social {
-	display:inline;
-	float:left;
-	margin-left:20px;
+	float:right;
+	margin-left:40px;
 }
 
-	
+h5 {
+	font-size:1.2rem;
+}
