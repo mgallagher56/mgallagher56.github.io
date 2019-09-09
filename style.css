@@ -1,7 +1,7 @@
 * {
 	box-sizing:border-box;
-	/*border: 1px solid red;*/
-}
+/*	border: 1px solid red;
+*/}
 	
 html {
 	font-size:14px;
@@ -10,7 +10,7 @@ html {
 
 body {
 
-	background-image: url("img/wheat.png");
+	background-image: url("img/black.png");
 	min-height: 500px; 
 	background-attachment: fixed;
 	background-position: top;
@@ -164,7 +164,7 @@ i {
 	display: inline-block;
 	padding: 10px;
 	position:absolute;
-	top:95%;
+	top:90%;
 	left:49%;
 }
 
@@ -283,20 +283,66 @@ i {
 	  margin:0 auto;
 }
 
+.email {
+	color:white;
+	background-color:#840CE1;
+	padding-top:10px;
+	padding-left:20px;
+	padding-bottom:10px;
+	padding-right:20px;
+	font-size:1.3rem;
+	border-radius:3px;
+}
+
+.email:hover {
+	transition:ease 0.5s;
+	background:RGBA(255,255,255,1);
+	padding-top:10px;
+	padding-left:30px;
+	padding-bottom:10px;
+	padding-right:30px;
+	color:black;
+}
+
 .socialImg {
-  background-color: #cccccc;
-  float:left; 
-  height: 40px; 
-  width:40px;
-  border-radius:50%;
-  background-size: cover; 
-  overflow:auto;
+	background-image:url('img/GitHub.png');
+	background-color: #cccccc;
+	float:left; 
+	height: 40px; 
+	width:40px;
+	border-radius:50%;
+	background-size: cover; 
+	margin-bottom:10px;
+	align:center;
+	margin-left:15%;
+}
+
+.socialImg2 {
+	background-image:url('img/linkedin.png');
+	background-color: #cccccc;
+	float:left; 
+	height: 40px; 
+	width:40px;
+	border-radius:50%;
+	background-size: cover; 
+	margin-bottom:10px;
+	margin-left:20%;
+}
+
+.socialBox {
+	position:relative;
+	right:42%;
+
 }
 
 .social {
-	display:inline;
-	float:left;
-	margin-left:20px;
+	float:right;
+	margin-left:40px;
+	height:200px;
+}
+
+h5 {
+	font-size:1.2rem;
 }
 
 	
