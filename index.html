@@ -6,8 +6,8 @@
 		
     <title>MG | Portfolio</title>
     <link rel="stylesheet" type="text/css" href="Normalize.css">
-	
     <link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
 
   </head>
   
@@ -16,9 +16,13 @@
 		<nav>
 			<div class='container'>
 				<ul>
-					<li>Portfolio</li>
-					<li>About Me</li>
-					<li>Contact</li>
+					<li>*</li>
+					<li><a href='#portfolio'>Portfolio</a></li>
+					<li>*</li>
+					<li><a href='#about'>About Me</a></li>
+					<li>*</li>
+					<li> <a href='#contact'>Contact</a></li>
+					<li>*</li>
 				</ul>
 			</div>
 		</nav>
@@ -26,15 +30,17 @@
 		<header>
 			<div class ='container'>
 				<div class='intro'>
-					<h1>Marc Gallagher</h1>
-					<h3>Full Stack Developer</h3>
+					<h1 class='text'>Marc Gallagher</h1>
+					<h3 class='text'>Full Stack Developer</h3>
+					<button class='moreInfo' type='button'>Hire</button>
+					
 				</div>
-				<button class='moreInfo' type='button'>Find out more</button>
 				
 			</div>
 		</header>
 		
-		<section class="portfolio">
+		<section class="container">
+			<a name="portfolio"></a>
 			
 			<div class='portfolioBox'>
 				<div class='circleImg'>
@@ -107,6 +113,7 @@
 		
 		
 		<section class='aboutMe'>
+			<a name="about"></a>
 			<div class='container'>
 				
 				<div class='profile'>
@@ -121,6 +128,7 @@
 		</section>
 		
 		<footer>
+			<a name="contact"></a>
 			<div class='container'>
 				<div class='footerContent'>
 					
