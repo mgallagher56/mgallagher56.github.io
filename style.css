@@ -1,7 +1,6 @@
 * {
 	box-sizing:border-box;
-/*	border: 1px solid red;
-*/}
+}
 	
 html {
 	font-size:14px;
@@ -70,8 +69,6 @@ header {
 	height:900px;
 	width:100%;
 	overflow:auto;
-/*	background-image:url('img/binary.jpg');*/
-	background-size:cover;
 	
 }
 
@@ -142,14 +139,6 @@ i {
 .down {
 	transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
-}
-
-.seePortfolio {
-	color:#FC630E;
-	position:absolute;
-	top:90%;
-	left:47%;
-	
 }
 
 .circleImg {
