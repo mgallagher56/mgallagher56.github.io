@@ -1,0 +1,125 @@
+/** {
+	box-sizing:border-box;
+	border: 1px solid red;
+}*/
+
+html {font-size:14px;),
+
+}
+
+body {
+	background-image:url('img/wheat.png');
+	color:white;
+}
+
+.container {
+	width:60%;
+	overflow:auto;
+	text-align:center;
+}
+
+a {
+	text-decoration:none;
+	color:inherit;
+}
+
+a:hover {
+	transition:ease 0.5s;
+	color: #963E43;
+	border-top:solid 2px #876160;
+	padding-top:20px;
+	border-radius:0px;
+}
+
+nav {
+	position:fixed;
+	width:100%;
+	background-color: RGBA(27,49,67,.8);
+}
+
+ul {
+	
+	margin:0px;
+}
+
+li {
+	display:inline-block;
+	float:left;
+	list-style-type:none;
+	margin:10px;
+	font-size:1.5rem;
+	padding-top:20px;
+}
+
+header {
+	padding-top:50px;
+	background-image:url();
+	
+}
+.circleImg {
+	background-image: url('https://www.thebalance.com/thmb/xdaHH5q9Wd4kpvlnJxj6WVbayu0=/400x0/portfolio-175431947-5ad433371f4e13003890fcdc.jpg');
+	  background-color: #cccccc;
+	  height: 100px; 
+	  width:100px;
+	  border-radius:50%;
+	  background-position: center; 
+	  background-repeat: no-repeat; 
+	  background-size: cover; 
+	  overflow:auto;
+}
+
+.overlay { /*portfolio circle hover overlay*/
+	position:absolute;
+	border-radius:50%;
+	height:100px;
+	width:100px;
+	opacity:0;
+	transition:0.5s ease;
+	background-color: #000;
+}
+
+.overlay:hover {
+	opacity:1;
+}
+
+.overlayText { /*portfolio overlay text*/
+	color:white;
+	font-size: 1rem;
+	position:absolute;
+	top:25%;
+	left:25%;
+}
+
+.profile {
+	overflow:auto;
+}
+
+.profileImg {
+	  background-image:url('https://cdn.breakerlink.com/images/car_logos/JPG/256/min/mg-min.jpg');
+	  background-color: #cccccc;
+	  height: 100px; 
+	  width:100px;
+	  border-radius:50%;
+	  background-position: center; 
+	  background-repeat: no-repeat; 
+	  background-size: cover; 
+	  overflow:auto;
+}
+
+.socialImg {
+  background-color: #cccccc;
+  float:left; 
+  height: 40px; 
+  width:40px;
+  border-radius:50%;
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover; 
+  overflow:auto;
+}
+
+.social {
+	display:inline;
+	float:left;
+	margin-left:20px;
+}
