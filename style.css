@@ -1,7 +1,7 @@
 * {
 	box-sizing:border-box;
 }
-	
+
 html {
 	font-size:14px;
 }
@@ -11,7 +11,7 @@ body {
 
 	background-image: url("img/black.png");
 	background-attachment: fixed;
-	color:white	
+	color:white
 }
 
 
@@ -24,6 +24,7 @@ body {
 
 .container {
 	width:60%;
+	margin:0 auto;
 
 	overflow:auto;
 	text-align:center;
@@ -74,7 +75,7 @@ header {
 	height:900px;
 	width:100%;
 	overflow:auto;
-	
+
 }
 
 .intro {
@@ -145,26 +146,30 @@ i {
 }
 
 .circleImg {
-	background-image: url('https://www.thebalance.com/thmb/xdaHH5q9Wd4kpvlnJxj6WVbayu0=/400x0/portfolio-175431947-5ad433371f4e13003890fcdc.jpg');
+		background-image: url('https://www.thebalance.com/thmb/xdaHH5q9Wd4kpvlnJxj6WVbayu0=/400x0/portfolio-175431947-5ad433371f4e13003890fcdc.jpg');
 	  background-color: #cccccc;
-	  height: 150px; 
-	  width:150px;
+	  height: 200px;
+	  width:200px;
 	  border-radius:50%;
-	  background-position: center; 
-	  background-size: cover; 
+	  background-position: center;
+	  background-size: cover;
 	  margin:0 auto;
 	  margin-top:30px;
 }
 
+ .project1 {
+background-image: url('img/portfolio.png');	}
+
+
 .overlay { /*portfolio circle hover overlay*/
 	position:absolute;
 	border-radius:50%;
-	height:150px;
-	width:150px;
+	height:200px;
+	width:200px;
 	opacity:0;
 	transition:0.5s ease;
 	background-color: RGBA(0,0,0,.7);
-	
+
 }
 
 .overlay:hover {
@@ -173,10 +178,10 @@ i {
 
 .overlayText { /*portfolio overlay text*/
 	color:white;
-	font-size: 1rem;
+	font-size: 1.5rem;
 	position:absolute;
-	top:20%;
-	left:50px;
+	top:30%;
+	left:60px;
 	opacity:1;
 }
 
@@ -184,7 +189,7 @@ i {
 	float:left;
 	width:33.3%;
 	background-image:url('img/abstract.png');
-	background-size:220px 280px;
+	background-size:270px 340px;
 	background-position:50% -30px;
 	background-repeat:no-repeat;
 	margin-top:20px;
@@ -236,7 +241,7 @@ i {
 .profileImg {
 	  background-image:url('img/me.jpg');
 	  background-color: #cccccc;
-	  height: 250px; 
+	  height: 250px;
 	  width:250px;
 	  border-radius:50%;
 	  background-size: cover;
@@ -272,11 +277,11 @@ footer h1 {
 .socialImg {
 	background-image:url('img/GitHub.png');
 	background-color: #cccccc;
-	float:left; 
-	height: 40px; 
+	float:left;
+	height: 40px;
 	width:40px;
 	border-radius:50%;
-	background-size: cover; 
+	background-size: cover;
 	margin-bottom:10px;
 	margin-left:15%;
 	margin-top:20px;
@@ -285,11 +290,11 @@ footer h1 {
 .socialImg2 {
 	background-image:url('img/linkedin.png');
 	background-color: #cccccc;
-	float:left; 
-	height: 40px; 
+	float:left;
+	height: 40px;
 	width:40px;
 	border-radius:50%;
-	background-size: cover; 
+	background-size: cover;
 	margin-bottom:10px;
 	margin-left:20%;
 	margin-top:20px;
@@ -453,7 +458,7 @@ ul {
 
 li {
 	font-size:1.6rem;
-	
+
 }
 
 .fullscreen-bg__video {
@@ -476,7 +481,7 @@ i {
 	bottom:150px;
 	background-size:100% 375px;
 	background-position:10%;
-	
+
 }
 
 .intro h1 {
@@ -507,7 +512,7 @@ i {
 	padding-left:8px;
 	padding-bottom:3px;
 	padding-right:8px;
-	
+
 
 }
 
@@ -555,7 +560,7 @@ html {
 .fullscreen-bg__video {
 	position: absolute;
 	top:-34%;
-   
+
 }
 
 .intro {
@@ -590,8 +595,8 @@ ul {
 li {
 	font-size:1.2rem;
 	margin:5px;
-	
-	
+
+
 }
 
 .fullscreen-bg__video {
@@ -615,7 +620,7 @@ i {
 	background-size:100% 250px;
 	background-position:10%;
 	background-repeat:no-repeat;
-	
+
 }
 
 .intro h1 {
@@ -645,7 +650,7 @@ i {
 	padding-left:5px;
 	padding-right:5px;
 	border:1px solid white;
-	
+
 }
 
 .moreInfo:hover {
@@ -669,7 +674,7 @@ i {
 }
 
 .circleImg {
-	  height: 100px; 
+	  height: 100px;
 	  width:100px;
 }
 
@@ -681,7 +686,7 @@ i {
 	opacity:0;
 	transition:0.5s ease;
 	background-color: RGBA(0,0,0,.7);
-	
+
 }
 
 .overlay:hover {
