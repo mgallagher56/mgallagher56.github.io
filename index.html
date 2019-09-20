@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang='en-GB'>
-  <head>
-    <meta charset="UTF-8">
+<head>
+  <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
+
     <title>MG | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="Normalize.css">
-	
     <link rel="stylesheet" type="text/css" href="style.css">
 
-  </head>
-  
-	<body>
-		
+</head>
+
+<body>
 		<nav>
 			<div class='container'>
 				<ul>
@@ -26,21 +25,35 @@
 				</ul>
 			</div>
 		</nav>
-		
+
+		<div class="fullscreen-bg">
+		    <video loop muted autoplay poster="img/video.jpg" class="fullscreen-bg__video">
+		        <source src="img/video.mov" type="video/webm">
+		        <source src="img/video.mp4" type="video/mp4">
+		        <source src="img/video.ogv" type="video/ogg">
+		    </video>
+		</div>
+
 		<header>
 			<div class ='container'>
 				<div class='intro'>
-					<h1>Marc Gallagher</h1>
-					<h3>Full Stack Developer</h3>
+					<h1 >Marc Gallagher</h1>
+					<h3 >Full Stack Developer</h3>
+					<a href='#contact'><button class='moreInfo' type='button'>Hire</button></a>
+
 				</div>
-				<button class='moreInfo' type='button'>Find out more</button>
-				
+
 			</div>
+			<h1><a href='#portfolio'><br/><i class='arrow down'></i></a></h1>
+
 		</header>
-		
-		<section class="portfolio">
-			<a name="portfolio"></a>
-			
+
+		<a name="portfolio"></a>
+
+		<div class='portfolio'>
+		    <section class="container">
+			       <h1>Portfolio</h1>
+
 			<div class='portfolioBox'>
 				<div class='circleImg'>
 					<div class='overlay'>
@@ -49,110 +62,106 @@
 						</div>
 					</div>
 				</div>
-				<button class='projectButton' type='button'>Go to project</button>
+				<button class='projectButton' type='button'>View</button>
 			</div>
-			
+
 			<div class='portfolioBox'>
 				<div class='circleImg'>
 					<div class='overlay'>
 						<div class='overlayText'>
-							Project 1
+							Project 2
 						</div>
 					</div>
 				</div>
-				<button class='projectButton' type='button'>Go to project</button>
+				<button class='projectButton' type='button'>View</button>
 			</div>
-			
+
 			<div class='portfolioBox'>
 				<div class='circleImg'>
 					<div class='overlay'>
 						<div class='overlayText'>
-							Project 1
+							Project 3
 						</div>
 					</div>
 				</div>
-				<button class='projectButton' type='button'>Go to project</button>
+				<button class='projectButton' type='button'>View</button>
 			</div>
-			
+
 			<div class='portfolioBox'>
 				<div class='circleImg'>
 					<div class='overlay'>
 						<div class='overlayText'>
-							Project 1
+							Project 4
 						</div>
 					</div>
 				</div>
-				<button class='projectButton' type='button'>Go to project</button>
+				<button class='projectButton' type='button'>View</button>
 			</div>
-			
+
 			<div class='portfolioBox'>
 				<div class='circleImg'>
 					<div class='overlay'>
 						<div class='overlayText'>
-							Project 1
+							Project 5
 						</div>
 					</div>
 				</div>
-				<button class='projectButton' type='button'>Go to project</button>
+				<button class='projectButton' type='button'>View</button>
 			</div>
-			
+
 			<div class='portfolioBox'>
 				<div class='circleImg'>
 					<div class='overlay'>
 						<div class='overlayText'>
-							Project 1
+							Project 6
 						</div>
 					</div>
 				</div>
-				<button class='projectButton' type='button'>Go to project</button>
+				<button class='projectButton' type='button'>View</button>
 			</div>
-			
-			
+
+		</div>
 		</section>
-		
-		
+
+
 		<section class='aboutMe'>
 			<a name="about"></a>
-			<div class='container'>
-				
-				<div class='profile'>
+
+				<div class='container'>
 					<h1>About Me</h1>
 					<div class='profileImg'>
 					</div>
-					</div>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus mauris a diam maecenas sed enim ut sem. Risus viverra adipiscing at in tellus integer feugiat scelerisque varius</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus mauris a diam maecenas sed enim ut sem. Risus viverra adipiscing at in tellus integer feugiat scelerisque varius</p>
-					
-			</div>
+
+				</div>
+
 		</section>
-		
+
 		<footer>
 			<a name="contact"></a>
 			<div class='container'>
-				<div class='footerContent'>
-					
+					<h1>Contact</h1>
 					<a href='mailto:marc.gallagherreid11@bathspa.ac.uk?subject=Mail%20from%20MG%20Porfolio%20Site'><button class='email' type='button'>Email Me</button></a>
-					
+
 					<div class='socialBox'>
-						
+
 						<div class='social'>
 							<a href='https://github.com/mgallagher56'>
 								<div class="socialImg">
 								</div>
 								<h5>GitHub</h5>
 						</div></a>
-					
+
 						<div class='social'>
 							<a href='https://www.linkedin.com/in/marcgallagherreid/'>
-								<div class="socialImg">
+								<div class="socialImg2">
 							</div>
 							<h5>LinkedIn</h5>
 						</div></a>
-						
+
 					</div>
-				</div>
 			</div>
-		</footer>
-	  
-	</body>
+	</footer>
+</body>
 </html>
