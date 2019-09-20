@@ -130,10 +130,8 @@ i {
 	border-width: 0 10px 10px 0;
 	display: inline-block;
 	padding: 10px;
-	position:absolute;
-	top:85%;
+	position:relative;
 	left:49%;
-	
 }
 
 .down {
@@ -533,6 +531,41 @@ i {
 	right:30%;
 }
 
+}
+
+@media screen and (max-width: 375px){
+  .container {
+    width: 90%;
+}
+
+html {
+	font-size:11px;
+}
+
+.portfolioBox {
+	width:100%;
+}
+
+.fullscreen-bg__video {
+	position: absolute;
+	top:-34%;
+   
+}
+
+.intro {
+	position:relative;
+	bottom:170px;
+	background-size:100% 275px;
+}
+
+.intro h3 {
+	top:210px;
+}
+
+.moreInfo {
+	top:259px;
+	left:46%;
+	border:1px white solid;
 }
 
 @media screen and (max-width: 320px){
