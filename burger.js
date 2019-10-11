@@ -1,3 +1,3 @@
 $('.burger').click(function(){
-    $('.burgerMenu').animate({height: 'toggle'}, 1000)
+    $('.burgerMenu').animate({width: 'toggle'}, 1000)
 })
