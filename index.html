@@ -8,13 +8,15 @@
     <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="Normalize.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
+	<script src="burger.js" defer></script>
 </head>
 
 <body>
 		<nav>
+			<img class="burger" src="img/burger.svg">
 			<div class='container'>
-				<ul>
+				<ul class="menu">
 					<li>*</li>
 					<li><a href='#portfolio'>Portfolio</a></li>
 					<li>*</li>
@@ -26,25 +28,29 @@
 			</div>
 		</nav>
 
+		<div class="burgerMenu">
+			<ul class="burgerMenu">
+				<li class="burgerItem"><a href='#portfolio'>Portfolio</a></li>
+				<li class="burgerItem"><a href='#about'>About Me</a></li>
+				<li class="burgerItem"> <a href='#contact'>Contact</a></li>
+			</ul>
+		</div>
+
 		<div class="fullscreen-bg">
 		    <video loop muted autoplay poster="img/video.jpg" class="fullscreen-bg__video">
-		        <source src="img/video.mov" type="video/webm">
 		        <source src="img/video.mp4" type="video/mp4">
-		        <source src="img/video.ogv" type="video/ogg">
 		    </video>
 		</div>
 
 		<header>
 			<div class ='container'>
-				<div class='intro'>
-					<h1 >Marc Gallagher</h1>
-					<h3 >Full Stack Developer</h3>
-					<a href='#contact'><button class='moreInfo' type='button'>Hire</button></a>
-
-				</div>
+				<button class='moreInfo' type='button'>Hire</button>
+				<i class='arrow down'></i>
+				<img src="img/textBackground.png" class='intro'>
+				<a href='#contact'></a>
 
 			</div>
-			<h1><a href='#portfolio'><br/><i class='arrow down'></i></a></h1>
+			<h1><a href='#portfolio'></a></h1>
 
 		</header>
 
@@ -55,25 +61,28 @@
 			       <h1>Portfolio</h1>
 
 			<div class='portfolioBox'>
-				<div class='circleImg project1'>
+				<a href="#"><div class='circleImg project1'>
 					<div class='overlay'>
 						<div class='overlayText'>
 							My Portfolio <p>Website</p>
 						</div>
 					</div>
-				</div>
-				<button class='projectButton' type='button'>View</button>
+				</div></a>
+				<a href="#"> <button class='projectButton' type='button'>View</button></a>
+				<a href="https://github.com/mgallagher56/mgallagher56.github.io"> <button class='projectButton' type='button'>GitHub</button></a>
+
 			</div>
 
 			<div class='portfolioBox'>
-				<div class='circleImg'>
+				<a href="https://dev.maydenacademy.co.uk/students/2019/aug/marc/collectionApp/"><div class='circleImg project2'>
 					<div class='overlay'>
 						<div class='overlayText'>
-							Project 2
+							Shoe Collection <p>App</p>
 						</div>
 					</div>
-				</div>
-				<button class='projectButton' type='button'>View</button>
+				</div></a>
+				<a href="https://dev.maydenacademy.co.uk/students/2019/aug/marc/collectionApp/"> <button class='projectButton' type='button'>View</button></a>
+				<a href="https://github.com/mgallagher56/Mayden-Collection-App"> <button class='projectButton' type='button'>GitHub</button></a>
 			</div>
 
 			<div class='portfolioBox'>
@@ -84,7 +93,8 @@
 						</div>
 					</div>
 				</div>
-				<button class='projectButton' type='button'>View</button>
+				<a href="#"> <button class='projectButton' type='button'>View</button></a>
+				<a href="https://github.com/Mayden-Academy/2019-august-pairs"> <button class='projectButton' type='button'>GitHub</button></a>
 			</div>
 
 			<div class='portfolioBox'>
@@ -95,7 +105,8 @@
 						</div>
 					</div>
 				</div>
-				<button class='projectButton' type='button'>View</button>
+				<a href="#"> <button class='projectButton' type='button'>View</button></a>
+				<a href="#"> <button class='projectButton' type='button'>GitHub</button></a>
 			</div>
 
 			<div class='portfolioBox'>
@@ -106,7 +117,8 @@
 						</div>
 					</div>
 				</div>
-				<button class='projectButton' type='button'>View</button>
+				<a href="#"> <button class='projectButton' type='button'>View</button></a>
+				<a href="#"> <button class='projectButton' type='button'>GitHub</button></a>
 			</div>
 
 			<div class='portfolioBox'>
@@ -117,10 +129,9 @@
 						</div>
 					</div>
 				</div>
-				<button class='projectButton' type='button'>View</button>
+				<a href="#"> <button class='projectButton' type='button'>View</button></a>
+				<a href="#"> <button class='projectButton' type='button'>GitHub</button></a>
 			</div>
-
-		</div>
 		</section>
 
 
@@ -138,30 +149,28 @@
 
 		</section>
 
-		<footer>
 			<a name="contact"></a>
 			<div class='container'>
-					<h1>Contact</h1>
+					<h1 class="footer">Contact</h1>
 					<a href='mailto:marc.gallagherreid11@bathspa.ac.uk?subject=Mail%20from%20MG%20Porfolio%20Site'><button class='email' type='button'>Email Me</button></a>
-
-					<div class='socialBox'>
-
-						<div class='social'>
+					<div class="container"></div>
+						<ul>
+					<li class='social'>
 							<a href='https://github.com/mgallagher56'>
-								<div class="socialImg">
+								<div class="socialImg social1">
 								</div>
-								<h5>GitHub</h5>
-						</div></a>
+								<h5>GitHub</h5></a>
+						</li>
 
-						<div class='social'>
+						<li class='social'>
 							<a href='https://www.linkedin.com/in/marcgallagherreid/'>
-								<div class="socialImg2">
+								<div class="socialImg social2">
 							</div>
 							<h5>LinkedIn</h5>
-						</div></a>
-
+							</a>
+						</li>
+						</ul>
 					</div>
 			</div>
-	</footer>
 </body>
 </html>
