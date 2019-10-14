@@ -352,6 +352,10 @@ h5 {
 		width: 150px;
 	}
 
+	.portfolio {
+		padding: 0;
+	}
+
 	.portfolio h1 {
 		font-size: 20px;
 		padding: 5px;
@@ -362,7 +366,4 @@ h5 {
 		background-position:50% -15px;
 	}
 
-	.aboutMe {
-		padding: 20px;
-	}
 }
