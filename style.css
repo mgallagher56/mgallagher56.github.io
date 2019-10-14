@@ -12,13 +12,24 @@ body {
 	color:white
 }
 
-.fullscreen-bg__video {
-    position: absolute;
-	width: 100%;
-	max-height: 750px;
-	min-height: 600px;
-	min-width: 500px;
+
+.fullscreen-bg {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	z-index: -100;
 }
+
+.fullscreen-bg__video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
 
 .container {
 	width:60%;
@@ -32,7 +43,7 @@ a {
 	color:inherit;
 }
 
-a:hover {
+li a:hover {
 	transition:ease 0.5s;
 	color: #FBB025;
 	border-top:solid 2px #FC630E;
@@ -87,7 +98,6 @@ li {
 }
 
 .burgerItem a:hover {
-	/*border-top: none;*/
 	padding-top: 9px;
 }
 
@@ -105,29 +115,25 @@ header {
 
 
 .intro {
-	position:relative;
-	margin-top:100px;
-	height: 80%;
-	width: 80%;
+	margin-top: 15%;
+	height: 70%;
+	width: 70%;
 }
 
 .portfolio {
 	margin-top: 5%;
-}
-
-.moreInfo:hover {
-	color:white;
-	padding:5px 25px;
-	font-size:2.3rem;
-	transition:ease 0.5s;
-	border: #FC630E solid 3px;
+	background-image: url("img/bananas.png");
+	background-attachment: fixed;
+	padding-top: 5%;
 }
 
 .portfolio h1 {
-	width: 130px;
+	width: 150px;
 	background-color: black;
 	color: white;
 	margin: 0 auto;
+	padding: 10px;
+	text-align: center;
 }
 
 .circleImg {
@@ -147,11 +153,16 @@ header {
 
 .project2 {
 	background-image: url("img/collectionApp.png");
-	background-position: left;
  }
 
 .project3 {
 	background-image: url("img/pairsgame.png");
+}
+
+.project4 {
+	background-image: url("img/solarSystem.gif");
+	background-position: -13px 6px;
+
 }
 
 .overlay { /*portfolio circle hover overlay*/
@@ -187,7 +198,7 @@ header {
 }
 
 .projectButton {
-	margin:40px 10px 20px 10px;
+	margin:20px 10px 20px 10px;
 	color:white;
 	background-color:#F27224;
 	padding:10px 20px;
@@ -231,11 +242,11 @@ header {
 	  margin:0 auto;
 }
 
-h1 .footer {
+.footer {
 	width: 130px;
 	background-color: white;
 	color: black;
-	margin-top: 20px;
+	margin: 20px auto;
 }
 
 .email {
@@ -312,3 +323,27 @@ h5 {
 	}
 }
 
+@media screen and (max-width: 1100px) {
+	.portfolioBox {
+		width: 50%;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+	.circleImg {
+		height: 150px;
+		width: 150px;
+	}
+
+	.overlay { /*portfolio circle hover overlay*/
+		height: 150px;
+		width: 150px;
+	}
+
+	.portfolioBox {
+		background-size: 200px 280px;
+		background-position: 50% -30px;
+	}
+}
