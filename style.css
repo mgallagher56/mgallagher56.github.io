@@ -122,7 +122,7 @@ header {
 
 .portfolio {
 	margin-top: 5%;
-	/*background-image: url("img/bananas.png");*/
+	background-image: url("img/bananas.png");
 	background-attachment: fixed;
 	padding-top: 5%;
 }
@@ -354,6 +354,7 @@ h5 {
 
 	.portfolio {
 	margin: 0;
+		padding: 20px;
 	}
 
 	.portfolio h1 {
@@ -367,8 +368,12 @@ h5 {
 	}
 
 	.aboutMe {
-		padding: 0 20px 0 20px;
+		padding: 20px 20px 0 20px;
 		margin: 0;
+	}
+
+	.aboutMe h1 {
+		width: 25%;
 	}
 
 }
