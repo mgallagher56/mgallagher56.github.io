@@ -332,20 +332,24 @@ h5 {
 
 @media screen and (max-width: 800px) {
 
+	.container {
+		width: 100%;
+	}
+
 	.intro {
 		height: 250px;
 		width: 290px;
-		margin-top: 8%;
+		margin-top: 6%;
 	}
 
 	.circleImg {
-		height: 120px;
-		width: 120px;
+		height: 150px;
+		width: 150px;
 	}
 
 	.overlay { /*portfolio circle hover overlay*/
-		height: 120px;
-		width: 120px;
+		height: 150px;
+		width: 150px;
 	}
 
 	.portfolio h1 {
@@ -354,11 +358,11 @@ h5 {
 	}
 
 	.portfolioBox {
-		background-size: 160px 200px;
-		background-position:-7px 0px;
+		background-size: 200px 240px;
+		background-position:50% -15px;
 	}
 
-	.overlayText {
-		font-size: 18px;
+	.aboutMe {
+		padding: 20px;
 	}
 }
