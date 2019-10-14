@@ -353,7 +353,7 @@ h5 {
 	}
 
 	.portfolio {
-		padding: 0;
+	margin: 0;
 	}
 
 	.portfolio h1 {
@@ -364,6 +364,11 @@ h5 {
 	.portfolioBox {
 		background-size: 200px 240px;
 		background-position:50% -15px;
+	}
+
+	.aboutMe {
+		padding: 0 20px 0 20px;
+		margin: 0;
 	}
 
 }
