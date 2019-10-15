@@ -121,9 +121,10 @@ header {
 }
 
 .portfolio {
-	margin-top: 8%;
+	margin-top: 0;
 	background-image: url("img/bananas.png");
 	background-attachment: fixed;
+	padding-top: 8%;
 }
 
 .portfolio h1 {
