@@ -156,12 +156,14 @@ header {
  }
 
 .project3 {
-	background-image: url("img/pairsgame.png");
+	background-image: url("img/pairsGame.gif");
 }
 
 .project4 {
 	background-image: url("img/solarSystem.gif");
-	background-position: -13px 6px;
+	background-repeat: no-repeat;
+	background-position: -6px -15px;
+	background-color: black;
 }
 
 .project5 {
