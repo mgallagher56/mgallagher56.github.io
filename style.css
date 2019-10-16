@@ -162,7 +162,10 @@ header {
 .project4 {
 	background-image: url("img/solarSystem.gif");
 	background-position: -13px 6px;
+}
 
+.project5 {
+	background-image: url("img/githubFetch.png");
 }
 
 .overlay { /*portfolio circle hover overlay*/
