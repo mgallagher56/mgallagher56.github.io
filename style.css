@@ -12,7 +12,6 @@ body {
 	color:white
 }
 
-
 .fullscreen-bg {
 	position: absolute;
 	top: 0;
@@ -32,7 +31,7 @@ body {
 
 
 .container {
-	width:60%;
+	width:70%;
 	margin:0 auto;
 	overflow:auto;
 	text-align:center;
@@ -122,7 +121,6 @@ header {
 
 .portfolio {
 	margin-top: 0;
-	/*background-image: url("img/bananas.png");*/
 	background-attachment: fixed;
 	padding-top: 10%;
 }
@@ -134,6 +132,7 @@ header {
 	margin: 0 auto;
 	padding: 10px;
 	text-align: center;
+	overflow: auto;
 }
 
 .circleImg {
@@ -170,6 +169,15 @@ header {
 	background-image: url("img/githubFetch.png");
 }
 
+.project6 {
+	background-image: url("img/finance.png");
+	background-position: right;
+}
+
+.project7 {
+	background-image: url("img/GRUB.png");
+}
+
 .overlay { /*portfolio circle hover overlay*/
 	position:absolute;
 	border-radius:50%;
@@ -194,12 +202,14 @@ header {
 
 .portfolioBox {
 	float:left;
-	width:33.3%;
+	width:32%;
 	background-image:url('img/abstract.png');
-	background-size:270px 340px;
+	background-size: 350px 470px;
 	background-position:50% -30px;
 	background-repeat:no-repeat;
-	margin-top:20px;
+	border: 3px black dashed;
+	border-radius: 10px;
+	margin: 20px 5px 0 5px;
 }
 
 .projectButton {
@@ -330,7 +340,7 @@ h5 {
 
 @media screen and (max-width: 1100px) {
 	.portfolioBox {
-		width: 50%;
+		width: 45%;
 	}
 
 }
