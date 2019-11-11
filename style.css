@@ -112,7 +112,6 @@ header {
 	width:100%;
 }
 
-
 .intro {
 	margin-top: 15%;
 	height: 70%;
@@ -135,6 +134,14 @@ header {
 	overflow: auto;
 }
 
+.portfolio .portfolioBox H1 {
+	position: relative;
+	top: -120px;
+	background-color: white;
+	color: black;
+	width: 200px;
+}
+
 .circleImg {
 	background-image: url('img/coming-soon.jpg');
 	background-color: #cccccc;
@@ -143,7 +150,7 @@ header {
 	border-radius:50%;
 	background-position: center;
 	background-size: cover;
-	margin:30px auto 30px auto;
+	margin:150px auto 30px auto;
 }
 
 .project1 {
@@ -153,6 +160,10 @@ header {
 .project2 {
 	background-image: url("img/collectionApp.png");
  }
+
+.project2 .overlay {
+	bottom: 85px;
+}
 
 .project3 {
 	background-image: url("img/pairsGame.gif");
@@ -174,12 +185,21 @@ header {
 	background-position: right;
 }
 
+.project6 .overlay {
+	bottom: 85px;
+}
+
 .project7 {
 	background-image: url("img/GRUB.png");
 }
 
+.project7 .overlay {
+	bottom: 85px;
+}
+
 .overlay { /*portfolio circle hover overlay*/
-	position:absolute;
+	position:relative;
+	bottom: 52px;
 	border-radius:50%;
 	height:200px;
 	width:200px;
@@ -203,13 +223,14 @@ header {
 .portfolioBox {
 	float:left;
 	width:32%;
+	height: 500px;
 	background-image:url('img/abstract.png');
 	background-size: 350px 470px;
-	background-position:50% -30px;
+	background-position:38% 89px;
 	background-repeat:no-repeat;
 	border: 3px black dashed;
 	border-radius: 10px;
-	margin: 20px 5px 0 5px;
+	margin: 50px 5px 0 5px;
 }
 
 .projectButton {
@@ -219,6 +240,7 @@ header {
 	padding:10px 20px;
 	font-size:1.3rem;
 	border-radius:3px;
+	vertical-align: center;
 }
 
 .projectButton:hover {
