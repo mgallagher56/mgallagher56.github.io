@@ -24,6 +24,14 @@ nav {
 	margin: 0 auto;
 }
 
+.logo {
+	position: absolute;
+	margin: 10px 0 0 15px;
+	float: left;
+	font-size: 4rem;
+	font-family: 'Monoton', cursive;
+}
+
 ul {
 	width: 70%;
 	margin: 0 auto;
@@ -50,9 +58,15 @@ nav ul li a {
 	float: left;
 }
 
+li img {
+	width: 40px;
+	margin: 0 0 0 20px;
+}
+
 /*header*/
 .header {
-	height: 1200px;
+	height: 900px;
+
 }
 
 .innerHeader {
@@ -60,16 +74,16 @@ nav ul li a {
 	height: 100%;
 	margin: 10px auto;
 	background-color: white;
-}
+	font-family: 'Source Code Pro', monospace;}
 
 .innerHeader .headerText {
 	 position: relative;
-	 top: 23%;
-	 left: 15%;
+	 top: 30%;
+	 left: 10%;
 }
 
 .innerHeader h1 {
-	font-size: 3rem;
+	font-size: 2.5rem;
 }
 
 .innerHeader h3 {
@@ -82,8 +96,9 @@ nav ul li a {
 
 .screen {
 	position: relative;
-	height: 500px;
-	right: 15%;
+	float: right;
+	width: 45%;
+	right: 5%;
 }
 
 
