@@ -1,80 +1,99 @@
 * {
 	box-sizing:border-box;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
 }
 
 html {
 	font-size:14px;
+	background-color: whitesmoke;
 }
 
-body {
-	background-image: url("img/bananas.png");
-	background-attachment: fixed;
-	color:white
-}
-
-.fullscreen-bg {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	overflow: hidden;
-	z-index: -100;
-}
-
-.fullscreen-bg__video {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-}
-
-
-.container {
-	width:70%;
-	margin:0 auto;
-	overflow:auto;
-	text-align:center;
-}
-
-a {
-	text-decoration:none;
-	color:inherit;
-}
-
-li a:hover {
-	transition:ease 0.5s;
-	color: #FBB025;
-	border-top:solid 2px #FC630E;
-	padding-top:20px;
-}
-
+/*navbar*/
 nav {
-	position:fixed;
-	width:100%;
-	height:75px;
-	background-color: RGBA(27,49,67,.8);
-	z-index: 9999;
-}
-
-nav img {
+	width: 95%;
 	height: 75px;
-	float: left;
+	background-color: white;
+	text-align: center;
+	overflow: auto;
+	margin: 0 auto;
 }
 
 ul {
-	display:inline-block;
-	margin:0;
-	padding: 0;
+	width: 70%;
+	margin: 0 auto;
+	height: 75px;
 }
 
-li {
-	float:left;
-	list-style-type:none;
-	margin:10px;
-	font-size:2rem;
-	padding-top:20px;
+nav ul li a {
+	color: black;
+	font-size: 2.5rem;
+	float: left;
+	margin: 20px 5px 0 5px;
+	text-align: center;
+	width: 20%;
 }
+
+.social {
+	display: inline;
+	position: absolute;
+	float: right;
+	margin-left: 0;
+}
+
+.social li {
+	float: left;
+}
+
+/*header*/
+.header {
+	height: 1200px;
+}
+
+.innerHeader {
+	width: 95%;
+	height: 100%;
+	margin: 10px auto;
+	background-color: white;
+}
+
+.innerHeader .headerText {
+	 position: relative;
+	 top: 23%;
+	 left: 15%;
+}
+
+.innerHeader h1 {
+	font-size: 3rem;
+}
+
+.innerHeader h3 {
+	font-size: 2rem;
+}
+
+.headerImg {
+	float: right;
+}
+
+.screen {
+	position: relative;
+	height: 500px;
+	right: 15%;
+}
+
+
+
+
+
+
+
+
+
 
 .burgerMenu {
 	padding: 0;
@@ -107,230 +126,6 @@ li {
 	display: none;
 }
 
-header {
-	padding-top:0px;
-	width:100%;
-}
-
-.intro {
-	margin-top: 15%;
-	height: 70%;
-	width: 70%;
-}
-
-.portfolio {
-	margin-top: 0;
-	background-attachment: fixed;
-	padding-top: 10%;
-}
-
-.portfolio h1 {
-	width: 150px;
-	background-color: black;
-	color: white;
-	margin: 0 auto;
-	padding: 10px;
-	text-align: center;
-	overflow: auto;
-}
-
-.portfolio .portfolioBox H1 {
-	position: relative;
-	top: -120px;
-	background-color: white;
-	color: black;
-	width: 200px;
-}
-
-.circleImg {
-	background-image: url('img/coming-soon.jpg');
-	background-color: #cccccc;
-	height: 200px;
-	width:200px;
-	border-radius:50%;
-	background-position: center;
-	background-size: cover;
-	margin:150px auto 30px auto;
-}
-
-.project1 {
-	background-image: url('img/portfolio.png');
-}
-
-.project2 {
-	background-image: url("img/collectionApp.png");
- }
-
-.project2 .overlay {
-	bottom: 85px;
-}
-
-.project3 {
-	background-image: url("img/pairsGame.gif");
-}
-
-.project4 {
-	background-image: url("img/solarSystem.gif");
-	background-repeat: no-repeat;
-	background-position: -6px -15px;
-	background-color: black;
-}
-
-.project5 {
-	background-image: url("img/githubFetch.png");
-}
-
-.project6 {
-	background-image: url("img/finance.png");
-	background-position: right;
-}
-
-.project6 .overlay {
-	bottom: 85px;
-}
-
-.project7 {
-	background-image: url("img/GRUB.png");
-}
-
-.project7 .overlay {
-	bottom: 85px;
-}
-
-.overlay { /*portfolio circle hover overlay*/
-	position:relative;
-	bottom: 52px;
-	border-radius:50%;
-	height:200px;
-	width:200px;
-	opacity:0;
-	transition:0.5s ease;
-	background-color: RGBA(0,0,0,.7);
-}
-
-.overlay:hover {
-	opacity:1;
-}
-
-.overlayText { /*portfolio overlay text*/
-	color:white;
-	font-size: 1.5rem;
-	position:relative;
-	top:30%;
-	opacity:1;
-}
-
-.portfolioBox {
-	float:left;
-	width:32%;
-	height: 500px;
-	background-image:url('img/abstract.png');
-	background-size: 350px 470px;
-	background-position:38% 89px;
-	background-repeat:no-repeat;
-	border: 3px black dashed;
-	border-radius: 10px;
-	margin: 50px 5px 0 5px;
-}
-
-.projectButton {
-	margin:20px 10px 20px 10px;
-	color:white;
-	background-color:#F27224;
-	padding:10px 20px;
-	font-size:1.3rem;
-	border-radius:3px;
-	vertical-align: center;
-}
-
-.projectButton:hover {
-	transition:ease 0.5s;
-	background:RGBA(255,255,255,1);
-	padding:10px 30px;
-	color:black;
-}
-
-.aboutMe {
-	background-image:url('img/code.png');
-	background-repeat:repeat-x;
-	padding-top:50px;
-	background-color:white;
-	margin-top:20px;
-}
-
-.aboutMe p {
-	color:black;
-	font-size:2rem;
-}
-
-.aboutMe h1 {
-	background-color:black;
-	width:20%;
-	margin:0 auto 30px auto;
-}
-
-.profileImg {
-	  background-image:url('img/me.jpg');
-	  background-color: #cccccc;
-	  height: 250px;
-	  width:250px;
-	  border-radius:50%;
-	  background-size: cover;
-	  margin:0 auto;
-}
-
-.footer {
-	width: 130px;
-	background-color: white;
-	color: black;
-	margin: 20px auto;
-}
-
-.email {
-	color:white;
-	background-color:#F27224;
-	padding:10px 20px;
-	font-size:1.3rem;
-	border-radius:3px;
-	margin-top:20px;
-}
-
-.email:hover {
-	transition:ease 0.5s;
-	background:RGBA(255,255,255,1);
-	padding:10px 30px;
-	color:black;
-}
-
-.socialImg {
-	background-color: #cccccc;
-	float:left;
-	height: 40px;
-	width:40px;
-	border-radius:50%;
-	background-size: cover;
-	margin: 10px;
-}
-
-.social1 {
-	background-image:url('img/GitHub.png');
-}
-
-.social2 {
-	background-image:url('img/linkedin.png');
-}
-
-.social {
-	padding: 10px;
-	margin: 0 auto;
-}
-
-h5 {
-	font-size:1.2rem;
-	color: black;
-	text-align: center;
-}
-
 /*Reponsiveness*/
 @media screen and (max-width: 900px){
 	.burgerMenu {
@@ -346,8 +141,8 @@ h5 {
 	}
 
 	nav .menu {
-		display: none;
-	}
+		 display: none;
+	 }
 
 	nav {
 		background-color: transparent;
@@ -358,59 +153,4 @@ h5 {
 	.burgerMenu  {
 		display: none;
 	}
-}
-
-@media screen and (max-width: 1100px) {
-	.portfolioBox {
-		width: 45%;
-	}
-
-}
-
-@media screen and (max-width: 800px) {
-
-	.container {
-		width: 100%;
-	}
-
-	.intro {
-		height: 250px;
-		width: 290px;
-		margin-top: 6%;
-	}
-
-	.circleImg {
-		height: 150px;
-		width: 150px;
-	}
-
-	.overlay { /*portfolio circle hover overlay*/
-		height: 150px;
-		width: 150px;
-	}
-
-	.portfolio {
-	margin: 0;
-		padding: 20px;
-	}
-
-	.portfolio h1 {
-		font-size: 20px;
-		padding: 5px;
-	}
-
-	.portfolioBox {
-		background-size: 200px 240px;
-		background-position:50% -15px;
-	}
-
-	.aboutMe {
-		padding: 20px 20px 0 20px;
-		margin: 0;
-	}
-
-	.aboutMe h1 {
-		width: 25%;
-	}
-
 }
