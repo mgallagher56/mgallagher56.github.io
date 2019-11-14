@@ -26,23 +26,25 @@ nav {
 
 .logo {
 	position: absolute;
-	margin: 10px 0 0 15px;
+	left: 2%;
+	margin: 20px 0 0 20px;
 	float: left;
-	font-size: 4rem;
+	font-size: 3rem;
 	font-family: 'Monoton', cursive;
 }
 
 ul {
-	width: 70%;
+	width: 80%;
 	margin: 0 auto;
 	height: 75px;
+	font-family: 'Source Code Pro', monospace;
 }
 
 nav ul li a {
 	color: black;
-	font-size: 2.5rem;
+	font-size: 1.8rem;
 	float: left;
-	margin: 20px 5px 0 5px;
+	margin: 30px 5px 0 20px;
 	text-align: center;
 	width: 20%;
 }
@@ -50,23 +52,31 @@ nav ul li a {
 .social {
 	display: inline;
 	position: absolute;
+	top: -5px;
+	left: 80%;
 	float: right;
-	margin-left: 0;
 }
 
 .social li {
 	float: left;
 }
 
+
 li img {
-	width: 40px;
-	margin: 0 0 0 20px;
+	width: 30px;
+	margin: 0 0 0 25px;
+}
+
+
+.gitHub img {
+	position: absolute;
+	width: 45px;
+	top: 21px;
 }
 
 /*header*/
 .header {
 	height: 900px;
-
 }
 
 .innerHeader {
@@ -74,12 +84,15 @@ li img {
 	height: 100%;
 	margin: 10px auto;
 	background-color: white;
-	font-family: 'Source Code Pro', monospace;}
+	font-family: 'Source Code Pro', monospace;
+}
 
 .innerHeader .headerText {
-	 position: relative;
-	 top: 30%;
-	 left: 10%;
+	position: relative;
+	width: 35%;
+	top: 30%;
+	left: 10%;
+	text-align: center;
 }
 
 .innerHeader h1 {
@@ -97,10 +110,88 @@ li img {
 .screen {
 	position: relative;
 	float: right;
-	width: 45%;
-	right: 5%;
+	width: 50%;
 }
 
+/*Portfolio*/
+
+.portfolio {
+	margin: 100px 0;
+	background-color: white;
+	overflow: auto;
+}
+.portfolio h1 {
+	font-family: "Source Code Pro", monospace;
+	margin: 15px 0 50px 0;
+}
+
+.portfolio .title {
+	position: relative;
+	top: 25px;
+	text-align: center;
+}
+
+.portfolioBox {
+	background-image:url("img/coming-soon.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	float: left;
+	height: 450px;
+	width: 33.3%;
+}
+
+.project1 {
+	background-image: url("img/portfolio.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.project2 {
+	background-image: url("img/collectionApp.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:14%;
+}
+
+.project3 {
+	background-image: url("img/pairsGame.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.project4 {
+	background-image: url("img/solarSystem.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:top;
+}
+
+.project5 {
+	background-image: url("img/githubFetch.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.project6 {
+	background-image: url("img/finance.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:right;
+}
+
+.project7 {
+	background-image: url("img/GRUB.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+
+.project8 {
+	background-image: url("img/ski.gif");
+	background-size: 100% 90%;
+	background-repeat: no-repeat;
+}
 
 
 
