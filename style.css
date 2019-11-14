@@ -33,7 +33,7 @@ nav {
 	font-family: 'Monoton', cursive;
 }
 
-ul {
+.menu {
 	width: 80%;
 	margin: 0 auto;
 	height: 75px;
@@ -109,8 +109,10 @@ li img {
 
 .screen {
 	position: relative;
+  display: inline;
 	float: right;
 	width: 50%;
+  max-width: 800px
 }
 
 /*Portfolio*/
@@ -120,6 +122,7 @@ li img {
 	background-color: white;
 	overflow: auto;
 }
+
 .portfolio h1 {
 	font-family: "Source Code Pro", monospace;
 	margin: 15px 0 50px 0;
@@ -138,8 +141,19 @@ li img {
 	background-position: center;
 	float: left;
 	height: 450px;
-	width: 33.3%;
+	width: 33%;
+	filter: grayscale(100%);
+	transition: .2s linear;
 }
+
+.portfolioBox:hover {
+	filter: none;
+}
+
+.portfolioBox h1 {
+	margin-top: 0;
+}
+
 
 .project1 {
 	background-image: url("img/portfolio.png");
