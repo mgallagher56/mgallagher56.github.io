@@ -1,276 +1,316 @@
 * {
-	box-sizing:border-box;
-	padding: 0;
-	margin: 0;
-	list-style-type: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 html {
-	font-size:14px;
-	background-color: whitesmoke;
+  font-size: 14px;
+  background-color: whitesmoke;
 }
 
 /*navbar*/
 nav {
-	width: 95%;
-	height: 75px;
-	background-color: white;
-	text-align: center;
-	overflow: auto;
-	margin: 0 auto;
+  width: 100%;
+  height: 75px;
+  background-color: white;
+  text-align: center;
+  overflow: auto;
+  margin: 0 auto;
+  position: fixed;
+  z-index: 100;
+  top: 0;
 }
 
 .logo {
-	position: absolute;
-	left: 2%;
-	margin: 20px 0 0 20px;
-	float: left;
-	font-size: 3rem;
-	font-family: 'Monoton', cursive;
+  position: absolute;
+  left: 2%;
+  margin: 20px 0 0 20px;
+  float: left;
+  font-size: 3rem;
+  font-family: 'Monoton', cursive;
 }
 
 .menu {
-	width: 80%;
-	margin: 0 auto;
-	height: 75px;
-	font-family: 'Source Code Pro', monospace;
+  width: 80%;
+  margin: 0 auto;
+  height: 75px;
+  font-family: 'Source Code Pro', monospace;
 }
 
 nav ul li a {
-	color: black;
-	font-size: 1.8rem;
-	float: left;
-	margin: 30px 5px 0 20px;
-	text-align: center;
-	width: 20%;
+  color: black;
+  font-size: 1.8rem;
+  float: left;
+  margin: 30px 5px 0 20px;
+  text-align: center;
+  width: 20%;
 }
 
 .social {
-	display: inline;
-	position: absolute;
-	top: -5px;
-	left: 80%;
-	float: right;
+  display: inline;
+  position: absolute;
+  top: -5px;
+  left: 80%;
+  float: right;
 }
 
 .social li {
-	float: left;
+  float: left;
 }
-
 
 li img {
-	width: 30px;
-	margin: 0 0 0 25px;
+  width: 30px;
+  margin: 0 0 0 25px;
 }
 
-
 .gitHub img {
-	position: absolute;
-	width: 45px;
-	top: 21px;
+  position: absolute;
+  width: 45px;
+  top: 21px;
 }
 
 /*header*/
 .header {
-	height: 900px;
+	margin-top: 80px;
+	height: 600px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: -100;
 }
 
 .innerHeader {
-	width: 95%;
-	height: 100%;
-	margin: 10px auto;
-	background-color: white;
-	font-family: 'Source Code Pro', monospace;
+  width: 95%;
+  height: 100%;
+  margin: 10px auto;
+  background-color: white;
+  font-family: 'Source Code Pro', monospace;
 }
 
 .innerHeader .headerText {
-	position: relative;
-	width: 35%;
-	top: 30%;
-	left: 10%;
-	text-align: center;
+  position: relative;
+  width: 35%;
+  top: 25%;
+  left: 10%;
+  text-align: center;
 }
 
 .innerHeader h1 {
-	font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 .innerHeader h3 {
-	font-size: 2rem;
+  font-size: 2rem;
 }
 
 .headerImg {
-	float: right;
+  float: right;
 }
 
 .screen {
-	position: relative;
+  position: relative;
+	top: -100px;
   display: inline;
-	float: right;
-	width: 50%;
-  max-width: 800px
+  float: right;
+  width: 50%;
+  max-width: 800px;
+  min-width: 500px;
 }
 
 /*Portfolio*/
-
 .portfolio {
-	margin: 100px 0;
-	background-color: white;
-	overflow: auto;
+  width: 100%;
+  margin: 1000px auto 0 auto;
+  background-color: white;
+  overflow: auto;
 }
 
 .portfolio h1 {
-	font-family: "Source Code Pro", monospace;
-	margin: 15px 0 50px 0;
+  font-family: "Source Code Pro", monospace;
+  margin: 15px 0 50px 0;
 }
 
 .portfolio .title {
-	position: relative;
-	top: 25px;
-	text-align: center;
+  position: relative;
+  top: 25px;
+  text-align: center;
 }
 
 .portfolioBox {
-	background-image:url("img/coming-soon.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	float: left;
-	height: 450px;
-	width: 33%;
-	filter: grayscale(100%);
-	transition: .2s linear;
+  background-image: url("img/coming-soon.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  float: left;
+  height: 450px;
+  width: 33.3%;
+  border-bottom: 15px solid black;
+  transition: .2s linear;
+  filter: grayscale(90%) blur(2px);
+	z-index: 98;
 }
 
 .portfolioBox:hover {
-	filter: none;
+  filter: none;
+  border-bottom: 15px solid mediumseagreen;
 }
 
 .portfolioBox h1 {
-	margin-top: 0;
+  position: absolute;
+  display: inline-block;
+  background-color: white;
+  color: black;
+  filter: none;
+  z-index: 100;
 }
 
-
 .project1 {
-	background-image: url("img/portfolio.png");
-	background-size: cover;
-	background-repeat: no-repeat;
+  background-image: url("img/portfolio.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .project2 {
-	background-image: url("img/collectionApp.png");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position:14%;
+  background-image: url("img/collectionApp.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 14%;
 }
 
 .project3 {
-	background-image: url("img/pairsGame.gif");
-	background-size: cover;
-	background-repeat: no-repeat;
+  background-image: url("img/pairsGame.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .project4 {
-	background-image: url("img/solarSystem.gif");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position:top;
+  background-image: url("img/solarSystem.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 .project5 {
-	background-image: url("img/githubFetch.png");
-	background-size: cover;
-	background-repeat: no-repeat;
+  background-image: url("img/githubFetch.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .project6 {
-	background-image: url("img/finance.png");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position:right;
+  background-image: url("img/finance.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .project7 {
-	background-image: url("img/GRUB.png");
-	background-size: cover;
-	background-repeat: no-repeat;
-
+  background-image: url("img/GRUB.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .project8 {
-	background-image: url("img/ski.gif");
-	background-size: 100% 90%;
-	background-repeat: no-repeat;
+  /*background-image: url("img/ski.gif");*/
+  /*background-size: 100% 90%;*/
+  background-repeat: no-repeat;
 }
 
+.aboutMe {
+	background-image: url("img/code.320.png");
+	background-size: 1000px 50%;
+	background-repeat: repeat-x;
+	background-position: top;
+	background-color: white;
+	text-align: center;
+	padding:50px 0;
+}
 
+.aboutMe h1 {
+	background-color: black;
+	color: white;
+	width: 150px;
+	margin: 0 auto;
+}
 
+.profileImg {
+	background-image: url("img/profile.jpg");
+	background-size: cover;
+	height: 250px;
+	width: 250px;
+	margin: 20px auto;
+	border-radius: 50%;
+}
 
-
-
-
-
+.aboutMe p {
+	width: 70%;
+	margin: 0 auto;
+	font-size: 2rem;
+	text-align: center;
+}
 
 .burgerMenu {
-	padding: 0;
-	display: none;
-	position: fixed;
-	margin: 0;
-	width: 130px;
-	background-color: RGBA(27,49,67,.8);
-	border-top: black 1px solid;
-	border-right: black 1px solid;
+  padding: 0;
+  display: none;
+  position: fixed;
+  margin: 0;
+  width: 130px;
+  background-color: RGBA(27, 49, 67, .8);
+  border-top: black 1px solid;
+  border-right: black 1px solid;
 }
 
 .burgerItem {
-	list-style-type: none;
-	padding: 10px;
-	border-bottom: 1px solid black;
-	margin: 0;
-	width: 130px;
-	font-size: 20px;
+  list-style-type: none;
+  padding: 10px;
+  border-bottom: 1px solid black;
+  margin: 0;
+  width: 130px;
+  font-size: 20px;
 }
 
 .burgerItem a:hover {
-	padding-top: 9px;
+  padding-top: 9px;
 }
 
 .burger {
-	height: 50px;
-	float: left;
-	margin: 10px;
-	display: none;
+  height: 50px;
+  float: left;
+  margin: 10px;
+  display: none;
 }
 
+
 /*Reponsiveness*/
-@media screen and (max-width: 900px){
-	.burgerMenu {
-		display: none;
-		z-index: 100;
-		top:75px;
-	}
+@media screen and (max-width: 900px) {
+  .burgerMenu {
+    display: none;
+    z-index: 100;
+    top: 75px;
+  }
 
-	.burger {
-		display: inline;
-		float: left;
-		z-index: 1000;
-	}
+  .burger {
+    display: inline;
+    float: left;
+    z-index: 1000;
+  }
 
-	nav .menu {
-		 display: none;
-	 }
+  nav .menu {
+    display: none;
+  }
 
-	nav {
-		background-color: transparent;
-	}
+  nav {
+    background-color: transparent;
+  }
 }
 
 @media screen and (min-width:900px) {
-	.burgerMenu  {
-		display: none;
-	}
+  .burgerMenu {
+    display: none;
+  }
 }
