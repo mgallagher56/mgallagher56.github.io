@@ -1,145 +1,144 @@
 * {
-	box-sizing:border-box;
+  box-sizing: border-box;
 }
 
 html {
-	font-size:14px;
+  font-size: 14px;
 }
 
 body {
-	background-image: url("img/bananas.png");
-	background-attachment: fixed;
-	color:white
+  background-image: url("img/bananas.png");
+  background-attachment: fixed;
+  color: white
 }
 
 .fullscreen-bg {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	overflow: hidden;
-	z-index: -100;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
 }
 
 .fullscreen-bg__video {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
-
 .container {
-	width:70%;
-	margin:0 auto;
-	overflow:auto;
-	text-align:center;
+  width: 70%;
+  margin: 0 auto;
+  overflow: auto;
+  text-align: center;
 }
 
 a {
-	text-decoration:none;
-	color:inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 li a:hover {
-	transition:ease 0.5s;
-	color: #FBB025;
-	border-top:solid 2px #FC630E;
-	padding-top:20px;
+  transition: ease 0.5s;
+  color: #FBB025;
+  border-top: solid 2px #FC630E;
+  padding-top: 20px;
 }
 
 nav {
-	position:fixed;
-	width:100%;
-	height:75px;
-	background-color: RGBA(27,49,67,.8);
-	z-index: 9999;
+  position: fixed;
+  width: 100%;
+  height: 75px;
+  background-color: RGBA(27, 49, 67, .8);
+  z-index: 9999;
 }
 
 nav img {
-	height: 75px;
-	float: left;
+  height: 75px;
+  float: left;
 }
 
 ul {
-	display:inline-block;
-	margin:0;
-	padding: 0;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
 }
 
 li {
-	float:left;
-	list-style-type:none;
-	margin:10px;
-	font-size:2rem;
-	padding-top:20px;
+  float: left;
+  list-style-type: none;
+  margin: 10px;
+  font-size: 2rem;
+  padding-top: 20px;
 }
 
 .burgerMenu {
-	padding: 0;
-	display: none;
-	position: fixed;
-	margin: 0;
-	width: 130px;
-	background-color: RGBA(27,49,67,.8);
-	border-top: black 1px solid;
-	border-right: black 1px solid;
+  padding: 0;
+  display: none;
+  position: fixed;
+  margin: 0;
+  width: 130px;
+  background-color: RGBA(27, 49, 67, .8);
+  border-top: black 1px solid;
+  border-right: black 1px solid;
 }
 
 .burgerItem {
-	list-style-type: none;
-	padding: 10px;
-	border-bottom: 1px solid black;
-	margin: 0;
-	width: 130px;
-	font-size: 20px;
+  list-style-type: none;
+  padding: 10px;
+  border-bottom: 1px solid black;
+  margin: 0;
+  width: 130px;
+  font-size: 20px;
 }
 
 .burgerItem a:hover {
-	padding-top: 9px;
+  padding-top: 9px;
 }
 
 .burger {
-	height: 50px;
-	float: left;
-	margin: 10px;
-	display: none;
+  height: 50px;
+  float: left;
+  margin: 10px;
+  display: none;
 }
 
 header {
-	padding-top:0px;
-	width:100%;
+  padding-top: 0px;
+  width: 100%;
 }
 
 .intro {
-	margin-top: 15%;
-	height: 70%;
-	width: 70%;
+  margin-top: 15%;
+  height: 70%;
+  width: 70%;
 }
 
 .portfolio {
-	margin-top: 0;
-	background-attachment: fixed;
-	padding-top: 10%;
+  margin-top: 0;
+  background-attachment: fixed;
+  padding-top: 10%;
 }
 
 .portfolio h1 {
-	width: 150px;
-	background-color: black;
-	color: white;
-	margin: 0 auto;
-	padding: 10px;
-	text-align: center;
-	overflow: auto;
+  width: 150px;
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  overflow: auto;
 }
 
 .portfolio .portfolioBox H1 {
-	position: relative;
-	top: -120px;
-	background-color: white;
-	color: black;
-	width: 200px;
+  position: relative;
+  top: -120px;
+  background-color: white;
+  color: black;
+  width: 200px;
 }
 
 .circleImg {
@@ -154,70 +153,76 @@ header {
 }
 
 .project1 {
-	background-image: url('img/portfolio.png');
+  background-image: url('img/portfolio.png');
 }
 
 .project2 {
-	background-image: url("img/collectionApp.png");
- }
+  background-image: url("img/collectionApp.png");
+}
 
 .project2 .overlay {
-	bottom: 85px;
+  bottom: 85px;
 }
 
 .project3 {
-	background-image: url("img/pairsGame.gif");
+  background-image: url("img/pairsGame.gif");
 }
 
 .project4 {
-	background-image: url("img/solarSystem.gif");
-	background-repeat: no-repeat;
-	background-position: -6px -15px;
-	background-color: black;
+  background-image: url("img/solarSystem.gif");
+  background-repeat: no-repeat;
+  background-position: -6px -15px;
+  background-color: black;
 }
 
 .project5 {
-	background-image: url("img/githubFetch.png");
+  background-image: url("img/githubFetch.png");
 }
 
 .project6 {
-	background-image: url("img/finance.png");
-	background-position: right;
+  background-image: url("img/finance.png");
+  background-position: right;
 }
 
 .project6 .overlay {
-	bottom: 85px;
+  bottom: 85px;
 }
 
 .project7 {
-	background-image: url("img/GRUB.png");
+  background-image: url("img/GRUB.png");
 }
 
 .project7 .overlay {
-	bottom: 85px;
+  bottom: 85px;
+}
+
+.project8 {
+  /*background-image: url("");*/
 }
 
 .overlay { /*portfolio circle hover overlay*/
 	position:relative;
-	top: 0px;
+	top: 0;
 	border-radius:50%;
 	height:200px;
 	width:200px;
 	opacity:0;
 	transition:0.5s ease;
 	background-color: RGBA(0,0,0,.7);
+
 }
 
 .overlay:hover {
-	opacity:1;
+  opacity: 1;
 }
 
-.overlayText { /*portfolio overlay text*/
-	color:white;
-	font-size: 1.5rem;
-	position:relative;
-	top:30%;
-	opacity:1;
+.overlayText {
+  /*portfolio overlay text*/
+  color: white;
+  font-size: 1.5rem;
+  position: relative;
+  top: 30%;
+  opacity: 1;
 }
 
 .portfolioBox {
@@ -231,186 +236,185 @@ header {
 	border: 3px black dashed;
 	border-radius: 10px;
 	margin: 50px 5px 0 5px;
+
 }
 
 .projectButton {
-	margin:20px 10px 20px 10px;
-	color:white;
-	background-color:#F27224;
-	padding:10px 20px;
-	font-size:1.3rem;
-	border-radius:3px;
-	vertical-align: center;
+  margin: 20px 10px 20px 10px;
+  color: white;
+  background-color: #F27224;
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  border-radius: 3px;
+  vertical-align: center;
 }
 
 .projectButton:hover {
-	transition:ease 0.5s;
-	background:RGBA(255,255,255,1);
-	padding:10px 30px;
-	color:black;
+  transition: ease 0.5s;
+  background: RGBA(255, 255, 255, 1);
+  padding: 10px 30px;
+  color: black;
 }
 
 .aboutMe {
-	background-image:url('img/code.png');
-	background-repeat:repeat-x;
-	padding-top:50px;
-	background-color:white;
-	margin-top:20px;
+  background-image: url('img/code.png');
+  background-repeat: repeat-x;
+  padding-top: 50px;
+  background-color: white;
+  margin-top: 20px;
 }
 
 .aboutMe p {
-	color:black;
-	font-size:2rem;
+  color: black;
+  font-size: 2rem;
 }
 
 .aboutMe h1 {
-	background-color:black;
-	width:20%;
-	margin:0 auto 30px auto;
+  background-color: black;
+  width: 20%;
+  margin: 0 auto 30px auto;
 }
 
 .profileImg {
-	  background-image:url('img/me.jpg');
-	  background-color: #cccccc;
-	  height: 250px;
-	  width:250px;
-	  border-radius:50%;
-	  background-size: cover;
-	  margin:0 auto;
+  background-image: url('img/me.jpg');
+  background-color: #cccccc;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background-size: cover;
+  margin: 0 auto;
 }
 
 .footer {
-	width: 130px;
-	background-color: white;
-	color: black;
-	margin: 20px auto;
+  width: 130px;
+  background-color: white;
+  color: black;
+  margin: 20px auto;
 }
 
 .email {
-	color:white;
-	background-color:#F27224;
-	padding:10px 20px;
-	font-size:1.3rem;
-	border-radius:3px;
-	margin-top:20px;
+  color: white;
+  background-color: #F27224;
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  border-radius: 3px;
+  margin-top: 20px;
 }
 
 .email:hover {
-	transition:ease 0.5s;
-	background:RGBA(255,255,255,1);
-	padding:10px 30px;
-	color:black;
+  transition: ease 0.5s;
+  background: RGBA(255, 255, 255, 1);
+  padding: 10px 30px;
+  color: black;
 }
 
 .socialImg {
-	background-color: #cccccc;
-	float:left;
-	height: 40px;
-	width:40px;
-	border-radius:50%;
-	background-size: cover;
-	margin: 10px;
+  background-color: #cccccc;
+  float: left;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-size: cover;
+  margin: 10px;
 }
 
 .social1 {
-	background-image:url('img/GitHub.png');
+  background-image: url('img/GitHub.png');
 }
 
 .social2 {
-	background-image:url('img/linkedin.png');
+  background-image: url('img/linkedin.png');
 }
 
 .social {
-	padding: 10px;
-	margin: 0 auto;
+  padding: 10px;
+  margin: 0 auto;
 }
 
 h5 {
-	font-size:1.2rem;
-	color: black;
-	text-align: center;
+  font-size: 1.2rem;
+  color: black;
+  text-align: center;
 }
 
 /*Reponsiveness*/
-@media screen and (max-width: 900px){
-	.burgerMenu {
-		display: none;
-		z-index: 100;
-		top:75px;
-	}
+@media screen and (max-width: 900px) {
+  .burgerMenu {
+    display: none;
+    z-index: 100;
+    top: 75px;
+  }
 
-	.burger {
-		display: inline;
-		float: left;
-		z-index: 1000;
-	}
+  .burger {
+    display: inline;
+    float: left;
+    z-index: 1000;
+  }
 
-	nav .menu {
-		display: none;
-	}
+  nav .menu {
+    display: none;
+  }
 
-	nav {
-		background-color: transparent;
-	}
+  nav {
+    background-color: transparent;
+  }
 }
 
 @media screen and (min-width:900px) {
-	.burgerMenu  {
-		display: none;
-	}
+  .burgerMenu {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1100px) {
-	.portfolioBox {
-		width: 45%;
-	}
-
+  .portfolioBox {
+    width: 45%;
+  }
 }
 
 @media screen and (max-width: 800px) {
+  .container {
+    width: 100%;
+  }
 
-	.container {
-		width: 100%;
-	}
+  .intro {
+    height: 250px;
+    width: 290px;
+    margin-top: 6%;
+  }
 
-	.intro {
-		height: 250px;
-		width: 290px;
-		margin-top: 6%;
-	}
+  .circleImg {
+    height: 150px;
+    width: 150px;
+  }
 
-	.circleImg {
-		height: 150px;
-		width: 150px;
-	}
+  .overlay {
+    /*portfolio circle hover overlay*/
+    height: 150px;
+    width: 150px;
+  }
 
-	.overlay { /*portfolio circle hover overlay*/
-		height: 150px;
-		width: 150px;
-	}
+  .portfolio {
+    margin: 0;
+    padding: 20px;
+  }
 
-	.portfolio {
-	margin: 0;
-		padding: 20px;
-	}
+  .portfolio h1 {
+    font-size: 20px;
+    padding: 5px;
+  }
 
-	.portfolio h1 {
-		font-size: 20px;
-		padding: 5px;
-	}
+  .portfolioBox {
+    background-size: 200px 240px;
+    background-position: 50% -15px;
+  }
 
-	.portfolioBox {
-		background-size: 200px 240px;
-		background-position:50% -15px;
-	}
+  .aboutMe {
+    padding: 20px 20px 0 20px;
+    margin: 0;
+  }
 
-	.aboutMe {
-		padding: 20px 20px 0 20px;
-		margin: 0;
-	}
-
-	.aboutMe h1 {
-		width: 25%;
-	}
-
+  .aboutMe h1 {
+    width: 25%;
+  }
 }
