@@ -150,7 +150,7 @@ header {
 	border-radius:50%;
 	background-position: center;
 	background-size: cover;
-	margin:150px auto 30px auto;
+	margin: 50px auto 30px auto;
 }
 
 .project1 {
@@ -199,7 +199,7 @@ header {
 
 .overlay { /*portfolio circle hover overlay*/
 	position:relative;
-	bottom: 52px;
+	top: 0px;
 	border-radius:50%;
 	height:200px;
 	width:200px;
@@ -223,10 +223,10 @@ header {
 .portfolioBox {
 	float:left;
 	width:32%;
-	height: 500px;
+	height: 400px;
 	background-image:url('img/abstract.png');
 	background-size: 350px 470px;
-	background-position:38% 89px;
+	background-position: 50% -10px;
 	background-repeat:no-repeat;
 	border: 3px black dashed;
 	border-radius: 10px;
