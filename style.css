@@ -405,6 +405,8 @@ h5 {
   }
 
   .portfolioBox {
+    min-width: 250px;
+    width: 95%;
     background-size: 280px 350px;
     background-position: 50% 7px;
   }
@@ -416,5 +418,11 @@ h5 {
 
   .aboutMe h1 {
     width: 25%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .portfolioBox {
+    width: 95%;
   }
 }
