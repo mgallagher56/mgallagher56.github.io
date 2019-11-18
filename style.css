@@ -424,5 +424,6 @@ h5 {
 @media screen and (max-width: 500px) {
   .portfolioBox {
     width: 95%;
+    border: none;
   }
 }
