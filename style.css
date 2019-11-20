@@ -549,7 +549,7 @@ video {
     .logoSmall {
         display: block;
         position: fixed;
-        font-size: 4rem;
+        font-size: 3rem;
         text-align: center;
         font-family: 'Monoton', cursive;
         z-index: 102;
@@ -560,8 +560,10 @@ video {
     }
 
     .aboutMe {
-        background-position: 20px -100px;
+        background-position: 20px -110px;
     }
+
+    .ab
 
     .aboutMe p {
         width: 95%;
