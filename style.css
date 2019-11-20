@@ -1,429 +1,576 @@
 * {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 14px;
-}
-
-body {
-  background-image: url("img/bananas.png");
-  background-attachment: fixed;
-  color: white
-}
-
-.fullscreen-bg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  z-index: -100;
-}
-
-.fullscreen-bg__video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-.container {
-  width: 70%;
-  margin: 0 auto;
-  overflow: auto;
-  text-align: center;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
 }
 
-li a:hover {
-  transition: ease 0.5s;
-  color: #FBB025;
-  border-top: solid 2px #FC630E;
-  padding-top: 20px;
+html {
+    font-size: 14px;
+    background-color: whitesmoke;
 }
 
+/*navbar*/
 nav {
-  position: fixed;
-  width: 100%;
-  height: 75px;
-  background-color: RGBA(27, 49, 67, .8);
-  z-index: 9999;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    text-align: center;
+    overflow: auto;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 100;
+    top: 0;
 }
 
-nav img {
-  height: 75px;
-  float: left;
+.logo {
+    position: absolute;
+    left: 2%;
+    margin: 20px 0 0 20px;
+    float: left;
+    font-size: 3rem;
+    font-family: 'Monoton', cursive;
 }
 
-ul {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
+.logoSmall {
+    display: none;
 }
 
-li {
-  float: left;
-  list-style-type: none;
-  margin: 10px;
-  font-size: 2rem;
-  padding-top: 20px;
+.menu {
+    width: 60%;
+    margin: 0 auto;
+    height: 100px;
+    font-family: 'Source Code Pro', monospace;
 }
 
-.burgerMenu {
-  padding: 0;
-  display: none;
-  position: fixed;
-  margin: 0;
-  width: 130px;
-  background-color: RGBA(27, 49, 67, .8);
-  border-top: black 1px solid;
-  border-right: black 1px solid;
+nav ul li a {
+    color: gray;
+    font-size: 1.5rem;
+    float: left;
+    margin: 30px 5px 0 20px;
+    text-align: center;
+    width: 20%;
+    transition: .2s linear;
 }
 
-.burgerItem {
-  list-style-type: none;
-  padding: 10px;
-  border-bottom: 1px solid black;
-  margin: 0;
-  width: 130px;
-  font-size: 20px;
-}
-
-.burgerItem a:hover {
-  padding-top: 9px;
-}
-
-.burger {
-  height: 50px;
-  float: left;
-  margin: 10px;
-  display: none;
-}
-
-header {
-  padding-top: 0px;
-  width: 100%;
-}
-
-.intro {
-  margin-top: 15%;
-  height: 70%;
-  width: 70%;
-}
-
-.portfolio {
-  margin-top: 0;
-  background-attachment: fixed;
-  padding-top: 10%;
-}
-
-.portfolio h1 {
-  width: 150px;
-  background-color: black;
-  color: white;
-  margin: 0 auto;
-  padding: 10px;
-  text-align: center;
-  overflow: auto;
-}
-
-.portfolio .portfolioBox H1 {
-  position: relative;
-  top: -120px;
-  background-color: white;
-  color: black;
-  width: 200px;
-}
-
-.circleImg {
-	background-image: url('img/coming-soon.jpg');
-	background-color: #cccccc;
-	height: 200px;
-	width:200px;
-	border-radius:50%;
-	background-position: center;
-	background-size: cover;
-	margin: 50px auto 30px auto;
-}
-
-.project1 {
-  background-image: url('img/portfolio.png');
-}
-
-.project2 {
-  background-image: url("img/collectionApp.png");
-}
-
-.project2 .overlay {
-  bottom: 85px;
-}
-
-.project3 {
-  background-image: url("img/pairsGame.gif");
-}
-
-.project4 {
-  background-image: url("img/solarSystem.gif");
-  background-repeat: no-repeat;
-  background-position: -6px -15px;
-  background-color: black;
-}
-
-.project5 {
-  background-image: url("img/githubFetch.png");
-}
-
-.project6 {
-  background-image: url("img/finance.png");
-  background-position: right;
-}
-
-.project6 .overlay {
-  bottom: 85px;
-}
-
-.project7 {
-  background-image: url("img/GRUB.png");
-}
-
-.project7 .overlay {
-  bottom: 85px;
-}
-
-.project8 {
-  /*background-image: url("");*/
-}
-
-.overlay { /*portfolio circle hover overlay*/
-	position:relative;
-	top: 0;
-	border-radius:50%;
-	height:200px;
-	width:200px;
-	opacity:0;
-	transition:0.5s ease;
-	background-color: RGBA(0,0,0,.7);
-
-}
-
-.overlay:hover {
-  opacity: 1;
-}
-
-.overlayText {
-  /*portfolio overlay text*/
-  color: white;
-  font-size: 1.5rem;
-  position: relative;
-  top: 30%;
-  opacity: 1;
-}
-
-.portfolioBox {
-	float:left;
-	width:32%;
-	height: 400px;
-	background-image:url('img/abstract.png');
-	background-size: 350px 470px;
-	background-position: 50% -10px;
-	background-repeat:no-repeat;
-	border: 3px black dashed;
-	border-radius: 10px;
-	margin: 50px 5px 0 5px;
-
-}
-
-.projectButton {
-  margin: 20px 10px 20px 10px;
-  color: white;
-  background-color: #F27224;
-  padding: 10px 20px;
-  font-size: 1.3rem;
-  border-radius: 3px;
-  vertical-align: center;
-}
-
-.projectButton:hover {
-  transition: ease 0.5s;
-  background: RGBA(255, 255, 255, 1);
-  padding: 10px 30px;
-  color: black;
-}
-
-.aboutMe {
-  background-image: url('img/code.png');
-  background-repeat: repeat-x;
-  padding-top: 50px;
-  background-color: white;
-  margin-top: 20px;
-}
-
-.aboutMe p {
-  color: black;
-  font-size: 2rem;
-}
-
-.aboutMe h1 {
-  background-color: black;
-  width: 20%;
-  margin: 0 auto 30px auto;
-}
-
-.profileImg {
-  background-image: url('img/me.jpg');
-  background-color: #cccccc;
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
-  background-size: cover;
-  margin: 0 auto;
-}
-
-.footer {
-  width: 130px;
-  background-color: white;
-  color: black;
-  margin: 20px auto;
-}
-
-.email {
-  color: white;
-  background-color: #F27224;
-  padding: 10px 20px;
-  font-size: 1.3rem;
-  border-radius: 3px;
-  margin-top: 20px;
-}
-
-.email:hover {
-  transition: ease 0.5s;
-  background: RGBA(255, 255, 255, 1);
-  padding: 10px 30px;
-  color: black;
-}
-
-.socialImg {
-  background-color: #cccccc;
-  float: left;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  background-size: cover;
-  margin: 10px;
-}
-
-.social1 {
-  background-image: url('img/GitHub.png');
-}
-
-.social2 {
-  background-image: url('img/linkedin.png');
+nav ul li a:hover {
+    color: black;
+    font-weight: bold;
+    padding: 10px 0;
+    border-bottom:2px black solid;
+    border-top:2px black solid
 }
 
 .social {
-  padding: 10px;
-  margin: 0 auto;
+    display: inline;
+    position: absolute;
+    top: -5px;
+    left: 80%;
+    float: right;
 }
 
-h5 {
-  font-size: 1.2rem;
-  color: black;
-  text-align: center;
+.social li {
+    float: left;
 }
+
+.social li a:hover {
+    border:none;
+    padding: 0;
+}
+
+li img {
+    width: 30px;
+    margin: 0 0 0 25px;
+}
+
+.gitHub img {
+    position: absolute;
+    width: 45px;
+    top: 21px;
+}
+
+/*header*/
+.header {
+    margin-top: 120px;
+    height: 600px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -100;
+}
+
+.innerHeader {
+    width: 95%;
+    height: 900px;
+    margin: 10px auto;
+    background-color: white;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.innerHeader .headerText {
+    position: relative;
+    width: 35%;
+    top: 15%;
+    left: 5%;
+    text-align: center;
+    margin-right: 0;
+}
+
+.innerHeader h1 {
+    font-size: 2.5rem;
+}
+
+.innerHeader h3 {
+    font-size: 2rem;
+}
+
+.typed-cursor {
+    display: none;
+}
+
+.screen {
+    display: none;
+}
+
+video {
+    position: absolute;
+    top: 15%;
+    left: 45%;
+    display: inline;
+    width: 50%;
+    max-width: 800px;
+    min-width: 500px;
+}
+
+/*Portfolio*/
+.portfolio {
+    width: 100%;
+    margin: 1000px auto 0 auto;
+    background-color: white;
+    overflow: auto;
+}
+
+.portfolio h1 {
+    font-family: "Source Code Pro", monospace;
+    margin: 15px 0 50px 0;
+}
+
+.portfolio .title {
+    position: relative;
+    top: 25px;
+    margin: 50px auto;
+    background-color: black;
+    color: white;
+    width: 150px;
+}
+
+.portfolioBox {
+    background-image: url("img/coming-soon.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    height: 450px;
+    width: 33.3%;
+    transition: .6s linear;
+}
+
+.overlay {
+    transition: .2s linear;
+    filter: grayscale(90%);
+    z-index: 98;
+}
+
+.overlay:hover {
+    filter: none;
+}
+
+.portfolioBox:hover {
+    border-top: 40px solid black;
+    border-bottom: 40px solid black;
+}
+
+.portfolioBox h1 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+    filter: none;
+    text-align: center;
+}
+
+.projectButton {
+    position: relative;
+    display: inline-block;
+    background-color: black;
+    top: 300px;
+    color: white;
+    height: 50px;
+    width: 30%;
+    margin: 0 10%;
+    float: left;
+    border: 1px white solid;
+    font-size: 1rem;
+    filter: none;
+    transition: .4s linear;
+}
+
+.projectButton:hover {
+    background-color: white;
+    color: black;
+    border: 1px black solid;
+    font-size: 1.2rem;
+}
+
+.project1 {
+    background-image: url("img/portfolio.gif");
+    background-size: auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    /*width: 30%;*/
+}
+
+.project2 {
+    background-image: url("img/collectionApp.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 14%;
+    /*width: 40%;*/
+}
+
+.project3 {
+    background-image: url("img/pairsGame.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*width: 30%;*/
+}
+
+.project4 {
+    background-image: url("img/solarSystem.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*width: 35%;*/
+}
+
+.project5 {
+    background-image: url("img/githubFetch.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*width:25%;*/
+}
+
+.project6 {
+    background-image: url("img/finance.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    /*width:40%;*/
+}
+
+.project7 {
+    background-image: url("img/GRUB.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*width: 30%;*/
+}
+
+.project8 {
+    background-image: url("img/ski.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    /*width:50%;*/
+}
+
+.project9 {
+    /*width: 20%;*/
+}
+
+.project10 {
+    width: 33.3%;
+}
+
+.project11 {
+    width: 33.3%;
+}
+
+.project12 {
+    width: 33.3%;
+}
+
+.aboutMe {
+    background-image: url("img/code.320.png");
+    background-size: 1000px 50%;
+    background-repeat: repeat-x;
+    background-position: 0 -25px;
+    background-color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.aboutMe h1 {
+    background-color: black;
+    color: white;
+    width: 150px;
+    margin: 0 auto;
+}
+
+.profileImg {
+    background-image: url("img/profile.jpg");
+    background-size: cover;
+    height: 250px;
+    width: 250px;
+    margin: 20px auto;
+    border-radius: 50%;
+}
+
+.aboutMe p {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 1.7rem;
+    text-align: center;
+    font-family: "Source Code Pro", monospace;
+
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    width: 150px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.contact {
+    /*background-image: url("img/code.320.png");*/
+    background-repeat: repeat-x;
+    background-position: center;
+    height: auto;
+    width: 100%;
+    background-color: white;
+    margin: 0;
+}
+
+.email {
+    background-color: white;
+    border: black solid 1px;
+    padding: 10px 20px;
+    margin: 15px 25% 0 25%;
+    transition: .3s linear;
+}
+
+.email:hover {
+    padding: 15px 30px;
+    border: white solid 1px;
+    background-color: black;
+    color: white;
+}
+
+.contact ul {
+    width: 80%;
+    height: auto;
+    overflow: auto;
+    margin: 50px auto;
+    padding-bottom: 50px;
+}
+
+.socialImg {
+    height: 60px;
+    width: 60px;
+    margin: 0 40%;
+    transition: .3s linear;
+}
+
+.linkedIn {
+    height: 50px;
+    width: 50px;
+}
+
+.socialImg:hover {
+    height: 70px;
+    width: 70px;
+}
+
+.linkedIn:hover {
+    height: 60px;
+    width: 60px;
+}
+
+.socialFooter {
+    display: inline-block;
+    width: 33.3%;
+    float: left;
+    margin: 0 auto ;
+}
+
+.burgerMenu {
+    padding: 0;
+    display: none;
+    position: fixed;
+    margin: 0;
+    width: 130px;
+    background-color: black;
+    border-top: white 1px solid;
+    border-right: white 1px solid;
+}
+
+.burgerItem {
+    list-style-type: none;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    color: white;
+    margin: 0;
+    width: 130px;
+    font-size: 20px;
+}
+
+.burgerItem a {
+    color: white;
+}
+
+.burgerItem a:hover {
+    padding-top: 9px;
+}
+
+.burger {
+    height: 50px;
+    float: left;
+    margin: 20px 10px 10px 20px;
+    display: none;
+}
+
 
 /*Reponsiveness*/
+
 @media screen and (max-width: 900px) {
-  .burgerMenu {
-    display: none;
-    z-index: 100;
-    top: 75px;
-  }
 
-  .burger {
-    display: inline;
-    float: left;
-    z-index: 1000;
-  }
+    nav ul li a {
+        width: 18%;
+    }
 
-  nav .menu {
-    display: none;
-  }
+    .header {
+        position: fixed;
+        height: 600px;
 
-  nav {
-    background-color: transparent;
-  }
+    }
+
+    .portfolio {
+        margin: 800px auto 0 auto;
+    }
+
+    .portfolioBox {
+        width: 50%;
+    }
+
+    .headerText {
+        position: unset;
+        float: unset;
+    }
+
+    #typed {
+        width: 95%;
+    }
+
+    .innerHeader .headerText {
+        top: 5%;
+    }
+
+    video {
+        width: 50%;
+        min-width: 250px;
+        top: 325px;
+        left: unset;
+        margin: 0 25%;
+    }
+
+    li img {
+        margin: 0 0 0 10px;
+    }
+
+    .aboutMe {
+        background-position: 10px -50px;
+    }
+
+    .aboutMe p {
+        width: 85%;
+
+    }
+
+    .email {
+        position: relative ;
+        margin: 15px 0;
+    }
+
+    .contact ul {
+        width: 90%;
+        overflow: auto;
+        margin: 50px auto 0 auto;
+    }
+
+    .socialImg {
+        position: relative;
+    }
 }
 
-@media screen and (min-width:900px) {
-  .burgerMenu {
-    display: none;
-  }
+@media screen and (max-width: 720px) {
+
+
+    .burgerMenu {
+        display: none;
+        z-index: 100;
+        top: 75px;
+    }
+
+    .burger {
+        display: inline;
+        float: left;
+        z-index: 1000;
+    }
+
+    .header {
+        margin-top: 100px;
+    }
+
+    nav .menu {
+        display: none;
+    }
+
+    nav {
+        background-color: white;
+        height: 75px;
+    }
+
+    .logoSmall {
+        display: block;
+        position: fixed;
+        font-size: 4rem;
+        text-align: center;
+        font-family: 'Monoton', cursive;
+        z-index: 102;
+        padding: 0;
+        left: 40%;
+        margin: 10px auto;
+        width: 150px;
+    }
+
+    .aboutMe {
+        background-position: 20px -100px;
+    }
+
+    .aboutMe p {
+        width: 95%;
+    }
 }
 
-@media screen and (max-width: 1100px) {
-  .portfolioBox {
-    width: 45%;
-  }
-}
+@media screen and (min-width: 900px) {
+    .burgerMenu {
+        display: none;
+    }
 
-@media screen and (max-width: 800px) {
-  .container {
-    width: 100%;
-  }
-
-  .intro {
-    height: 250px;
-    width: 290px;
-    margin-top: 6%;
-  }
-
-  .circleImg {
-    height: 150px;
-    width: 150px;
-  }
-
-  .overlay {
-    /*portfolio circle hover overlay*/
-    height: 150px;
-    width: 150px;
-  }
-
-  .portfolio {
-    margin: 100px;
-    padding: 20px;
-  }
-
-  .portfolio h1 {
-    font-size: 20px;
-    padding: 5px;
-  }
-
-  .portfolioBox {
-    min-width: 240px;
-    width: 95%;
-    background-size: 280px 350px;
-    background-position: 50% 7px;
-  }
-
-  .aboutMe {
-    padding: 20px 20px 0 20px;
-    margin: 0;
-  }
-
-  .aboutMe h1 {
-    width: 25%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .portfolioBox {
-    width: 95%;
-    border: none;
-  }
 }
