@@ -2,213 +2,261 @@
 <html lang='en-GB'>
 
 <head>
-  <meta charset='UTF-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <title>MGR | Portfolio</title>
-  <link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon'>
-  <link href="https://fonts.googleapis.com/css?family=Monoton|Source+Code+Pro|Source+Serif+Pro&display=swap" rel="stylesheet">
-  <link rel='stylesheet' type='text/css' href='Normalize.css'>
-  <link rel='stylesheet' type='text/css' href='style.css'>
-  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js' defer></script>
-  <script src='typing.js' defer></script>
-  <script src='burger.js' defer></script>
+    <meta charset='UTF-8'>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <title>MGR | Portfolio</title>
+    <link href='img/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Source+Code+Pro|Source+Serif+Pro&display=swap"
+          rel="stylesheet">
+    <link href='Normalize.css' rel='stylesheet' type='text/css'>
+    <link href='style.css' rel='stylesheet' type='text/css'>
+    <script defer src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script defer src='typing.js'></script>
+    <script defer src='burger.js'></script>
 </head>
 
 <body>
-
-  <nav>
+<nav>
 
     <img class='burger' src='img/burger.svg'>
     <ul class='menu'>
-      <li>
         <h1 class="logo">MGR</h1>
-      </li>
-      <li class='nav'><a href='#portfolio'>Portfolio</a></li>
-      <li class='nav'><a href='#about'>About Me</a></li>
-      <li class='nav'><a href='cv.html'>My CV</a></li>
-      <li class='nav'> <a href='#contact'>Contact</a></li>
-      <ul class="social">
-        <li class='linkedIn'><a href=''><img alt="linkedIn" src='img/linkedin.png'></a></li>
-        <li class='gitHub'><a href=''><img alt="gitHub" src='img/GitHub.png'></a></li>
-      </ul>
+        <li class='nav border'><a href='#portfolio'>Home</a></li>
+        <li class='nav border'><a href='#about'>About Me</a></li>
+        <li class='nav border'><a target="_blank" href='img/Marc%20Gallagher-Reid%20-%20CV.pdf'>My CV</a></li>
+        <li class='nav border'><a href='#contact'>Contact</a></li>
+        <ul class="social">
+            <li class='linkedIn'><a href=''><img alt="linkedIn" src='img/linkedin.png'></a></li>
+            <li class='gitHub'><a href=''><img alt="gitHub" src='img/GitHub.png'></a></li>
+        </ul>
     </ul>
+    <h1 class="logoSmall">MGR</h1><h1 class="logoSmall">MGR</h1>
+</nav>
 
-
-
-  </nav>
-
-  <div class='burgerMenu'>
+<div class='burgerMenu'>
     <ul class='burgerMenu'>
-      <li class='burgerItem'><a href='#portfolio'>Portfolio</a></li>
-      <li class='burgerItem'><a href='#about'>About Me</a></li>
-      <li class='burgerItem'> <a href='#contact'>Contact</a></li>
-      <li class='linkedIn'><a href=''><img alt="linkedIn" src='img/linkedin.png'></a></li>
-      <li class='gitHub'><a href=''><img alt="gitHub" src='img/GitHub.png'></a></li>
+        <li class='burgerItem'><a href='#portfolio'>Portfolio</a></li>
+        <li class='burgerItem'><a href='#about'>About Me</a></li>
+        <li class='burgerItem'><a target="_blank" href='img/Marc%20Gallagher-Reid%20-%20CV.pdf'>My CV</a></li>
+        <li class='burgerItem'><a href='#contact'>Contact</a></li>
     </ul>
-  </div>
+</div>
 
-  <div class='header'>
+<div class='header'>
     <div class="innerHeader">
-      <h1 class="headerText">
-        Marc Gallagher-Reid
-      </h1>
+        <h1 class="headerText headerText1 typed" id="typed">
+        </h1>
 
-      <h1 class="headerText">
-        Full Stack Developer
-      </h1>
+        <h1 class="headerText headerText2" id="typed">
+        </h1>
 
-      <h3 class="headerText">
-        Mayden Academy Graduate
-      </h3>
+        <h1 class="headerText headerText3" id="typed">
+        </h1>
 
-      <img class="screen" src="img/screen.png">
-      <div class="headerImg">
-        <p></p>
-      </div>
+        <div class="video">
+            <video autoplay loop muted>
+                <source src="img/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
 
     </div>
-  </div>
+</div>
 
-  <a name='portfolio'></a>
+<a name='portfolio'></a>
 
-  <div class='portfolio'>
+<div class='portfolio'>
     <h1 class="title">Portfolio</h1>
 
-    <div class='portfolioBox project1'>
-      <a href='#'>
-        <div class='overlay'>
-          <H1>My Portfolio</H1>
-          My Portfolio <p>Website</p>
+    <div class='overlay'>
+        <div class='portfolioBox project1'>
+            <H1>My Portfolio</H1>
+            <a href='#'>
+                <button class='projectButton' type='button'>View</button>
+            </a>
+            <a href='http://bit.ly/mgrDev'>
+                <button class='projectButton' type='button'>GitHub</button>
+            </a>
         </div>
-      </a>
-      <a href='#'> <button class='projectButton' type='button'>View</button></a>
-      <a href='http://bit.ly/mgrDev'> <button class='projectButton' type='button'>GitHub</button></a>
-
     </div>
 
-    <div class='portfolioBox project2'>
-      <a href='http://bit.ly/mgrCollection'>
-        <div class='overlay'>
-          <H1>PHP Collection App</H1>
-          Shoe Collection <p>App - PHP</p>
+
+    <div class='overlay'>
+        <div class='portfolioBox project2'>
+            <H1>PHP Collection App</H1>
+            <a href='http://bit.ly/mgrCollection'>
+                <button class='projectButton' type='button'>View</button>
+            </a>
+            <a href='http://bit.ly/mgrCollectonGitHub'>
+                <button class='projectButton' type='button'>GitHub</button>
+            </a>
         </div>
-      </a>
-      <a href='http://bit.ly/mgrCollection'> <button class='projectButton' type='button'>View</button></a>
-      <a href='http://bit.ly/mgrCollectonGitHub'> <button class='projectButton' type='button'>GitHub</button></a>
     </div>
 
-    <div class='portfolioBox project3'>
-      <a href='http://bit.ly/mgrPairsGame'>
-        <div class='overlay'>
-          <H1>JS Pairs Game</H1>
-          Pairs App <p>- JavaScript</p>
+    <div class='overlay'>
+        <div class='portfolioBox project3'>
+            <H1>JS Pairs Game</H1>
+            <a href='http://bit.ly/mgrPairsGame'>
+                <button class='projectButton' type='button'>View</button>
+            </a>
+            <a href='http://bit.ly/mgrPairsGameGitHub'>
+                <button class='projectButton' type='button'>GitHub</button>
+            </a>
         </div>
-      </a>
-      <a href='http://bit.ly/mgrPairsGame'> <button class='projectButton' type='button'>View</button></a>
-      <a href='http://bit.ly/mgrPairsGameGitHub'> <button class='projectButton' type='button'>GitHub</button></a>
     </div>
 
-    <div class='portfolioBox project4'>
-      <a href='http://bit.ly/mgrSolarSystem'>
-        <div class='overlay'>
-          <H1>Solar System</H1>
-          SVG/CSS <p>Solar System</p>
+    <div class='overlay'>
+        <div class='portfolioBox project4'>
+            <H1>Solar System</H1>
+            <a href='http://bit.ly/mgrSolarSystem'>
+                <button class='projectButton' type='button'>View</button>
+            </a>
+            <a href='http://bit.ly/mgrSolarSystemGitHub'>
+                <button class='projectButton' type='button'>GitHub</button>
+            </a>
         </div>
-      </a>
-      <a href='http://bit.ly/mgrSolarSystem'> <button class='projectButton' type='button'>View</button></a>
-      <a href='http://bit.ly/mgrSolarSystemGitHub'> <button class='projectButton' type='button'>GitHub</button></a>
     </div>
 
-    <div class='portfolioBox project5'>
-      <a href='http://bit.ly/mgrFetchApp'>
-        <div class='overlay'>
-          <H1>JS API Fetch</H1>
-          GitHub API Fetch <p>- JavaScript</p>
+    <div class='overlay'>
+        <div class='portfolioBox project5'>
+            <H1>JS API Fetch</H1>
+            <a href='http://bit.ly/mgrFetchApp'>
+                <button class='projectButton' type='button'>View</button>
+            </a>
+            <a href='http://bit.ly/mgrGitHubFetchRepo'>
+                <button class='projectButton' type='button'>GitHub</button>
+            </a>
         </div>
-      </a>
-      <a href='http://bit.ly/mgrFetchApp'> <button class='projectButton' type='button'>View</button></a>
-      <a href='http://bit.ly/mgrGitHubFetchRepo'> <button class='projectButton' type='button'>GitHub</button></a>
     </div>
 
-    <div class='portfolioBox project6'>
-      <a href='http://bit.ly/mgrFinanceCalc'>
-        <div class='overlay'>
-          <H1>JS Finance Calculator</H1>
-          Finance Calculator <p>- JavaScript</p>
+    <div class='overlay'>
+        <div class='portfolioBox project6'>
+            <H1>JS Finance Calculator</H1>
+            <a href='http://bit.ly/mgrFinanceCalc'>
+                <button class='projectButton' type='button'>View</button>
+            </a>
+            <a href='http://bit.ly/mgrFinanceCalcGitHub'>
+                <button class='projectButton' type='button'>GitHub</button>
+            </a>
         </div>
-      </a>
-      <a href='http://bit.ly/mgrFinanceCalc'> <button class='projectButton' type='button'>View</button></a>
-      <a href='http://bit.ly/mgrFinanceCalcGitHub'> <button class='projectButton' type='button'>GitHub</button></a>
     </div>
 
-    <div class='portfolioBox project7'>
-      <a href='http://bit.ly/mgrGrub'>
-        <div class='overlay'>
-          <H1>OOP Recipe App</H1>
-          GRUB Recipe App <p>- OOP PHP</p>
+    <div class='overlay'>
+        <div class='portfolioBox project7'>
+            <H1>OOP Recipe App</H1>
+            <a href='http://bit.ly/mgrGrub'>
+                <button class='projectButton' type='button'>View</button>
+            </a>
+            <a href='http://bit.ly/mgrGrubGitHub'>
+                <button class='projectButton' type='button'>GitHub</button>
+            </a>
         </div>
-      </a>
-      <a href='http://bit.ly/mgrGrub'> <button class='projectButton' type='button'>View</button></a>
-      <a href='http://bit.ly/mgrGrubGitHub'> <button class='projectButton' type='button'>GitHub</button></a>
     </div>
 
-    <div class='portfolioBox project8'>
-      <div class='overlay'>
-        <a href='http://bit.ly/mgrSkiSite'>
-          <H1>PHP/JQUERY Ski</H1>
-          Counting / Ski <p>Animation</p>
-      </div>
-      </a>
-      <a href='http://bit.ly/mgrSkiSite'> <button class='projectButton' type='button'>View</button></a>
-      <a href='http://bit.ly/mgrSkiRepo'> <button class='projectButton' type='button'>GitHub</button></a>
+    <div class='overlay'>
+        <div class='portfolioBox project8'>
+            <H1>PHP/JQUERY Ski</H1>
+            <a href='http://bit.ly/mgrSkiSite'>
+                <button class='projectButton' type='button'>View</button>
+            </a>
+            <a href='http://bit.ly/mgrSkiRepo'>
+                <button class='projectButton' type='button'>GitHub</button>
+            </a>
+        </div>
     </div>
 
-    <div class='portfolioBox project9'>
-      <div class='overlay'>
-        <H1>Project 9</H1>
-        Project 9
-      </div>
-      <a href='#'> <button class='projectButton' type='button'>View</button></a>
-      <a href='#'> <button class='projectButton' type='button'>GitHub</button></a>
+    <div class='overlay'>
+        <div class='portfolioBox project9'>
+            <H1>Project 9</H1>
+            <a href='#'>
+                <button class='projectButton' type='button'>View</button>
+            </a>
+            <a href='#'>
+                <button class='projectButton' type='button'>GitHub</button>
+            </a>
+        </div>
     </div>
-  </div>
+
+    <div class='overlay'>
+        <div class='portfolioBox project10'>
+            <H1>Project 10</H1>
+            <a href='#'>
+                <button class='projectButton' type='button'>View</button>
+            </a>
+            <a href='#'>
+                <button class='projectButton' type='button'>GitHub</button>
+            </a>
+        </div>
+    </div>
+
+    <div class='overlay'>
+        <div class='portfolioBox projec11'>
+            <H1>Project11</H1>
+            <a href='#'>
+                <button class='projectButton' type='button'>View</button>
+            </a>
+            <a href='#'>
+                <button class='projectButton' type='button'>GitHub</button>
+            </a>
+        </div>
+    </div>
+
+    <div class='overlay'>
+        <div class='portfolioBox project12'>
+            <H1>Project12</H1>
+            <a href='#'>
+                <button class='projectButton' type='button'>View</button>
+            </a>
+            <a href='#'>
+                <button class='projectButton' type='button'>GitHub</button>
+            </a>
+        </div>
+    </div>
+
+</div>
 
 
-  <section class='aboutMe'>
+<section class='aboutMe'>
     <a name='about'></a>
 
-      <h1>About Me</h1>
-      <div class='profileImg'>
-      </div>
-      <p>Hello World. I'm currently a student with Mayden Academy in Bath, taking part in a 16 week course (August-December 2019) to become a Full Stack Developer. I'm passionate about Agile software development, and can currently write HTML, CSS,
+    <h1>About Me</h1>
+    <div class='profileImg'>
+    </div>
+    <p>Hello World. I'm currently a student with Mayden Academy in Bath, taking part in a 16 week course
+        (August-December 2019) to become a Full Stack Developer. I'm passionate about Agile software development, and
+        can currently write HTML, CSS,
         PHP and JavaScript.</p>
-	  <br>
-      <p>I also have a keen interest in how technology is developed, emerging technologies and PC hardware. Building my first PC around 5 years ago opened the door to my interest in the technology industry as a whole, which, over the years, has led
+    <br>
+    <p>I also have a keen interest in how technology is developed, emerging technologies and PC hardware. Building my
+        first PC around 5 years ago opened the door to my interest in the technology industry as a whole, which, over
+        the years, has led
         me to this point of developing a career in the software industry. </p>
 
-  </section>
-
-  <a name='contact'></a>
-  <div class='container'>
+</section>
+<section class="contact">
+    <a name='contact'></a>
     <h1 class='footer'>Contact</h1>
-    <a href='mailto:mgrdevuk@gmail.com?subject=Mail%20from%20MG%20Portfolio%20Site'><button class='email' type='button'>Email Me</button></a>
-    <div class='container'></div>
     <ul>
-      <li class='social'>
-        <a href='https://github.com/mgallagher56'>
-          <div class='socialImg social1'>
-          </div>
-        </a>
-      </li>
+        <li class="socialFooter">
+            <a href='mailto:mgrdevuk@gmail.com?subject=Mail%20from%20MG%20Portfolio%20Site'>
+                <button class='email' type='button'>Email Me</button>
+            </a>
+        </li>
 
-      <li class='social'>
-        <a href='https://www.linkedin.com/in/marcgallagherreid/'>
-          <div class='socialImg social2'>
-          </div>
-        </a>
-      </li>
+        <li class='socialFooter'>
+            <a href='https://github.com/mgallagher56'>
+                <img class="socialImg" src="img/GitHub.png">
+            </a>
+        </li>
+
+        <li class='socialFooter'>
+            <a href='https://www.linkedin.com/in/marcgallagherreid/'>
+                <img class="socialImg linkedIn" src="img/linkedin.png">
+            </a>
+        </li>
     </ul>
-  </div>
+</section>
 </body>
 
 </html>
