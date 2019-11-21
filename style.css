@@ -454,10 +454,17 @@ video {
         width: 18%;
     }
 
+    nav ul li a:hover {
+        padding: 7px 0;
+    }
+
+    nav {
+        height: 100px;
+    }
+
     .header {
         position: fixed;
         height: 500px;
-
     }
 
     .portfolio {
@@ -543,7 +550,7 @@ video {
 
     nav {
         background-color: white;
-        height: 75px;
+        height: 100px;
     }
 
     .logoSmall {
@@ -563,7 +570,7 @@ video {
         background-position: 20px -110px;
     }
 
-    .ab
+
 
     .aboutMe p {
         width: 95%;
