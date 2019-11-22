@@ -284,23 +284,21 @@ video {
     background-image: url("img/ski.png");
     background-size:cover;
     background-repeat: no-repeat;
-    /*width:50%;*/
 }
 
 .project9 {
-    /*width: 20%;*/
+    background-image: url("img/toDoApp.gif");
+    background-size:cover;
+    background-repeat: no-repeat;
 }
 
 .project10 {
-    width: 33.3%;
 }
 
 .project11 {
-    width: 33.3%;
 }
 
 .project12 {
-    width: 33.3%;
 }
 
 .aboutMe {
