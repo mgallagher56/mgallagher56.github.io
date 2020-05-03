@@ -1,0 +1,26 @@
+{
+  "name": "mgallagher56.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgallagher56/mgallagher56.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mgallagher56/mgallagher56.github.io/issues"
+  },
+  "homepage": "https://github.com/mgallagher56/mgallagher56.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "sass": "^1.26.5"
+  }
+}
