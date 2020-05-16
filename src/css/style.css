@@ -144,7 +144,7 @@ video {
   width: 170px; }
 
 .portfolioBox {
-  background-image: url("../img/coming-soon.jpg");
+  background-image: url("../../img/coming-soon.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -196,63 +196,63 @@ video {
   font-size: 1.2rem; }
 
 .project1 {
-  background-image: url("../img/portfolio.gif");
+  background-image: url("../../img/portfolio.gif");
   background-size: auto;
   background-position: top;
   background-repeat: no-repeat;
   /*width: 30%;*/ }
 
 .project2 {
-  background-image: url("../img/collectionApp.png");
+  background-image: url("../../img/collectionApp.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 14%;
   /*width: 40%;*/ }
 
 .project3 {
-  background-image: url("../img/pairsGame.gif");
+  background-image: url("../../img/pairsGame.gif");
   background-size: cover;
   background-repeat: no-repeat;
   /*width: 30%;*/ }
 
 .project4 {
-  background-image: url("../img/solarSystem.gif");
+  background-image: url("../../img/solarSystem.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   /*width: 35%;*/ }
 
 .project5 {
-  background-image: url("../img/githubFetch.png");
+  background-image: url("../../img/githubFetch.png");
   background-size: cover;
   background-repeat: no-repeat;
   /*width:25%;*/ }
 
 .project6 {
-  background-image: url("../img/finance.png");
+  background-image: url("../../img/finance.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
   /*width:40%;*/ }
 
 .project7 {
-  background-image: url("../img/GRUB.png");
+  background-image: url("../../img/GRUB.png");
   background-size: cover;
   background-repeat: no-repeat;
   /*width: 30%;*/ }
 
 .project8 {
-  background-image: url("../img/ski.png");
+  background-image: url("../../img/ski.png");
   background-size: cover;
   background-repeat: no-repeat; }
 
 .project9 {
-  background-image: url("../img/toDoApp.gif");
+  background-image: url("../../img/toDoApp.gif");
   background-size: cover;
   background-repeat: no-repeat; }
 
 .aboutMe {
-  background-image: url("../img/code.320.png");
+  background-image: url("../../img/code.320.png");
   background-size: 1000px 50%;
   background-repeat: repeat-x;
   background-position: 0 -60px;
@@ -267,7 +267,7 @@ video {
   margin: 0 auto; }
 
 .profileImg {
-  background-image: url("../img/profile.jpg");
+  background-image: url("../../img/profile.jpg");
   background-size: cover;
   height: 250px;
   width: 250px;
