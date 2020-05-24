@@ -1,0 +1,1 @@
+- show gif when selecting text
