@@ -1,15 +1,16 @@
-import React from 'react';
-import '../css/App.css';
-import '../css/Normalize.css';
+import React, { Component } from 'react';
+import '../css/styles.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-          <h1>Hello World!</h1>
-      </header>
-    </div>
-  );
+class App extends Component {
+    render() {
+        return (
+            <div className="App">
+                <header className="App-header">
+                    <h1>Hello World!</h1>
+                </header>
+            </div>
+        );
+    }
 }
 
 export default App;
