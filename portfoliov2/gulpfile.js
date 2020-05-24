@@ -13,7 +13,7 @@ let style = () => {
 function watch() {
     browserSync.init({
         open: false,
-        proxy: "localhost:63342/htdocs/mgallagher56.github.io/dist/index.html"
+        proxy: "localhost:63342/htdocs/mgallagher56.github.io/public/index.html"
     });
     gulp.watch('src/scss/**/*.scss', style);
     gulp.watch('src/*.html').on('change', browserSync.reload)
