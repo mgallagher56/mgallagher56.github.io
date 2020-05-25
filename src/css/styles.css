@@ -362,6 +362,11 @@ template {
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
+  --black: #000;
+  --grey-portfolio: #282c34;
+  --grey-portfolio-dark: #18191c;
+  --grey-portfolio-light: #c7c7c8;
+  --white: #fff;
   --primary: #007bff;
   --secondary: #6c757d;
   --success: #28a745;
@@ -7504,3 +7509,10 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
+
+body {
+  background: #282c34;
+  color: #c7c7c8; }
+
+h1, h2, h3 {
+  background: #18191c; }
