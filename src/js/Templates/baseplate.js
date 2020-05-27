@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../../css/styles.css';
+import BaseplateColors from "./partials/colors";
 
 class Baseplate extends Component {
     render() {
@@ -9,7 +10,7 @@ class Baseplate extends Component {
                     <h1>Hello Baseplate!</h1>
                 </header>
 
-                <div className='baseplate-main container justify-content-center'>
+                <div className='baseplate-main container-fluid justify-content-center'>
                     <div className='typography'>
                         <h1>Typography</h1>
                         <div className='fontStyles'>
@@ -28,6 +29,7 @@ class Baseplate extends Component {
 
                     <div className='colors'>
                         <h1>Colors</h1>
+                        <BaseplateColors />
                         <div className='shades'>
                             <h2>Shades</h2>
                         </div>

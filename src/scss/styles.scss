@@ -1,14 +1,13 @@
-@import 'conf/colors';
 @import "app";
 @import "index";
 @import "Normalize";
 @import "bootstrap/bootstrap";
-
+@import "conf/colors";
 
 body {
-    background: map-get($colors , grey-portfolio);
-    color: map-get($colors, grey-portfolio-light);
+    background: map-get(map-get($colors , colors), grey-portfolio);
+    color: map-get(map-get($colors, colors), grey-portfolio-light);
 }
 h1, h2, h3 {
-    background: map-get($colors, grey-portfolio-dark);
+    background: map-get(map-get($colors , colors), grey-portfolio-dark);
 }

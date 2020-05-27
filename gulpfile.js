@@ -2,9 +2,10 @@ const gulp = require("gulp")
 const sass = require("gulp-sass")
 const browserSync = require('browser-sync').create();
 const compress_images = require('compress-images');
+const run = require('gulp-run');
 
 let styles = () => {
-    return gulp.src('src/scss/styles.scss')
+    return gulp.src('src/scss/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('src/css/'))
         .pipe(browserSync.stream());
@@ -20,6 +21,14 @@ let compressImages = () => {
         });
 }
 
+
+
+let jsonToScss = () => {
+    return run('json-to-scss \'./src/conf/**/*.json\' ./src/scss/conf/', true).exec()
+        .pipe(gulp.dest('output'))      // writes "Hello World\n" to output/echo.
+        ;
+}
+
 let  watch = () => {
     browserSync.init({
         open: false,
@@ -29,8 +38,10 @@ let  watch = () => {
     gulp.watch('src/scss/**/*.scss', styles);
     gulp.watch('src/*.html').on('change', browserSync.reload)
     gulp.watch('src/js/**/*.js').on('change', browserSync.reload)
+    gulp.watch('src/conf/**/*.json', jsonToScss)
 }
 
 exports.styles = styles;
 exports.compreessImages = compressImages;
 exports.watch = watch;
+exports.jsonToScss = jsonToScss;
