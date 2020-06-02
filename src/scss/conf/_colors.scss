@@ -7,6 +7,30 @@ $colors: (
     white: #fff
   ),
   map: (
-    black: shdfsdfs
+    color-1: (
+      name: Black,
+      color: black,
+      type: primary
+    ),
+    color-2: (
+      name: Portfolio Grey,
+      color: grey-portfolio,
+      type: primary
+    ),
+    color-3: (
+      name: Portfolio Dark Grey,
+      color: grey-portfolio-dark,
+      type: primary
+    ),
+    color-4: (
+      name: Portfolio Grey,
+      color: grey-portfolio-light,
+      type: primary
+    ),
+    color-5: (
+      name: White,
+      color: white,
+      type: primary
+    )
   )
 );

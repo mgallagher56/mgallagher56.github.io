@@ -1,34 +1,46 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
+import * as data from '../../../conf/_colors.json';
 
 class BaseplateColors extends Component {
-    componentDidMount() {
-        console.log('I was triggered during componentDidMount')
+    constructor( props ) {
+        super( props );
+        this.state = {
+            classColors: Object.entries( data.colors ),
+            mappedColors:Object.entries( data.map ),
+        }
     }
 
     render() {
-        console.log('I was triggered during render')
+        let colorOutput = this.state.classColors.map( ( value, key, map ) => {
+            let swatchStyle = {
+                background: value[1],
+                height: '100px',
+                borderRadius: '5px'
+            }
+            return <div className='row d-flex my-5'>
+                <div className='col d-flex align-items-center'>
+                    <p>{this.state.mappedColors[key][1]['name']}</p>
+                </div>
+                <div className='col color' style={ swatchStyle }></div>
+            </div>
+        } )
+
+        console.log(this.state.mappedColors[0])
+
+
+
         return (
-            <div> I am the App component </div>
+            <div className='swatch my-5'>
+                <h3>Swatch</h3>
+                <div className='col-4 primaryColors'>
+                    <h4>Primary Colors</h4>
+                    { colorOutput }
+                </div>
+                <div className='col-4 secondaryColors'></div>
+                <div className='col-4 tertiaryColors'></div>
+            </div>
         )
     }
-//     constructor( props ) {
-//         super( props );
-//         this.state = {
-//             result: sass.rendersync( {
-//                 file: '../../scss/conf/_colors.json'
-//             } )
-//         }
-//     }
-//
-//     render() {
-//         return (
-//             <div>
-//                 <p>
-//                     { this.state.result }
-//                 </p>
-//             </div>
-//         )
-//     }
 }
-//
+
 export default BaseplateColors;
