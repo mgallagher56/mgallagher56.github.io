@@ -21,8 +21,6 @@ let compressImages = () => {
         });
 }
 
-
-
 let jsonToScss = () => {
     return run('json-to-scss \'./src/conf/**/*.json\' ./src/scss/conf/', true).exec()
         .pipe(gulp.dest('output'))      // writes "Hello World\n" to output/echo.
