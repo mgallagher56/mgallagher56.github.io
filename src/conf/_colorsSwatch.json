@@ -1,0 +1,22 @@
+{
+    "black" : {
+        "name" : "Black",
+        "type" : "primary"
+    },
+    "grey-portfolio" : {
+        "name" : "Portfolio Grey",
+        "type" : "primary"
+    },
+    "grey-portfolio-dark" : {
+        "name" : "Portfolio Dark Grey",
+        "type" : "primary"
+    },
+    "grey-portfolio-light" : {
+        "name" : "Portfolio Grey",
+        "type" : "primary"
+    },
+    "white" : {
+        "name" : "White",
+        "type" : "primary"
+    }
+}

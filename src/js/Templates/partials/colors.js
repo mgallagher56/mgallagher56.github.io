@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import * as data from '../../../conf/_colors.json';
+import * as colors from '../../../conf/_colors.json';
+import * as colorSwatch from '../../../conf/_colorsSwatch.json';
+
 
 class BaseplateColors extends Component {
     constructor( props ) {
         super( props );
         this.state = {
-            classColors: Object.entries( data.colors ),
-            mappedColors: Object.entries( data.map ),
+            classColors: Object.entries( colors.default ),
+            mappedColors: Object.entries( colorSwatch.default),
         };
     }
 
@@ -36,20 +38,23 @@ class BaseplateColors extends Component {
 
             // loop through sorted color array, match name to hex color
             return sortedColorArray.map( ( colorArray, key ) => {
+
                 // set style for each swatch
                 let swatchStyle = {
                     background: '',
                     height: '100px',
                     borderRadius: '5px',
-                    border: '1px solid ' + data.colors.white
+                    border: '1px solid white'
                 };
+                console.log(primaryColors);
 
+                //set color for each swatch square
                 colors.forEach( ( color, colorKey ) => {
                     if ( colorArray[0] === color[0] ) {
                         swatchStyle.background = colors[colorKey][1];
                     }
                 } );
-                
+
                 //return markup to output
                 return <div className='row d-flex my-5'>
                     <div className='col d-flex align-items-center'>

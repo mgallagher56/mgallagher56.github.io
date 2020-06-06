@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../../css/styles.css';
-import BaseplateColors from "./partials/colors";
+import BaseplateColors from './partials/colors';
+import ButtonVariationsOutput from './partials/ButtonVariationsOutput';
 
 class Baseplate extends Component {
     render() {
@@ -29,7 +30,7 @@ class Baseplate extends Component {
 
                     <div className='colors'>
                         <h1>Colors</h1>
-                        <BaseplateColors />
+                        <BaseplateColors/>
                         <div className='shades'>
                             <h2>Shades</h2>
                         </div>
@@ -46,391 +47,15 @@ class Baseplate extends Component {
 
                         <div className='buttons'>
                             <h2>Buttons</h2>
-                            <div className='btn-contained'>
-                                <h2>Contained Buttons</h2>
-                                <div className='row'>
-                                    <div className='offset-4 col'>
-                                        <h3>Big</h3>
-                                    </div>
-                                    <div className='col'>
-                                        <h3>Small</h3>
-                                    </div>
-                                </div>
-                                <div className='row'>
-                                    <div className='col'>
-                                        <h3>Idle</h3>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                </div>
-                                <div className='row'>
-                                    <div className='col'>
-                                        <h3>Hover</h3>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                </div>
-                                <div className='row'>
-                                    <div className='col'>
-                                        <h3>Pressed</h3>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                </div>
-                                <div className='row'>
-                                    <div className='col'>
-                                        <h3>Disabled</h3>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='btn-outline'>
-                                <h2>Outlined Buttons</h2>
-                                <div className='row'>
-                                    <div className='offset-4 col'>
-                                        <h3>Big</h3>
-                                    </div>
-                                    <div className='col'>
-                                        <h3>Small</h3>
-                                    </div>
-                                </div>
-                                <div className='row'>
-                                    <div className='col'>
-                                        <h3>Idle</h3>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                </div>
-                                <div className='row'>
-                                    <div className='col'>
-                                        <h3>Hover</h3>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                </div>
-                                <div className='row'>
-                                    <div className='col'>
-                                        <h3>Pressed</h3>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                </div>
-                                <div className='row'>
-                                    <div className='col'>
-                                        <h3>Disabled</h3>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='btn-text'>
-                                <h2>Text Buttons</h2>
-                                <div className='row'>
-                                    <div className='offset-4 col'>
-                                        <h3>Big</h3>
-                                    </div>
-                                    <div className='col'>
-                                        <h3>Small</h3>
-                                    </div>
-                                </div>
-                                <div className='row'>
-                                    <div className='col'>
-                                        <h3>Idle</h3>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                </div>
-                                <div className='row'>
-                                    <div className='col'>
-                                        <h3>Hover</h3>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                </div>
-                                <div className='row'>
-                                    <div className='col'>
-                                        <h3>Pressed</h3>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                </div>
-                                <div className='row'>
-                                    <div className='col'>
-                                        <h3>Disabled</h3>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='btn-arrow'>
-                                <h2>Arrow Buttons</h2>
-                                <div className='row'>
-                                    <div className='offset-4 col'>
-                                        <h3>Big</h3>
-                                    </div>
-                                    <div className='col'>
-                                        <h3>Small</h3>
-                                    </div>
-                                </div>
-                                <div className='row'>
-                                    <div className='col'>
-                                        <h3>Idle</h3>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                </div>
-                                <div className='row'>
-                                    <div className='col'>
-                                        <h3>Hover</h3>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                </div>
-                                <div className='row'>
-                                    <div className='col'>
-                                        <h3>Pressed</h3>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                </div>
-                                <div className='row'>
-                                    <div className='col'>
-                                        <h3>Disabled</h3>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='btn-icon'>
-                                <h2>Icon Buttons</h2>
-                                <div className='row'>
-                                    <div className='offset-4 col'>
-                                        <h3>Big</h3>
-                                    </div>
-                                    <div className='col'>
-                                        <h3>Small</h3>
-                                    </div>
-                                </div>
-                                <div className='row'>
-                                    <div className='col'>
-                                        <h3>Idle</h3>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                </div>
-                                <div className='row'>
-                                    <div className='col'>
-                                        <h3>Hover</h3>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                </div>
-                                <div className='row'>
-                                    <div className='col'>
-                                        <h3>Pressed</h3>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                </div>
-                                <div className='row'>
-                                    <div className='col'>
-                                        <h3>Disabled</h3>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='btn-round'>
-                                <h2>Round Buttons</h2>
-                                <div className='row'>
-                                    <div className='offset-4 col'>
-                                        <h3>Big</h3>
-                                    </div>
-                                    <div className='col'>
-                                        <h3>Small</h3>
-                                    </div>
-                                </div>
-                                <div className='row'>
-                                    <div className='col'>
-                                        <h3>Idle</h3>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                </div>
-                                <div className='row'>
-                                    <div className='col'>
-                                        <h3>Hover</h3>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                </div>
-                                <div className='row'>
-                                    <div className='col'>
-                                        <h3>Pressed</h3>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                </div>
-                                <div className='row'>
-                                    <div className='col'>
-                                        <h3>Disabled</h3>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='btn-square'>
-                                <h2>Square Buttons</h2>
-                                <div className='row'>
-                                    <div className='offset-4 col'>
-                                        <h3>Big</h3>
-                                    </div>
-                                    <div className='col'>
-                                        <h3>Small</h3>
-                                    </div>
-                                </div>
-                                <div className='row'>
-                                    <div className='col'>
-                                        <h3>Idle</h3>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                </div>
-                                <div className='row'>
-                                    <div className='col'>
-                                        <h3>Hover</h3>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                </div>
-                                <div className='row'>
-                                    <div className='col'>
-                                        <h3>Pressed</h3>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                </div>
-                                <div className='row'>
-                                    <div className='col'>
-                                        <h3>Disabled</h3>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                    <div className='col'>
-                                        <button></button>
-                                    </div>
-                                </div>
-                            </div>
+
+                            <ButtonVariationsOutput buttonName={ 'Contained' } />
+                            <ButtonVariationsOutput buttonName={ 'Outline' } />
+                            <ButtonVariationsOutput buttonName={ 'Text' } />
+                            <ButtonVariationsOutput buttonName={ 'Arrow' } />
+                            <ButtonVariationsOutput buttonName={ 'Icon' } />
+                            <ButtonVariationsOutput buttonName={ 'Round' } />
+                            <ButtonVariationsOutput buttonName={ 'Square' } />
+
                             <div className='colorCombinations'>
                                 <h2>Set Color Combinations</h2>
                                 <div className='row'>
@@ -701,6 +326,7 @@ class Baseplate extends Component {
                                             <button className='btn btn-square'></button>
                                         </div>
                                     </div>
+
                                 </div>
 
                                 <div className='row'>
@@ -793,9 +419,11 @@ class Baseplate extends Component {
                                     </div>
                                 </div>
                             </div>
+
                             <div className='socailLogins'>
                                 <h1>Social Login Buttons</h1>
                             </div>
+
                         </div>
                     </div>
 

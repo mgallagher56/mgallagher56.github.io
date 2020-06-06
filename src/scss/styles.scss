@@ -1,13 +1,15 @@
-@import "app";
-@import "index";
-@import "bootstrap/bootstrap";
+@import 'bootstrap/bootstrap';
+@import 'app';
+@import 'index';
 @import 'colors';
-@import "conf/colors";
+@import '_variables/variables';
+@import 'components/linksAndButtons/linksButtons';
 
 body {
-    background: map-get(map-get($colors , colors), grey-portfolio);
-    color: map-get(map-get($colors, colors), grey-portfolio-light);
+    background: map-get($colors, grey-portfolio);
+    color: map-get($colors, grey-portfolio-light);
 }
+
 h1, h2, h3 {
-    background: map-get(map-get($colors , colors), grey-portfolio-dark);
+    background: map-get($colors, grey-portfolio-dark);
 }
