@@ -45,6 +45,7 @@ class BaseplateColors extends Component {
                 let swatchStyle = {
                     background: '',
                     height: '100px',
+                    width: '200px',
                     borderRadius: '5px',
                     border: '1px solid white',
                 };
@@ -66,18 +67,25 @@ class BaseplateColors extends Component {
             } );
         };
 
+        // loop through colors object & output each in a column
+        let colorOutput = () => {
+            return <>
+                {
+                    Object.keys( colorObj ).map( ( objectKey ) => {
+                        return <div className={ 'col-12 col-md-6 col-lg-4 ' + objectKey + 'Color' }>
+                            <h4>{ objectKey.charAt( 0 ).toUpperCase() + objectKey.slice( 1 ) }</h4>
+                            { colourOutput( colorObj[objectKey], this.state.classColors ) }
+                        </div>;
+                    } )
+                }
+            </>;
+        };
+
         return (
             <div className=' swatch my-3'>
                 <h3>Swatch</h3>
                 <div className={ 'row d-flex my-3 ' }>
-                    { // loop through colors object & output each in a column
-                        Object.keys( colorObj ).map( ( objectKey ) => {
-                        return <div className={ 'col text-center ' + objectKey + 'Color' }>
-                            <h4>{ objectKey.charAt(0).toUpperCase() + objectKey.slice(1) }</h4>
-                            { colourOutput( colorObj[objectKey], this.state.classColors ) }
-                        </div>;
-                    } )
-                    }
+                    { colorOutput() }
                 </div>
             </div>
         );

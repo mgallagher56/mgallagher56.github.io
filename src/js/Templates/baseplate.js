@@ -2,16 +2,17 @@ import React, { Component } from 'react';
 import '../../css/styles.css';
 import BaseplateColors from './partials/colors';
 import ButtonVariationsOutput from './partials/ButtonVariationsOutput';
+import ColorCombinations from './partials/ColorCombinations';
 
 class Baseplate extends Component {
     render() {
         return (
-            <div className='Baseplate'>
+            <div className='baseplate'>
                 <header className='App-header'>
                     <h1>Hello Baseplate!</h1>
                 </header>
 
-                <div className='baseplate-main container justify-content-center'>
+                <div className='baseplate-main container-lg justify-content-center'>
                     <div className='typography'>
                         <h1>Typography</h1>
                         <div className='fontStyles'>
@@ -31,9 +32,6 @@ class Baseplate extends Component {
                     <div className='colors'>
                         <h1>Colors</h1>
                         <BaseplateColors />
-                        <div className='shades'>
-                            <h2>Shades</h2>
-                        </div>
                         <div className='colorMaps'>
                             <h2>Color Maps</h2>
                         </div>
@@ -47,7 +45,7 @@ class Baseplate extends Component {
 
                         <div className='buttons'>
                             <h2>Buttons</h2>
-
+                            <div className={'row justify-content-around'}>
                             <ButtonVariationsOutput buttonName={ 'Contained' } />
                             <ButtonVariationsOutput buttonName={ 'Outline' } />
                             <ButtonVariationsOutput buttonName={ 'Text' } />
@@ -55,369 +53,11 @@ class Baseplate extends Component {
                             <ButtonVariationsOutput buttonName={ 'Icon' } />
                             <ButtonVariationsOutput buttonName={ 'Round' } />
                             <ButtonVariationsOutput buttonName={ 'Square' } />
+                            </div>
 
                             <div className='colorCombinations'>
                                 <h2>Set Color Combinations</h2>
-                                <div className='row'>
-                                    <div className='col'>
-                                        <h4>Color Set 1 - Primary-1</h4>
-                                        <div className='row d-flex'>
-                                            <h3>Idle</h3>
-                                            <button className='btn'></button>
-                                            <button className='btn btn-outline'></button>
-                                            <button className='btn btn-text'></button>
-                                            <button className='btn btn-arrow'></button>
-                                            <button className='btn btn-icon'></button>
-                                            <button className='btn btn-circle'></button>
-                                            <button className='btn btn-square'></button>
-                                        </div>
-                                        <div className='row d-flex'>
-                                            <h3>Hover</h3>
-                                            <button className='btn'></button>
-                                            <button className='btn btn-outline'></button>
-                                            <button className='btn btn-text'></button>
-                                            <button className='btn btn-arrow'></button>
-                                            <button className='btn btn-icon'></button>
-                                            <button className='btn btn-circle'></button>
-                                            <button className='btn btn-square'></button>
-                                        </div>
-                                        <div className='row d-flex'>
-                                            <h3>Pressed</h3>
-                                            <button className='btn'></button>
-                                            <button className='btn btn-outline'></button>
-                                            <button className='btn btn-text'></button>
-                                            <button className='btn btn-arrow'></button>
-                                            <button className='btn btn-icon'></button>
-                                            <button className='btn btn-circle'></button>
-                                            <button className='btn btn-square'></button>
-                                        </div>
-                                        <div className='row d-flex'>
-                                            <h3>Disabled</h3>
-                                            <button className='btn'></button>
-                                            <button className='btn btn-outline'></button>
-                                            <button className='btn btn-text'></button>
-                                            <button className='btn btn-arrow'></button>
-                                            <button className='btn btn-icon'></button>
-                                            <button className='btn btn-circle'></button>
-                                            <button className='btn btn-square'></button>
-                                        </div>
-                                    </div>
-
-                                    <div className='col'>
-                                        <h4>Color Set 1 - Primary-2</h4>
-                                        <div className='row d-flex'>
-                                            <h3>Idle</h3>
-                                            <button className='btn'></button>
-                                            <button className='btn btn-outline'></button>
-                                            <button className='btn btn-text'></button>
-                                            <button className='btn btn-arrow'></button>
-                                            <button className='btn btn-icon'></button>
-                                            <button className='btn btn-circle'></button>
-                                            <button className='btn btn-square'></button>
-                                        </div>
-                                        <div className='row d-flex'>
-                                            <h3>Hover</h3>
-                                            <button className='btn'></button>
-                                            <button className='btn btn-outline'></button>
-                                            <button className='btn btn-text'></button>
-                                            <button className='btn btn-arrow'></button>
-                                            <button className='btn btn-icon'></button>
-                                            <button className='btn btn-circle'></button>
-                                            <button className='btn btn-square'></button>
-                                        </div>
-                                        <div className='row d-flex'>
-                                            <h3>Pressed</h3>
-                                            <button className='btn'></button>
-                                            <button className='btn btn-outline'></button>
-                                            <button className='btn btn-text'></button>
-                                            <button className='btn btn-arrow'></button>
-                                            <button className='btn btn-icon'></button>
-                                            <button className='btn btn-circle'></button>
-                                            <button className='btn btn-square'></button>
-                                        </div>
-                                        <div className='row d-flex'>
-                                            <h3>Disabled</h3>
-                                            <button className='btn'></button>
-                                            <button className='btn btn-outline'></button>
-                                            <button className='btn btn-text'></button>
-                                            <button className='btn btn-arrow'></button>
-                                            <button className='btn btn-icon'></button>
-                                            <button className='btn btn-circle'></button>
-                                            <button className='btn btn-square'></button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className='row'>
-                                    <div className='col'>
-                                        <h4>Color Set 1 - Primary-3</h4>
-                                        <div className='row d-flex'>
-                                            <h3>Idle</h3>
-                                            <button className='btn'></button>
-                                            <button className='btn btn-outline'></button>
-                                            <button className='btn btn-text'></button>
-                                            <button className='btn btn-arrow'></button>
-                                            <button className='btn btn-icon'></button>
-                                            <button className='btn btn-circle'></button>
-                                            <button className='btn btn-square'></button>
-                                        </div>
-                                        <div className='row d-flex'>
-                                            <h3>Hover</h3>
-                                            <button className='btn'></button>
-                                            <button className='btn btn-outline'></button>
-                                            <button className='btn btn-text'></button>
-                                            <button className='btn btn-arrow'></button>
-                                            <button className='btn btn-icon'></button>
-                                            <button className='btn btn-circle'></button>
-                                            <button className='btn btn-square'></button>
-                                        </div>
-                                        <div className='row d-flex'>
-                                            <h3>Pressed</h3>
-                                            <button className='btn'></button>
-                                            <button className='btn btn-outline'></button>
-                                            <button className='btn btn-text'></button>
-                                            <button className='btn btn-arrow'></button>
-                                            <button className='btn btn-icon'></button>
-                                            <button className='btn btn-circle'></button>
-                                            <button className='btn btn-square'></button>
-                                        </div>
-                                        <div className='row d-flex'>
-                                            <h3>Disabled</h3>
-                                            <button className='btn'></button>
-                                            <button className='btn btn-outline'></button>
-                                            <button className='btn btn-text'></button>
-                                            <button className='btn btn-arrow'></button>
-                                            <button className='btn btn-icon'></button>
-                                            <button className='btn btn-circle'></button>
-                                            <button className='btn btn-square'></button>
-                                        </div>
-                                    </div>
-
-                                    <div className='col'>
-                                        <h4>Color Set 1 - Primary-4</h4>
-                                        <div className='row d-flex'>
-                                            <h3>Idle</h3>
-                                            <button className='btn'></button>
-                                            <button className='btn btn-outline'></button>
-                                            <button className='btn btn-text'></button>
-                                            <button className='btn btn-arrow'></button>
-                                            <button className='btn btn-icon'></button>
-                                            <button className='btn btn-circle'></button>
-                                            <button className='btn btn-square'></button>
-                                        </div>
-                                        <div className='row d-flex'>
-                                            <h3>Hover</h3>
-                                            <button className='btn'></button>
-                                            <button className='btn btn-outline'></button>
-                                            <button className='btn btn-text'></button>
-                                            <button className='btn btn-arrow'></button>
-                                            <button className='btn btn-icon'></button>
-                                            <button className='btn btn-circle'></button>
-                                            <button className='btn btn-square'></button>
-                                        </div>
-                                        <div className='row d-flex'>
-                                            <h3>Pressed</h3>
-                                            <button className='btn'></button>
-                                            <button className='btn btn-outline'></button>
-                                            <button className='btn btn-text'></button>
-                                            <button className='btn btn-arrow'></button>
-                                            <button className='btn btn-icon'></button>
-                                            <button className='btn btn-circle'></button>
-                                            <button className='btn btn-square'></button>
-                                        </div>
-                                        <div className='row d-flex'>
-                                            <h3>Disabled</h3>
-                                            <button className='btn'></button>
-                                            <button className='btn btn-outline'></button>
-                                            <button className='btn btn-text'></button>
-                                            <button className='btn btn-arrow'></button>
-                                            <button className='btn btn-icon'></button>
-                                            <button className='btn btn-circle'></button>
-                                            <button className='btn btn-square'></button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className='row'>
-                                    <div className='col'>
-                                        <h4>Color Set 2 - Secondary-1</h4>
-                                        <div className='row d-flex'>
-                                            <h3>Idle</h3>
-                                            <button className='btn'></button>
-                                            <button className='btn btn-outline'></button>
-                                            <button className='btn btn-text'></button>
-                                            <button className='btn btn-arrow'></button>
-                                            <button className='btn btn-icon'></button>
-                                            <button className='btn btn-circle'></button>
-                                            <button className='btn btn-square'></button>
-                                        </div>
-                                        <div className='row d-flex'>
-                                            <h3>Hover</h3>
-                                            <button className='btn'></button>
-                                            <button className='btn btn-outline'></button>
-                                            <button className='btn btn-text'></button>
-                                            <button className='btn btn-arrow'></button>
-                                            <button className='btn btn-icon'></button>
-                                            <button className='btn btn-circle'></button>
-                                            <button className='btn btn-square'></button>
-                                        </div>
-                                        <div className='row d-flex'>
-                                            <h3>Pressed</h3>
-                                            <button className='btn'></button>
-                                            <button className='btn btn-outline'></button>
-                                            <button className='btn btn-text'></button>
-                                            <button className='btn btn-arrow'></button>
-                                            <button className='btn btn-icon'></button>
-                                            <button className='btn btn-circle'></button>
-                                            <button className='btn btn-square'></button>
-                                        </div>
-                                        <div className='row d-flex'>
-                                            <h3>Disabled</h3>
-                                            <button className='btn'></button>
-                                            <button className='btn btn-outline'></button>
-                                            <button className='btn btn-text'></button>
-                                            <button className='btn btn-arrow'></button>
-                                            <button className='btn btn-icon'></button>
-                                            <button className='btn btn-circle'></button>
-                                            <button className='btn btn-square'></button>
-                                        </div>
-                                    </div>
-
-                                    <div className='col'>
-                                        <h4>Color Set 2 - Secondary-2</h4>
-                                        <div className='row d-flex'>
-                                            <h3>Idle</h3>
-                                            <button className='btn'></button>
-                                            <button className='btn btn-outline'></button>
-                                            <button className='btn btn-text'></button>
-                                            <button className='btn btn-arrow'></button>
-                                            <button className='btn btn-icon'></button>
-                                            <button className='btn btn-circle'></button>
-                                            <button className='btn btn-square'></button>
-                                        </div>
-                                        <div className='row d-flex'>
-                                            <h3>Hover</h3>
-                                            <button className='btn'></button>
-                                            <button className='btn btn-outline'></button>
-                                            <button className='btn btn-text'></button>
-                                            <button className='btn btn-arrow'></button>
-                                            <button className='btn btn-icon'></button>
-                                            <button className='btn btn-circle'></button>
-                                            <button className='btn btn-square'></button>
-                                        </div>
-                                        <div className='row d-flex'>
-                                            <h3>Pressed</h3>
-                                            <button className='btn'></button>
-                                            <button className='btn btn-outline'></button>
-                                            <button className='btn btn-text'></button>
-                                            <button className='btn btn-arrow'></button>
-                                            <button className='btn btn-icon'></button>
-                                            <button className='btn btn-circle'></button>
-                                            <button className='btn btn-square'></button>
-                                        </div>
-                                        <div className='row d-flex'>
-                                            <h3>Disabled</h3>
-                                            <button className='btn'></button>
-                                            <button className='btn btn-outline'></button>
-                                            <button className='btn btn-text'></button>
-                                            <button className='btn btn-arrow'></button>
-                                            <button className='btn btn-icon'></button>
-                                            <button className='btn btn-circle'></button>
-                                            <button className='btn btn-square'></button>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div className='row'>
-                                    <div className='col'>
-                                        <h4>Color Set 2 - Secondary-3</h4>
-                                        <div className='row d-flex'>
-                                            <h3>Idle</h3>
-                                            <button className='btn'></button>
-                                            <button className='btn btn-outline'></button>
-                                            <button className='btn btn-text'></button>
-                                            <button className='btn btn-arrow'></button>
-                                            <button className='btn btn-icon'></button>
-                                            <button className='btn btn-circle'></button>
-                                            <button className='btn btn-square'></button>
-                                        </div>
-                                        <div className='row d-flex'>
-                                            <h3>Hover</h3>
-                                            <button className='btn'></button>
-                                            <button className='btn btn-outline'></button>
-                                            <button className='btn btn-text'></button>
-                                            <button className='btn btn-arrow'></button>
-                                            <button className='btn btn-icon'></button>
-                                            <button className='btn btn-circle'></button>
-                                            <button className='btn btn-square'></button>
-                                        </div>
-                                        <div className='row d-flex'>
-                                            <h3>Pressed</h3>
-                                            <button className='btn'></button>
-                                            <button className='btn btn-outline'></button>
-                                            <button className='btn btn-text'></button>
-                                            <button className='btn btn-arrow'></button>
-                                            <button className='btn btn-icon'></button>
-                                            <button className='btn btn-circle'></button>
-                                            <button className='btn btn-square'></button>
-                                        </div>
-                                        <div className='row d-flex'>
-                                            <h3>Disabled</h3>
-                                            <button className='btn'></button>
-                                            <button className='btn btn-outline'></button>
-                                            <button className='btn btn-text'></button>
-                                            <button className='btn btn-arrow'></button>
-                                            <button className='btn btn-icon'></button>
-                                            <button className='btn btn-circle'></button>
-                                            <button className='btn btn-square'></button>
-                                        </div>
-                                    </div>
-
-                                    <div className='col'>
-                                        <h4>Color Set 2 - Secondary-4</h4>
-                                        <div className='row d-flex'>
-                                            <h3>Idle</h3>
-                                            <button className='btn'></button>
-                                            <button className='btn btn-outline'></button>
-                                            <button className='btn btn-text'></button>
-                                            <button className='btn btn-arrow'></button>
-                                            <button className='btn btn-icon'></button>
-                                            <button className='btn btn-circle'></button>
-                                            <button className='btn btn-square'></button>
-                                        </div>
-                                        <div className='row d-flex'>
-                                            <h3>Hover</h3>
-                                            <button className='btn'></button>
-                                            <button className='btn btn-outline'></button>
-                                            <button className='btn btn-text'></button>
-                                            <button className='btn btn-arrow'></button>
-                                            <button className='btn btn-icon'></button>
-                                            <button className='btn btn-circle'></button>
-                                            <button className='btn btn-square'></button>
-                                        </div>
-                                        <div className='row d-flex'>
-                                            <h3>Pressed</h3>
-                                            <button className='btn'></button>
-                                            <button className='btn btn-outline'></button>
-                                            <button className='btn btn-text'></button>
-                                            <button className='btn btn-arrow'></button>
-                                            <button className='btn btn-icon'></button>
-                                            <button className='btn btn-circle'></button>
-                                            <button className='btn btn-square'></button>
-                                        </div>
-                                        <div className='row d-flex'>
-                                            <h3>Disabled</h3>
-                                            <button className='btn'></button>
-                                            <button className='btn btn-outline'></button>
-                                            <button className='btn btn-text'></button>
-                                            <button className='btn btn-arrow'></button>
-                                            <button className='btn btn-icon'></button>
-                                            <button className='btn btn-circle'></button>
-                                            <button className='btn btn-square'></button>
-                                        </div>
-                                    </div>
-                                </div>
+                                <ColorCombinations />
                             </div>
 
                             <div className='socailLogins'>

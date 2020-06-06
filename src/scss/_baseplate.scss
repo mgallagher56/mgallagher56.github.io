@@ -1,0 +1,6 @@
+.baseplate {
+    h1 {
+        padding-bottom: map-get($spacers, 2);
+        border-bottom: 5px solid map-get($colors, white-portfolio);
+    }
+}

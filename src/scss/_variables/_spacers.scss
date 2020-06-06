@@ -3,6 +3,6 @@ $spacers : ();
 
 @for $i from 1 through 30 {
     $map : ();
-    $map: ( $i : calc(#{$i * $spacer}));
+    $map: ( $i : #{$i * $spacer});
     $spacers : map-merge( $spacers, $map)
 }

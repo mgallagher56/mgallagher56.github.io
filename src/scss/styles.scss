@@ -1,15 +1,16 @@
 @import 'bootstrap/bootstrap';
+@import '_variables/variables';
 @import 'app';
 @import 'index';
-@import 'colors';
-@import '_variables/variables';
-@import 'components/linksAndButtons/linksButtons';
+@import 'components/_linksAndButtons/linksButtons';
+@import 'components/_typography/typography';
+@import 'baseplate';
 
 body {
     background: map-get($colors, grey-portfolio-dark);
     color: map-get($colors, white-portfolio);
 }
 
-h1, h2, h3 {
-    background: map-get($colors, grey-portfolio-light);
-}
+
+
+
