@@ -6,12 +6,12 @@ import ButtonVariationsOutput from './partials/ButtonVariationsOutput';
 class Baseplate extends Component {
     render() {
         return (
-            <div className="Baseplate">
+            <div className='Baseplate'>
                 <header className='App-header'>
                     <h1>Hello Baseplate!</h1>
                 </header>
 
-                <div className='baseplate-main container-fluid justify-content-center'>
+                <div className='baseplate-main container justify-content-center'>
                     <div className='typography'>
                         <h1>Typography</h1>
                         <div className='fontStyles'>
@@ -30,7 +30,7 @@ class Baseplate extends Component {
 
                     <div className='colors'>
                         <h1>Colors</h1>
-                        <BaseplateColors/>
+                        <BaseplateColors />
                         <div className='shades'>
                             <h2>Shades</h2>
                         </div>

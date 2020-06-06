@@ -8,27 +8,29 @@ class BaseplateColors extends Component {
         super( props );
         this.state = {
             classColors: Object.entries( colors.default ),
-            mappedColors: Object.entries( colorSwatch.default),
+            mappedColors: Object.entries( colorSwatch.default ),
         };
     }
 
     render() {
-        let primaryColors = [];
-        let secondaryColors = [];
-        let tertiaryColors = [];
+        let colorObj = {
+            primary: [],
+            shade: [],
+            standard: [],
+        };
 
         // sort colors into groups
         this.state.mappedColors.forEach( ( value, key ) => {
             switch ( value[1]['type'] ) {
                 case 'primary' :
                 default:
-                    primaryColors.push( value );
+                    colorObj.primary.push( value );
                     break;
                 case 'secondary' :
-                    secondaryColors.push( value );
+                    colorObj.shade.push( value );
                     break;
                 case 'tertiary' :
-                    tertiaryColors.push( value );
+                    colorObj.standard.push( value );
                     break;
             }
         } );
@@ -44,9 +46,8 @@ class BaseplateColors extends Component {
                     background: '',
                     height: '100px',
                     borderRadius: '5px',
-                    border: '1px solid white'
+                    border: '1px solid white',
                 };
-                console.log(primaryColors);
 
                 //set color for each swatch square
                 colors.forEach( ( color, colorKey ) => {
@@ -56,8 +57,8 @@ class BaseplateColors extends Component {
                 } );
 
                 //return markup to output
-                return <div className='row d-flex my-5'>
-                    <div className='col d-flex align-items-center'>
+                return <div className='row my-3 mx-1'>
+                    <div className='col d-flex align-items-center justify-content-center'>
                         <p> { colorArray[1]['name'] }</p>
                     </div>
                     <div className='col color' style={ swatchStyle }></div>
@@ -65,16 +66,19 @@ class BaseplateColors extends Component {
             } );
         };
 
-
         return (
-            <div className='swatch my-5'>
+            <div className=' swatch my-3'>
                 <h3>Swatch</h3>
-                <div className='col-4 primaryColors'>
-                    <h4>Primary Colors</h4>
-                    { colourOutput( primaryColors, this.state.classColors ) }
+                <div className={ 'row d-flex my-3 ' }>
+                    { // loop through colors object & output each in a column
+                        Object.keys( colorObj ).map( ( objectKey ) => {
+                        return <div className={ 'col text-center ' + objectKey + 'Color' }>
+                            <h4>{ objectKey.charAt(0).toUpperCase() + objectKey.slice(1) }</h4>
+                            { colourOutput( colorObj[objectKey], this.state.classColors ) }
+                        </div>;
+                    } )
+                    }
                 </div>
-                <div className='col-4 secondaryColors'></div>
-                <div className='col-4 tertiaryColors'></div>
             </div>
         );
     }

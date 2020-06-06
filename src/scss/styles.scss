@@ -6,10 +6,10 @@
 @import 'components/linksAndButtons/linksButtons';
 
 body {
-    background: map-get($colors, grey-portfolio);
-    color: map-get($colors, grey-portfolio-light);
+    background: map-get($colors, grey-portfolio-dark);
+    color: map-get($colors, white-portfolio);
 }
 
 h1, h2, h3 {
-    background: map-get($colors, grey-portfolio-dark);
+    background: map-get($colors, grey-portfolio-light);
 }
