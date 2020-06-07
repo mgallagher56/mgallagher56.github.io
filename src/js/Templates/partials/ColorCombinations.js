@@ -50,7 +50,7 @@ class ColorCombinations extends Component {
 
 
         return (
-            <div className=''>
+            <div>
                 { variationOutput( this.props.colorMaps ) }
             </div>
         );
