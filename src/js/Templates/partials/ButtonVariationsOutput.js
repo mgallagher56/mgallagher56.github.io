@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Button from '../../components/Button';
 
 class ButtonVariationsOutput extends Component {
     static defaultProps = {
@@ -14,7 +15,7 @@ class ButtonVariationsOutput extends Component {
             return <>
                 { variationArray.map( ( variation ) => {
                     return <div className='col d-flex '>
-                        <a href={ '/' } className={ 'btn btn-' + variation.toLowerCase() }>Button</a>
+                        <Button addClasses={'btn-' + variation.toLowerCase()} />
                     </div>;
                 } ) }
             </>;
@@ -62,7 +63,7 @@ class ButtonVariationsOutput extends Component {
         };
 
         return (
-            <div className={'col-12 col-md-6 '}>
+            <div className={'col-12 my-2 py-2 px-1 col-md-5  buttonContainer'}>
                 { buttonOutput( this.props.buttonVariations, this.props.buttonStates ) }
             </div>
         );

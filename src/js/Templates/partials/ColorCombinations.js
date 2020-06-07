@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Button from './../../components/Button'
 import * as data from '../../../conf/_colorCombinations.json';
 
 class ColorCombinations extends Component {
@@ -21,7 +22,7 @@ class ColorCombinations extends Component {
         let outputBtnStates = ( buttonTypes ) => {
             return buttonTypes.map( ( type ) => {
                 return <div className={ 'col' }>
-                    <a className={ 'btn btn-small btn-' + type.toLowerCase() }>Button</a>
+                    <Button addClass={'btn-small btn-' + type.toLowerCase() } />
                 </div>;
             } );
         }

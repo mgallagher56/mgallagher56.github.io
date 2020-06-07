@@ -1,19 +1,23 @@
-import React, { Component} from 'react';
+import React, { Component } from 'react';
 
-class Button extends Component{
-    constructor(props) {
-        super( props );
-    }
-
+class Button extends Component {
     static defaultProps = {
-        href : '/',
-        classes : 'btn',
-
+        type: 'large',
+        href: '#',
+        defaultClasses: 'btn ',
+        addClasses: '',
+        text: 'Button'
     }
-
+    
+    
     render() {
-        <div>
-            <a ></a>
-        </div>
+        return (
+            <div>
+                <button href={this.props.href} className={this.props.defaultClasses + this.props.addClasses} >{this.props.text}</button>
+            </div>
+        )
     }
 }
+
+export default Button;
+
