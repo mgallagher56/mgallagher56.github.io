@@ -43,7 +43,7 @@ class ColorCombinations extends Component {
         let variationOutput = ( colorMaps ) => {
             return Object.entries( colorMaps[0][1] ).map( ( value, key ) => {
                 return <div className='col'>
-                    <h4>{ value[1]['set'] + ' ' + value[0] }</h4>
+                    <h3>{ value[1]['set'] + ' ' + value[0] }</h3>
                     { buttonOutput( this.props.btnStates, this.props.btnTypes ) }
                 </div>;
             } );

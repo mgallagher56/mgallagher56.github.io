@@ -27,7 +27,7 @@ class ButtonVariationsOutput extends Component {
                 { stateArray.map( ( state ) => {
                     return <div className='row my-1 align-items-center  '>
                         <div className='col text-center'>
-                            <h3>{ state }</h3>
+                            <h4>{ state }</h4>
                         </div>
 
                         { outputButtonVariation( variationArray ) }
@@ -40,7 +40,7 @@ class ButtonVariationsOutput extends Component {
             return <>
                 { variationArray.map( ( variation ) => {
                     return <div className='col'>
-                        <h3>{ variation }</h3>
+                        <h4>{ variation }</h4>
                     </div>;
                 } )
                 }
@@ -51,7 +51,7 @@ class ButtonVariationsOutput extends Component {
         let buttonOutput = ( variationArray, stateArray ) => {
             // output title row for button variations
             return <div className={ 'btn-' + this.props.buttonName.toLowerCase() }>
-                <h3>{ this.props.buttonName }</h3>
+                <h4>{ this.props.buttonName }</h4>
                 <div className='row'>
                     <div className='col'>
                     </div>

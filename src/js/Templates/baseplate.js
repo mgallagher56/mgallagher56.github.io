@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../../css/styles.css';
+import '../../scss/styles.scss';
 import BaseplateColors from './partials/colors';
 import ButtonVariationsOutput from './partials/ButtonVariationsOutput';
 import ColorCombinations from './partials/ColorCombinations';
@@ -9,50 +9,125 @@ class Baseplate extends Component {
         return (
             <div className='baseplate'>
                 <header className='App-header'>
-                    <h1>Hello Baseplate!</h1>
+                    <h1 className={ 'baseplateTitle' }>Hello Baseplate!</h1>
                 </header>
 
                 <div className='baseplate-main container-lg justify-content-center'>
-                    <div className='typography'>
-                        <h1>Typography</h1>
-                        <div className='fontStyles'>
-                            <h2>Font Styles</h2>
+                    <div className='typography sectionTitle'>
+                        <h2>Typography</h2>
+                        <h3>Font Styles</h3>
+                        <div className='row fontStyles section'>
+                            <div className={ 'offset-md-4 col' }>
+                                <h4>Headings</h4>
+                            </div>
+                            <div className={ 'col' }>
+                                <h4>Body</h4>
+                            </div>
                         </div>
-                        <div className='headingStyles'>
-                            <h2>Heading Styles</h2>
+                        <div className={ 'row' }>
+                            <div className={ 'offset-md-4 col' }>
+                                <h4>Lora</h4>
+                            </div>
+                            <div className={ 'col' }>
+                                <p style={ { fontSize: 30 } }>Assistant</p>
+                            </div>
                         </div>
-                        <div className='listStyles'>
-                            <h2>List Styles</h2>
+
+                        <div className='headingStyles section'>
+                            <h3>Heading Styles</h3>
+                            <div className={ 'row' }>
+                                <div className={ 'offset-1 col-12 col-md-6' }>
+                                    <div className={ 'row' }>
+                                        <h3>Desktop</h3>
+                                    </div>
+                                    <div className={ 'row' }>
+                                        <h1 className={ 'showcase' }>H1 Heading - 60px</h1>
+                                    </div>
+                                    <div className={ 'row' }>
+                                        <h2 className={ 'showcase' }>H2 Heading - 50px</h2>
+                                    </div>
+                                    <div className={ 'row' }>
+                                        <h3 className={ 'showcase' }>H3 Heading - 40px</h3>
+                                    </div>
+                                    <div className={ 'row' }>
+                                        <h4>H4 Heading - 30px</h4>
+                                    </div>
+                                    <div className={ 'row' }>
+                                        <h5>H5 Heading - 22px</h5>
+                                    </div>
+                                    <div className={ 'row' }>
+                                        <h6>H6 Heading - 16px</h6>
+                                    </div>
+                                </div>
+                                <div className={ 'offset-1 col-10 offset-md-0 col-md-5' }>
+                                    <div className={ 'row' }>
+                                        <h3>Mobile</h3>
+                                    </div>
+                                    <div className={ 'row' }>
+                                        <h1 className={ 'baseplateHeading showcase' }>H1 Heading - 50px</h1>
+                                    </div>
+                                    <div className={ 'row' }>
+                                        <h2 className={ 'baseplateHeading showcase' }>H2 Heading - 40px</h2>
+                                    </div>
+                                    <div className={ 'row' }>
+                                        <h3 className={ 'baseplateHeading showcase' }>H3 Heading - 30px</h3>
+                                    </div>
+                                    <div className={ 'row' }>
+                                        <h4 className={ 'baseplateHeading' }>H4 Heading - 24px</h4>
+                                    </div>
+                                    <div className={ 'row' }>
+                                        <h5 className={ 'baseplateHeading' }>H5 Heading - 18px</h5>
+                                    </div>
+                                    <div className={ 'row' }>
+                                        <h6 className={ 'baseplateHeading' }>H6 Heading - 12px</h6>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div className='blockQuoteStyles'>
-                            <h2>Block Quote Styles</h2>
+
+                        <h3>List Styles</h3>
+                        <div className='row listStyles section justify-space-between'>
+                            <div className={ 'offset-2 col' }>
+                                <h4>Bullet List</h4>
+                                <ul>
+                                    <li>List Item</li>
+                                    <li>List Item</li>
+                                    <li>List Item</li>
+                                </ul>
+                            </div>
+                            <div className={ 'col' }>
+                                <h4>Numbered List</h4>
+                                <ol>
+                                    <li>List Item</li>
+                                    <li>List Item</li>
+                                    <li>List Item</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <h3>Block Quote Styles</h3>
+                        <div className='row blockQuoteStyles section'>
                         </div>
                     </div>
 
                     <div className='colors'>
-                        <h1>Colors</h1>
+                        <h2>Colors</h2>
                         <BaseplateColors />
-                        <div className='colorMaps'>
-                            <h2>Color Maps</h2>
-                        </div>
-                        <div className='colorMapVariations'>
-                            <h2>Color Maps - Variations</h2>
-                        </div>
                     </div>
 
                     <div className='Controls'>
-                        <h1>Controls</h1>
+                        <h2>Controls</h2>
 
                         <div className='buttons'>
-                            <h2>Buttons</h2>
-                            <div className={'row justify-content-around'}>
-                            <ButtonVariationsOutput buttonName={ 'Contained' } />
-                            <ButtonVariationsOutput buttonName={ 'Outline' } />
-                            <ButtonVariationsOutput buttonName={ 'Text' } />
-                            <ButtonVariationsOutput buttonName={ 'Arrow' } />
-                            <ButtonVariationsOutput buttonName={ 'Icon' } />
-                            <ButtonVariationsOutput buttonName={ 'Round' } />
-                            <ButtonVariationsOutput buttonName={ 'Square' } />
+                            <h3>Buttons</h3>
+                            <div className={ 'row justify-content-around' }>
+                                <ButtonVariationsOutput buttonName={ 'Contained' } />
+                                <ButtonVariationsOutput buttonName={ 'Outline' } />
+                                <ButtonVariationsOutput buttonName={ 'Text' } />
+                                <ButtonVariationsOutput buttonName={ 'Arrow' } />
+                                <ButtonVariationsOutput buttonName={ 'Icon' } />
+                                <ButtonVariationsOutput buttonName={ 'Round' } />
+                                <ButtonVariationsOutput buttonName={ 'Square' } />
                             </div>
 
                             <div className='colorCombinations'>
@@ -61,339 +136,814 @@ class Baseplate extends Component {
                             </div>
 
                             <div className='socailLogins'>
-                                <h1>Social Login Buttons</h1>
+                                <h3>Social Login Buttons</h3>
                             </div>
-                            <div className={'row'}>
-                                <div className={'col'}></div>
-                                <div className={'col'}>
-                                    <h3>Light</h3>
+                            <div className={ 'row' }>
+                                <div className={ 'col' }></div>
+                                <div className={ 'col' }>
+                                    <h4>Light</h4>
                                 </div>
-                                <div className={'col'}>
-                                    <h3>Dark</h3>
-                                </div>
-                            </div>
-                            <div className={'row'}>
-                                <div className={'col'}>
-                                    <h3>Google</h3>
-                                </div>
-                                <div className={'col'}>
-                                    <a href={'/'} className={'socialLogin googleLoginLight'}></a>
-                                </div>
-                                <div className={'col'}>
-                                    <a href={'/'} className={'socialLogin googleLoginDark'}></a>
+                                <div className={ 'col' }>
+                                    <h4>Dark</h4>
                                 </div>
                             </div>
-
+                            <div className={ 'row' }>
+                                <div className={ 'col' }>
+                                    <h4>Google</h4>
+                                </div>
+                                <div className={ 'col' }>
+                                    <a href={ '/' } className={ 'socialLogin googleLoginLight' }></a>
+                                </div>
+                                <div className={ 'col' }>
+                                    <a href={ '/' } className={ 'socialLogin googleLoginDark' }></a>
+                                </div>
+                            </div>
+                            <div className={ 'row' }>
+                                <div className={ 'col' }>
+                                    <h4>Twitter</h4>
+                                </div>
+                                <div className={ 'col' }>
+                                    <a href={ '/' } className={ 'socialLogin twitterLoginLight' }></a>
+                                </div>
+                                <div className={ 'col' }>
+                                    <a href={ '/' } className={ 'socialLogin twitterLoginLight' }></a>
+                                </div>
+                            </div>
+                            <div className={ 'row' }>
+                                <div className={ 'col' }>
+                                    <h4>Facebook</h4>
+                                </div>
+                                <div className={ 'col' }>
+                                    <a href={ '/' } className={ 'socialLogin facebookLoginLight' }></a>
+                                </div>
+                                <div className={ 'col' }>
+                                    <a href={ '/' } className={ 'socialLogin facebookLoginLight' }></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <div className='stylisticFeatures'>
-                        <h1>Stylistic features</h1>
-                        <div className='shadow'>
-                            <h2>Shadow</h2>
+                        <h2>Stylistic features</h2>
+                        <div className=''>
+                            <h3>Shadow</h3>
                             <div className='row'>
-                                <div className={'col'}>
-                                <h3>Buttons</h3>
+                                <div className={ 'col' }>
+                                    <h4>Buttons</h4>
                                 </div>
-                                <div className={'col'}>
-                                   <a href={'/'} className={'btn btn-small'}></a>
+                                <div className={ 'col' }>
+                                    <a href={ '/' } className={ 'btn btn-small shadow' }></a>
                                 </div>
                             </div>
                             <div className='row'>
-                                <div className={'col'}>
-                                    <h3>FAB</h3>
+                                <div className={ 'col' }>
+                                    <h4>FAB</h4>
                                 </div>
-                                <div className={'col'}>
-                                    <a href={'/'} className={'btn btn-circle'}></a>
+                                <div className={ 'col' }>
+                                    <a href={ '/' } className={ 'btn btn-circle shadow' }></a>
                                 </div>
                             </div>
                             <div className='row'>
-                                <div className={'col'}>
-                                    <h3>Card</h3>
+                                <div className={ 'col' }>
+                                    <h4>Card</h4>
                                 </div>
-                                <div className={'col'}>
-                                    <a href={'/'} className={'btn '}></a>
+                                <div className={ 'col' }>
+                                    <a href={ '/' } className={ 'btn shadow' }></a>
                                 </div>
                             </div>
                         </div>
                         <div className='borderRadius'>
-                            <h2>Border Radius</h2>
+                            <h3>Border Radius</h3>
                             <div className='row'>
-                                <div className={'col'}>
-                                    <h3>Buttons</h3>
+                                <div className={ 'col' }>
+                                    <h4>Buttons</h4>
                                 </div>
-                                <div className={'col'}>
-                                    <a href={'/'} className={'btn btn-small'}></a>
+                                <div className={ 'col' }>
+                                    <a href={ '/' } className={ 'btn btn-small' }></a>
                                 </div>
                             </div>
                             <div className='row'>
-                                <div className={'col'}>
-                                    <h3>Cards</h3>
+                                <div className={ 'col' }>
+                                    <h4>Cards</h4>
                                 </div>
-                                <div className={'col'}>
-                                    <a href={'/'} className={'btn '}></a>
+                                <div className={ 'col' }>
+                                    <a href={ '/' } className={ 'btn ' }></a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div className='inputs'>
-                        <h1>Inputs</h1>
+                        <h2>Inputs</h2>
                         <div className='formFields'>
-                            <h2>Form Fields</h2>
-                            <div className='inputFields'>
-                                <h3>Input Fields</h3>
-                            </div>
-                            <div className='searchFields'>
-                                <h3>Search Fields</h3>
-                            </div>
-                            <div className='textFields'>
-                                <h3>Text Fields</h3>
-                            </div>
-                            <div className='dropdowns'>
-                                <h3>Dropdowns</h3>
-                            </div>
-                            <div className='dragAreas'>
-                                <div>
-                                    <h3>Drag Areas - Files</h3>
+                            <h3>Form Fields</h3>
+                            <div className='inputField'>
+                                <div className={ 'row' }>
+                                    <div className={ 'col' }></div>
+                                    <div className={ 'col' }>
+                                        <h4>Idle</h4>
+                                    </div>
+                                    <div className={ 'col' }>
+                                        <h4>Hover</h4>
+                                    </div>
+                                    <div className={ 'col' }>
+                                        <h4>Active</h4>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h3>Drag Areas - Images</h3>
+                            </div>
+                            <div className='inputField'>
+                                <div className={ 'row' }>
+                                    <div className={ 'col' }>
+                                        <h4>Input Field</h4>
+                                    </div>
+                                    <div className={ 'col' }>
+                                        <input type={ 'text' } />
+                                    </div>
+                                    <div className={ 'col' }>
+                                        <input type={ 'text' } />
+                                    </div>
+                                    <div className={ 'col' }>
+                                        <input type={ 'text' } />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='searchField'>
+                                <div className={ 'row' }>
+                                    <div className={ 'col' }>
+                                        <h4>Search Field</h4>
+                                    </div>
+                                    <div className={ 'col' }>
+                                        <input type={ 'search' } />
+                                    </div>
+                                    <div className={ 'col' }>
+                                        <input type={ 'search' } />
+                                    </div>
+                                    <div className={ 'col' }>
+                                        <input type={ 'search' } />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='textArea'>
+                                <div className={ 'row' }>
+                                    <div className={ 'col' }>
+                                        <h4>Text Area</h4>
+                                    </div>
+                                    <div className={ 'col' }>
+                                        <textarea rows={ 4 }></textarea>
+                                    </div>
+                                    <div className={ 'col' }>
+                                        <textarea rows={ 4 }></textarea>
+                                    </div>
+                                    <div className={ 'col' }>
+                                        <textarea rows={ 4 }></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='dropdown'>
+                                <div className={ 'row' }>
+                                    <div className={ 'col' }>
+                                        <h4>Dropdown</h4>
+                                    </div>
+                                    <div className={ 'col' }>
+                                        <select>
+                                            <option value='option'>option</option>
+                                            <option value='option'>option</option>
+                                            <option value='option'>option</option>
+                                        </select>
+                                    </div>
+                                    <div className={ 'col' }>
+                                        <select>
+                                            <option value='option'>option</option>
+                                            <option value='option'>option</option>
+                                            <option value='option'>option</option>
+                                        </select>
+                                    </div>
+                                    <div className={ 'col' }>
+                                        <select>
+                                            <option value='option'>option</option>
+                                            <option value='option'>option</option>
+                                            <option value='option'>option</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='submit'>
+                                <div className={ 'row' }>
+                                    <div className={ 'col' }>
+                                        <h4>Submit</h4>
+                                    </div>
+                                    <div className={ 'col' }>
+                                        <input type={ 'submit' } />
+                                    </div>
+                                    <div className={ 'col' }>
+                                        <input type={ 'submit' } />
+                                    </div>
+                                    <div className={ 'col' }>
+                                        <input type={ 'submit' } />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='dragAreaFiles'>
+                                <div className={ 'row' }>
+                                    <div className={ 'col' }>
+                                        <h4>Drag Area - Files</h4>
+                                    </div>
+                                    <div className={ 'col' }>
+                                        <form className='box' method='post' action='' encType='multipart/form-data'>
+                                            <div className='box__input'>
+                                                <input type='file' name='files[]' id='file'
+                                                       data-multiple-caption='{count} files selected' multiple />
+                                                <label htmlFor='file'><strong>Choose a file</strong><span
+                                                > or drag it here</span>.</label>
+                                                <a className='btn btn-small' type='submit'>Upload</a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div className={ 'col' }>
+                                        <form className='box' method='post' action='' encType='multipart/form-data'>
+                                            <div className='box__input'>
+                                                <input type='file' name='files[]' id='file'
+                                                       data-multiple-caption='{count} files selected' multiple />
+                                                <label htmlFor='file'><strong>Choose a file</strong><span
+                                                > or drag it here</span>.</label>
+                                                <a className='btn btn-small' type='submit'>Upload</a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div className={ 'col' }>
+                                        <form className='box' method='post' action='' encType='multipart/form-data'>
+                                            <div className='box__input'>
+                                                <input type='file' name='files[]' id='file'
+                                                       data-multiple-caption='{count} files selected' multiple />
+                                                <label htmlFor='file'><strong>Choose a file</strong><span
+                                                > or drag it here</span>.</label>
+                                                <a className='btn btn-small' type='submit'>Upload</a>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div className='inputColorVariations'>
-                                <h2>Set Color Variations</h2>
+                            <div className='dragAreaImages'>
+                                <div className={ 'row' }>
+                                    <div className={ 'col' }>
+                                        <h4>Drag Area - Images</h4>
+                                    </div>
+                                    <div className={ 'col' }>
+                                        <form className='box' method='post' action='' encType='multipart/form-data'>
+                                            <div className='box__input'>
+                                                <input type='file' name='files[]' id='file'
+                                                       data-multiple-caption='{count} files selected' multiple />
+                                                <label htmlFor='file'><strong>Choose an image</strong><span
+                                                > or drag it here</span>.</label>
+                                                <a className='btn btn-small' type='submit'>Upload</a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div className={ 'col' }>
+                                        <form className='box' method='post' action='' encType='multipart/form-data'>
+                                            <div className='box__input'>
+                                                <input type='file' name='files[]' id='file'
+                                                       data-multiple-caption='{count} files selected' multiple />
+                                                <label htmlFor='file'><strong>Choose an image</strong><span
+                                                > or drag it here</span>.</label>
+                                                <a className='btn btn-small' type='submit'>Upload</a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div className={ 'col' }>
+                                        <form className='box' method='post' action='' encType='multipart/form-data'>
+                                            <div className='box__input'>
+                                                <input type='file' name='files[]' id='file'
+                                                       data-multiple-caption='{count} files selected' multiple />
+                                                <label htmlFor='file'><strong>Choose an image</strong><span
+                                                > or drag it here</span>.</label>
+                                                <a className='btn btn-small' type='submit'>Upload</a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                         <div className='checkBoxes'>
-                            <h3>Check Boxes</h3>
+                            <div className={ 'row' }>
+                                <div className={ 'col' }>
+                                    <h4>Check Boxes</h4>
+                                </div>
+                                <div className={ 'col' }>
+                                    <input type={ 'checkbox' } />
+                                </div>
+                                <div className={ 'col' }>
+                                    <input type={ 'checkbox' } />
+                                </div>
+                                <div className={ 'col' }>
+                                    <input type={ 'checkbox' } />
+                                </div>
+                            </div>
                         </div>
                         <div className='quantityCounter'>
-                            <h3>Quantity Counter</h3>
+                            <div className={ 'row' }>
+                                <div className={ 'col' }>
+                                    <h4>Quantity Counter</h4>
+                                </div>
+                                <div className={ 'col' }>
+                                    <input type={ 'number' } />
+                                </div>
+                                <div className={ 'col' }>
+                                    <input type={ 'number' } />
+                                </div>
+                                <div className={ 'col' }>
+                                    <input type={ 'number' } />
+                                </div>
+                            </div>
                         </div>
                         <div className='radioButtons'>
-                            <h3>Radio Buttons</h3>
+                            <div className={ 'row' }>
+                                <div className={ 'col' }>
+                                    <h4>Radio Button</h4>
+                                </div>
+                                <div className={ 'col' }>
+                                    <input type={ 'radio' } />
+                                </div>
+                                <div className={ 'col' }>
+                                    <input type={ 'radio' } />
+                                </div>
+                                <div className={ 'col' }>
+                                    <input type={ 'radio' } />
+                                </div>
+                            </div>
                         </div>
-                        <div className='calendar'>
-                            <h3>Calendar</h3>
-                        </div>
+
                         <div className='toggles'>
-                            <h3>Toggles</h3>
+                            <h4>Toggles</h4>
+                            <div className={ 'row' }>
+                                <div className={ 'col' }>
+                                    <h5> Square Toggle</h5>
+                                </div>
+                                <div className={ 'col' }>
+                                    <label className={ 'switch' }>
+                                        <input type={ 'checkbox' } />
+                                        <span className={ 'slider' }></span>
+                                    </label>
+                                </div>
+                                <div className={ 'col' }>
+                                    <label className={ 'switch' }>
+                                        <input type={ 'checkbox' } />
+                                        <span className={ 'slider' }></span>
+                                    </label>
+                                </div>
+                                <div className={ 'col' }>
+                                    <label className={ 'switch' }>
+                                        <input type={ 'checkbox' } />
+                                        <span className={ 'slider' }></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div className={ 'row' }>
+                                <div className={ 'col' }>
+                                    <h5> Round Toggle</h5>
+                                </div>
+                                <div className={ 'col' }>
+                                    <label className={ 'switch' }>
+                                        <input type={ 'checkbox' } />
+                                        <span className={ 'slider round' }></span>
+                                    </label>
+                                </div>
+                                <div className={ 'col' }>
+                                    <label className={ 'switch' }>
+                                        <input type={ 'checkbox' } />
+                                        <span className={ 'slider round' }></span>
+                                    </label>
+                                </div>
+                                <div className={ 'col' }>
+                                    <label className={ 'switch' }>
+                                        <input type={ 'checkbox' } />
+                                        <span className={ 'slider round' }></span>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                         <div className='sliders'>
-                            <h3>Sliders</h3>
+                            <h4>Sliders</h4>
+                        </div>
+
+                        <div className='inputColorVariations'>
+                            <h3>Set Color Variations</h3>
+                            <div className={ 'row' }>
+                                <div className={ 'col' }>
+                                    <h4>Primary 1 </h4>
+                                    <form>
+                                        <div className={ 'row' }>
+                                            <input type={ 'text' } />
+                                        </div>
+                                        <div className={ 'row' }>
+                                            <input type={ 'search' } />
+                                        </div>
+                                        <div className={ 'row' }>
+                                            <textarea rows={ '4' }></textarea>
+                                        </div>
+                                        <div className={ 'row' }>
+                                            <select>
+                                                <option value={ 'option' }>option</option>
+                                                <option value={ 'option' }>option</option>
+                                                <option value={ 'option' }>option</option>
+                                            </select>
+                                        </div>
+                                        <div className={ 'row' }>
+                                            <input type={ 'submit' } />
+                                        </div>
+                                        <div className={ 'row' }>
+                                            <div className='box__input'>
+                                                <input type='file' name='files[]' id='file'
+                                                       data-multiple-caption='{count} files selected' multiple />
+                                                <label htmlFor='file'><strong>Choose an image</strong><span
+                                                > or drag it here</span>.</label>
+                                                <a className='btn btn-small' type='submit'>Upload</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div className={ 'col' }>
+                                    <h4>Primary 2 </h4>
+                                    <form>
+                                        <div className={ 'row' }>
+                                            <input type={ 'text' } />
+                                        </div>
+                                        <div className={ 'row' }>
+                                            <input type={ 'search' } />
+                                        </div>
+                                        <div className={ 'row' }>
+                                            <textarea rows={ '4' }></textarea>
+                                        </div>
+                                        <div className={ 'row' }>
+                                            <select>
+                                                <option value={ 'option' }>option</option>
+                                                <option value={ 'option' }>option</option>
+                                                <option value={ 'option' }>option</option>
+                                            </select>
+                                        </div>
+                                        <div className={ 'row' }>
+                                            <input type={ 'submit' } />
+                                        </div>
+                                        <div className={ 'row' }>
+                                            <div className='box__input'>
+                                                <input type='file' name='files[]' id='file'
+                                                       data-multiple-caption='{count} files selected' multiple />
+                                                <label htmlFor='file'><strong>Choose an image</strong><span
+                                                > or drag it here</span>.</label>
+                                                <a className='btn btn-small' type='submit'>Upload</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div className={ 'col' }>
+                                    <h4>Primary 3 </h4>
+                                    <form>
+                                        <div className={ 'row' }>
+                                            <input type={ 'text' } />
+                                        </div>
+                                        <div className={ 'row' }>
+                                            <input type={ 'search' } />
+                                        </div>
+                                        <div className={ 'row' }>
+                                            <textarea rows={ '4' }></textarea>
+                                        </div>
+                                        <div className={ 'row' }>
+                                            <select>
+                                                <option value={ 'option' }>option</option>
+                                                <option value={ 'option' }>option</option>
+                                                <option value={ 'option' }>option</option>
+                                            </select>
+                                        </div>
+                                        <div className={ 'row' }>
+                                            <input type={ 'submit' } />
+                                        </div>
+                                        <div className={ 'row' }>
+                                            <div className='box__input'>
+                                                <input type='file' name='files[]' id='file'
+                                                       data-multiple-caption='{count} files selected' multiple />
+                                                <label htmlFor='file'><strong>Choose an image</strong><span
+                                                > or drag it here</span>.</label>
+                                                <a className='btn btn-small' type='submit'>Upload</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className={ 'row' }>
+                            <div className={ 'col-10 col-md-6 col-lg-4' }>
+                                <div className='calendar'>
+                                    <h4>Calendar</h4>
+                                    <div className='month'>
+                                        <ul>
+                                            <li className='prev'>&#10094;</li>
+                                            <li className='next'>&#10095;</li>
+                                            <li><span>2017</span></li>
+                                        </ul>
+                                    </div>
+
+                                    <ul className='weekdays'>
+                                        <li>Mo</li>
+                                        <li>Tu</li>
+                                        <li>We</li>
+                                        <li>Th</li>
+                                        <li>Fr</li>
+                                        <li>Sa</li>
+                                        <li>Su</li>
+                                    </ul>
+
+                                    <ul className='days'>
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li>4</li>
+                                        <li>5</li>
+                                        <li>6</li>
+                                        <li>7</li>
+                                        <li>8</li>
+                                        <li>9</li>
+                                        <li><span className={ 'active' }>10</span></li>
+                                        <li>11</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <div className='navigation'>
-                        <h1>Navigation</h1>
+                        <h2>Navigation</h2>
                         <div className='textLink'>
-                            <div className='textLinkParagraph'>
-                                <h3>Text Link: Paragraph</h3>
+                            <div className='row textLinkParagraph'>
+                                <div className={ 'col' }>
+                                    <h4>Text Link: Paragraph</h4>
+                                </div>
+                                <div className={ 'col bg-white text-secondary' }>
+                                    <div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua.
+                                            <a href={ '/' }>Ut enim
+                                                ad minim veniam,
+                                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                consequat.
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <div className='textLinkFooter'>
-                                <h3>Text Link: Footer</h3>
+                            <div className='row textLinkFooter'>
+                                <div className={ 'col' }>
+                                    <h4>Text Link: Footer</h4>
+                                </div>
+                                <div className={ 'col bg-dark' }>
+                                    <div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua.
+                                            <a href={ '/' }>Ut enim
+                                                ad minim veniam,
+                                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                consequat.
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div className='pagination'>
-                            <div className='paginationDots'>
-                                <h3>Pagination: Dots</h3>
+
+                        <div className={ 'row paginationDots' }>
+                            <div className={ 'col' }>
+                                <h4>Pagination: Dots</h4>
                             </div>
-                            <div className='paginationNumbers'>
-                                <h3>Pagination: Numbers</h3>
+
+                            <div className={'col'}>
+                                <div className="pagination dots">
+                                    <a className={'paginationNav'} href="#">&laquo;</a>
+                                    <a href="#"></a>
+                                    <a className="active" href="#"></a>
+                                    <a href="#"></a>
+                                    <a href="#"></a>
+                                    <a href="#"></a>
+                                    <a href="#"></a>
+                                    <a className={'paginationNav'} href="#">&raquo;</a>
+
+                                </div>
                             </div>
                         </div>
+                        <div className={ 'row paginationNumbers' }>
+                            <div className={ 'col' }>
+                                <h4>Pagination: Number</h4>
+                            </div>
+                            <div className={'col'}>
+                                <div className="pagination numbered">
+                                    <a href="#">&laquo;</a>
+                                    <a href="#">1</a>
+                                    <a className="active" href="#">2</a>
+                                    <a href="#">3</a>
+                                    <a href="#">4</a>
+                                    <a href="#">5</a>
+                                    <a href="#">6</a>
+                                    <a href="#">&raquo;</a>
+                                </div>
+                            </div>
+                        </div>
+
                         <div className='tabs'>
-                            <h3>Tabs</h3>
+                            <h4>Tabs</h4>
                         </div>
+
                         <div className='arrowButtons'>
-                            <h3>Arrow Buttons</h3>
+                            <h4>Arrow Buttons</h4>
                         </div>
+
                         <div className='progressIndicator'>
-                            <h3>Progress Indicator</h3>
+                            <h4>Progress Indicator</h4>
                         </div>
+
                         <div className='breadcrumbs'>
-                            <h3>Breadcrumbs</h3>
+                            <h4>Breadcrumbs</h4>
                         </div>
+
                         <div className='socialIcons'>
-                            <h3>Social Icons</h3>
+                            <h4>Social Icons</h4>
                         </div>
                     </div>
 
                     <div className='content'>
-                        <h1>Content</h1>
+                        <h2>Content</h2>
                         <div className='accordions'>
-                            <h3>Accordions</h3>
+                            <h4>Accordions</h4>
                         </div>
                         <div className='toolTips'>
                             <div className='toolTipsLarge'>
-                                <h3>Tooltips Large</h3>
+                                <h4>Tooltips Large</h4>
                             </div>
                             <div className='toolTipsSmall'>
-                                <h3>Tooltips Small</h3>
+                                <h4>Tooltips Small</h4>
                             </div>
                         </div>
                         <div className='placeholders'>
-                            <h3>Placeholders</h3>
+                            <h4>Placeholders</h4>
                         </div>
                         <div className='loaders'>
-                            <h3>Loaders</h3>
+                            <h4>Loaders</h4>
                         </div>
                         <div className='notifications'>
-                            <h3>Notifications</h3>
+                            <h4>Notifications</h4>
                         </div>
                         <div className='videoPlayer'>
-                            <h3>Video Player</h3>
+                            <h4>Video Player</h4>
                         </div>
                         <div className='tables'>
                             <div className='tablesFill'>
-                                <h3>Tables: Fill</h3>
+                                <h4>Tables: Fill</h4>
                             </div>
                             <div className='tablesOutline'>
-                                <h3>Tables: Outline</h3>
+                                <h4>Tables: Outline</h4>
                             </div>
                         </div>
                     </div>
+                    ;
 
                     <div className='modules'>
-                        <h1>Modules</h1>
+                        <h2>Modules</h2>
 
                         <div className='topNav'>
-                            <h2>Top Nav</h2>
+                            <h3>Top Nav</h3>
                             <div className='logoLeft'>
-                                <h3>Logo Left</h3>
+                                <h4>Logo Left</h4>
                             </div>
                             <div className='logoMiddle'>
-                                <h3>Logo Middle</h3>
+                                <h4>Logo Middle</h4>
                             </div>
                             <div className='logoRight'>
-                                <h3>Logo Right</h3>
+                                <h4>Logo Right</h4>
                             </div>
                         </div>
 
                         <div className='topNavMinimal'>
-                            <h2>Top Nav Minimal</h2>
+                            <h3>Top Nav Minimal</h3>
                             <div className='logoLeft'>
-                                <h3>Logo Left</h3>
+                                <h4>Logo Left</h4>
                             </div>
                             <div className='logoMiddle'>
-                                <h3>Logo Middle</h3>
+                                <h4>Logo Middle</h4>
                             </div>
                             <div className='logoRight'>
-                                <h3>Logo Right</h3>
+                                <h4>Logo Right</h4>
                             </div>
                         </div>
 
                         <div className='footer'>
-                            <h2>Footer</h2>
+                            <h3>Footer</h3>
                         </div>
 
                         <div className='textBlock'>
-                            <h2>Text Block</h2>
+                            <h3>Text Block</h3>
                             <div className='desktopLeft'>
-                                <h3>Desktop Left</h3>
+                                <h4>Desktop Left</h4>
                             </div>
                             <div className='desktopRight'>
-                                <h3>Desktop Right</h3>
+                                <h4>Desktop Right</h4>
                             </div>
                             <div className='desktopCenter'>
-                                <h3>Desktop Center</h3>
+                                <h4>Desktop Center</h4>
                             </div>
                         </div>
 
                         <div className='hero'>
-                            <h2>Hero</h2>
+                            <h3>Hero</h3>
                             <div className='imageRight'>
-                                <h3>Image Right</h3>
+                                <h4>Image Right</h4>
                             </div>
                             <div className='imageCenter'>
-                                <h3>Image Center</h3>
+                                <h4>Image Center</h4>
                             </div>
                             <div className='imageLeft'>
-                                <h3>Image Left</h3>
+                                <h4>Image Left</h4>
                             </div>
                         </div>
 
                         <div className='cta'>
-                            <h2>CTA</h2>
+                            <h3>CTA</h3>
                             <div className='ctaCenter'>
-                                <h3>CTA Center</h3>
+                                <h4>CTA Center</h4>
                             </div>
                             <div className='ctaNarrow'>
-                                <h3>CTA Narrow</h3>
+                                <h4>CTA Narrow</h4>
                             </div>
                             <div className='ctaForm'>
-                                <h3>CTA Form</h3>
+                                <h4>CTA Form</h4>
                             </div>
                         </div>
 
                         <div className='socialProofLogos'>
-                            <h2>Social Proof Logos</h2>
+                            <h3>Social Proof Logos</h3>
                         </div>
 
                         <div className='feature'>
-                            <h2>Features</h2>
+                            <h3>Features</h3>
                             <div className='featureSplitLeft'>
-                                <h3>Feature Split Left</h3>
+                                <h4>Feature Split Left</h4>
                             </div>
                             <div className='featureSplitRight'>
-                                <h3>Feature Split Right</h3>
+                                <h4>Feature Split Right</h4>
                             </div>
                             <div className='featureListLeft'>
-                                <h3>Feature List Left</h3>
+                                <h4>Feature List Left</h4>
                             </div>
                             <div className='featureListRight'>
-                                <h3>Feature List Right</h3>
+                                <h4>Feature List Right</h4>
                             </div>
                             <div className='featureQuoteLeft'>
-                                <h3>Feature Quote Left</h3>
+                                <h4>Feature Quote Left</h4>
                             </div>
                             <div className='featureQuoteRight'>
-                                <h3>Feature Quote Right</h3>
+                                <h4>Feature Quote Right</h4>
                             </div>
                         </div>
 
                         <div className='cards'>
-                            <h2>Cards</h2>
+                            <h3>Cards</h3>
                         </div>
                         <div className='cardListing'>
-                            <h2>Card Listing</h2>
+                            <h3>Card Listing</h3>
                         </div>
                         <div className='overlays/modals'>
-                            <h2>Overlays/Modals</h2>
+                            <h3>Overlays/Modals</h3>
                             <div className='openedState'>
-                                <h3>Opened State</h3>
+                                <h4>Opened State</h4>
                             </div>
 
                             <div className='filters'>
-                                <h2>Filters</h2>
+                                <h3>Filters</h3>
                             </div>
 
                             <div className='accordion'>
-                                <h2>Accordion</h2>
+                                <h3>Accordion</h3>
                                 <div className='accordionContracted'>
-                                    <h3>Accordion Contracted - Desktop</h3>
+                                    <h4>Accordion Contracted - Desktop</h4>
                                 </div>
                                 <div className='accordionExpanded'>
-                                    <h3>Accordion Expanded - Desktop</h3>
+                                    <h4>Accordion Expanded - Desktop</h4>
                                 </div>
                             </div>
 
                             <div className='login'>
-                                <h2>Login</h2>
+                                <h3>Login</h3>
                             </div>
 
                             <div className='tabs'>
-                                <h2>Tabs</h2>
+                                <h3>Tabs</h3>
                             </div>
 
                             <div className='testimonial'>
-                                <h2>Testimonial</h2>
+                                <h3>Testimonial</h3>
                             </div>
                         </div>
-                    </div>
+                    </div>;
                 </div>
             </div>
         );
