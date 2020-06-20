@@ -63,6 +63,26 @@ class Baseplate extends Component {
                             <div className='socailLogins'>
                                 <h1>Social Login Buttons</h1>
                             </div>
+                            <div className={'row'}>
+                                <div className={'col'}></div>
+                                <div className={'col'}>
+                                    <h3>Light</h3>
+                                </div>
+                                <div className={'col'}>
+                                    <h3>Dark</h3>
+                                </div>
+                            </div>
+                            <div className={'row'}>
+                                <div className={'col'}>
+                                    <h3>Google</h3>
+                                </div>
+                                <div className={'col'}>
+                                    <a href={'/'} className={'socialLogin googleLoginLight'}></a>
+                                </div>
+                                <div className={'col'}>
+                                    <a href={'/'} className={'socialLogin googleLoginDark'}></a>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
@@ -71,23 +91,48 @@ class Baseplate extends Component {
                         <h1>Stylistic features</h1>
                         <div className='shadow'>
                             <h2>Shadow</h2>
-                            <div className=''>
+                            <div className='row'>
+                                <div className={'col'}>
                                 <h3>Buttons</h3>
+                                </div>
+                                <div className={'col'}>
+                                   <a href={'/'} className={'btn btn-small'}></a>
+                                </div>
                             </div>
-                            <div className=''>
-                                <h3>FAB</h3>
+                            <div className='row'>
+                                <div className={'col'}>
+                                    <h3>FAB</h3>
+                                </div>
+                                <div className={'col'}>
+                                    <a href={'/'} className={'btn btn-circle'}></a>
+                                </div>
                             </div>
-                            <div className=''>
-                                <h3>Cards</h3>
+                            <div className='row'>
+                                <div className={'col'}>
+                                    <h3>Card</h3>
+                                </div>
+                                <div className={'col'}>
+                                    <a href={'/'} className={'btn '}></a>
+                                </div>
                             </div>
                         </div>
                         <div className='borderRadius'>
                             <h2>Border Radius</h2>
-                            <div className=''>
-                                <h3>Buttons</h3>
+                            <div className='row'>
+                                <div className={'col'}>
+                                    <h3>Buttons</h3>
+                                </div>
+                                <div className={'col'}>
+                                    <a href={'/'} className={'btn btn-small'}></a>
+                                </div>
                             </div>
-                            <div className=''>
-                                <h3>Cards</h3>
+                            <div className='row'>
+                                <div className={'col'}>
+                                    <h3>Cards</h3>
+                                </div>
+                                <div className={'col'}>
+                                    <a href={'/'} className={'btn '}></a>
+                                </div>
                             </div>
                         </div>
                     </div>
