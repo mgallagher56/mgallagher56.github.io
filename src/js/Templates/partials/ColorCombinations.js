@@ -22,7 +22,7 @@ class ColorCombinations extends Component {
         let outputBtnStates = ( buttonTypes ) => {
             return buttonTypes.map( ( type ) => {
                 return <div className={ 'col' }>
-                    <Button addClass={'btn-small btn-' + type.toLowerCase() } />
+                    <Button addClasses={'btn-small btn-' + type.toLowerCase() } />
                 </div>;
             } );
         }
