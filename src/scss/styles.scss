@@ -1,12 +1,9 @@
 @import 'bootstrap/bootstrap';
 @import '_variables/variables';
 @import 'app';
-@import 'components/_linksAndButtons/linksButtons';
-@import 'components/_typography/typography';
-@import 'components/_forms/forms';
-
-
-
+@import '_components/_linksAndButtons/linksButtons';
+@import '_components/_typography/typography';
+@import '_components/_forms/forms';
 @import 'baseplate';
 
 

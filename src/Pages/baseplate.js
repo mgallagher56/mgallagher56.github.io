@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
-import '../../scss/styles.scss';
+import '../scss/styles.scss';
 import BaseplateColors from './partials/colors';
 import ButtonVariationsOutput from './partials/ButtonVariationsOutput';
 import ColorCombinations from './partials/ColorCombinations';
+import NavBar from '../js/modules/navBar';
 
 export default class Baseplate extends Component {
     render() {
         return (
             <div className='baseplate'>
+                <NavBar />
                 <header className='App-header'>
                     <h1 className={ 'baseplateTitle' }>Hello Baseplate!</h1>
                 </header>

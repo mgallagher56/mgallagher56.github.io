@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Button from './../../components/Button'
-import * as data from '../../../conf/_colorCombinations.json';
+import Button from '../../js/components/Button'
+import * as data from '../../conf/_colorCombinations.json';
 
 class ColorCombinations extends Component {
     constructor( props ) {

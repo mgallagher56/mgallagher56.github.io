@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import * as colors from '../../../conf/_colors.json';
-import * as colorSwatch from '../../../conf/_colorsSwatch.json';
+import * as colors from '../../conf/_colors.json';
+import * as colorSwatch from '../../conf/_colorsSwatch.json';
 
 
 class BaseplateColors extends Component {
