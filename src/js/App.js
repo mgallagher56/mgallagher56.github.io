@@ -12,6 +12,10 @@ class App extends Component {
                     <nav className="navbar navbar-expand-lg navbar-light bg-light">
                         <ul className="navbar-nav mr-auto">
                             <li><Link to={ '/' } className="nav-link"> Home </Link></li>
+                            <li><Link to={ '/#projects' } className="nav-link"> Projects </Link></li>
+                            <li><Link to={ '/#about' } className="nav-link"> About </Link></li>
+                            <li><Link to={ '/#technologies' } className="nav-link"> Technologies </Link></li>
+                            <li><Link to={ '/cv' } className="nav-link"> My CV </Link></li>
                             <li><Link to={ '/baseplate' } className="nav-link"> Baseplate </Link></li>
                         </ul>
                     </nav>
