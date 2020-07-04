@@ -4,7 +4,7 @@ import BaseplateColors from './partials/colors';
 import ButtonVariationsOutput from './partials/ButtonVariationsOutput';
 import ColorCombinations from './partials/ColorCombinations';
 
-class Baseplate extends Component {
+export default class Baseplate extends Component {
     render() {
         return (
             <div className='baseplate'>
@@ -950,4 +950,3 @@ class Baseplate extends Component {
     }
 }
 
-export default Baseplate;

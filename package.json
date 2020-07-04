@@ -45,6 +45,7 @@
     "json-to-scss": "^1.5.0",
     "mozjpeg": "^6.0.1",
     "pngquant-bin": "^5.0.2",
+    "react-router-dom": "^5.2.0",
     "sass": "^1.26.5",
     "svgo": "^1.3.2"
   }
