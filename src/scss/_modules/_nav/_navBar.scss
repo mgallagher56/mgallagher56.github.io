@@ -1,26 +1,101 @@
 nav {
     .navbar-mobile {
-        height: 100vh;
+        display: none;
+        &.open {
+            display: flex;
+            height: 100vh;
+            z-index: 100;
 
-        .row {
-            &:nth-child(odd) {
-                li {
-                    &:nth-child(odd) {
-                        background: map-get($colors, grey-portfolio);
-                    }
+            .row {
+                margin: 0;
+                // set alternate pattern for mobile menu
+                &:nth-child(odd) {
+                    li {
+                        &:nth-child(odd) {
+                            background: map-get($colors, blue-portfolio);
+                        }
 
-                    &:nth-child(even) {
-                        background: map-get($colors, grey-portfolio-light);
+                        &:nth-child(even) {
+                            background: map-get($colors, pink-portfolio);
+                        }
                     }
                 }
-            }
-            &:nth-child(even) {
-                li {
-                    &:nth-child(even) {
-                        background: map-get($colors, grey-portfolio);
+
+                &:nth-child(even) {
+                    li {
+                        &:nth-child(even) {
+                            background: map-get($colors, mint-portfolio-dark);
+                        }
+
+                        &:nth-child(odd) {
+                            background: map-get($colors, yellow-portfolio-light);
+                        }
                     }
-                    &:nth-child(odd) {
-                        background: map-get($colors,grey-portfolio-light);
+                }
+                
+                li {
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    margin: 0;
+
+                    a {
+                        display: flex;
+                        height: 100%;
+                        justify-content: center;
+                        width: 100%;
+
+                        p {
+                            bottom: 20%;
+                            color: map-get($colors, grey-portfolio-dark);
+                            position: absolute;
+                        }
+                    }
+
+                    &:before {
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                        content: '';
+                        display: block;
+                        height: 50px;
+                        position: absolute;
+                        width: 50px;
+                    }
+
+                    &.home {
+                        &:before {
+                            background-image: url("/img/001-property.svg");
+                        }
+                    }
+
+                    &.projects {
+                        &:before {
+                            background-image: url("/img/003-folder.svg");
+                        }
+                    }
+
+                    &.technologies {
+                        &:before {
+                            background-image: url("/img/002-electronics.svg");
+                        }
+                    }
+
+                    &.about {
+                        &:before {
+                            background-image: url("/img/005-information.svg");
+                        }
+                    }
+
+                    &.cv {
+                        &:before {
+                            background-image: url("/img/004-inbox.svg");
+                        }
+                    }
+
+                    &.baseplate {
+                        &:before {
+                            background-image: url("/img/007-equalizer.svg");
+                        }
                     }
                 }
             }
