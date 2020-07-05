@@ -1,0 +1,29 @@
+nav {
+    .navbar-mobile {
+        height: 100vh;
+
+        .row {
+            &:nth-child(odd) {
+                li {
+                    &:nth-child(odd) {
+                        background: map-get($colors, grey-portfolio);
+                    }
+
+                    &:nth-child(even) {
+                        background: map-get($colors, grey-portfolio-light);
+                    }
+                }
+            }
+            &:nth-child(even) {
+                li {
+                    &:nth-child(even) {
+                        background: map-get($colors, grey-portfolio);
+                    }
+                    &:nth-child(odd) {
+                        background: map-get($colors,grey-portfolio-light);
+                    }
+                }
+            }
+        }
+    }
+}

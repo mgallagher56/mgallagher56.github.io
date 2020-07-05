@@ -12,7 +12,6 @@ export default class Home extends Component {
                 <h3>Technologies</h3>
                 <h3>About Me</h3>
                 <h3>Socials</h3>
-                <h1>Home</h1>
             </div>
         </div>;
     }
