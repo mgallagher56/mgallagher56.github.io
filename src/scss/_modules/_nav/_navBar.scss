@@ -1,9 +1,28 @@
-nav {
+.nav-mobile {
+    .collapsable-nav {
+        background: map-get($colors, grey-portfolio-light);
+        bottom: 0;
+        padding: map-get($spacers, 3);
+        position: fixed;
+        width: 100%;
+
+        span {
+            background-image: url("/img/006-list.svg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            cursor: pointer;
+            display: block;
+            height: 30px;
+            width: 30px;
+        }
+    }
+
     .navbar-mobile {
         display: none;
+        transition: all .5s linear;
+
         &.open {
             display: flex;
-            height: 100vh;
             z-index: 100;
 
             .row {
@@ -32,7 +51,7 @@ nav {
                         }
                     }
                 }
-                
+
                 li {
                     align-items: center;
                     display: flex;
