@@ -39,6 +39,7 @@ let watch = () => {
     gulp.watch( 'src/scss/**/*.scss', styles );
     gulp.watch( 'src/*.html' ).on( 'change', browserSync.reload );
     gulp.watch( 'src/js/**/*.js' ).on( 'change', browserSync.reload );
+    gulp.watch( 'src/js/**/*.jsx' ).on( 'change', browserSync.reload );
     gulp.watch( 'src/conf/**/*.json', jsonToScss );
 };
 
