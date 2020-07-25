@@ -30,6 +30,12 @@ let jsonToScss = () => {
         .pipe( gulp.dest( 'output' ) );
 };
 
+
+let html = () => {
+    return gulp.src( 'src/**/*.html' )
+        .pipe( gulp.dest( 'public/' ) )
+};
+
 let watch = () => {
     browserSync.init( {
         open: false,
@@ -37,9 +43,7 @@ let watch = () => {
     } );
     gulp.watch( 'src/img/**/*', compressImages );
     gulp.watch( 'src/scss/**/*.scss', styles );
-    gulp.watch( 'src/*.html' ).on( 'change', browserSync.reload );
-    gulp.watch( 'src/js/**/*.js' ).on( 'change', browserSync.reload );
-    gulp.watch( 'src/js/**/*.jsx' ).on( 'change', browserSync.reload );
+    gulp.watch( 'src/**/*.html' ).on( 'change', html );
     gulp.watch( 'src/conf/**/*.json', jsonToScss );
 };
 

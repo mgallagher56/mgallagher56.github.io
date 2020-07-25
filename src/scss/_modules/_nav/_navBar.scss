@@ -1,10 +1,11 @@
 .nav-mobile {
     .collapsable-nav {
         background: map-get($colors, grey-portfolio-light);
-        bottom: 0;
+        top: calc(100vh - 78px);
         padding: map-get($spacers, 3);
         position: fixed;
         width: 100%;
+        z-index: 100;
 
         span {
             background-image: url("/img/006-list.svg");

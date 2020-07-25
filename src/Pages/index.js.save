@@ -1,0 +1,47 @@
+qimport React, { Component } from 'react';
+import NavBar from '../js/modules/navBar';
+import '../scss/styles.scss';
+import barba from '@barba/core';
+import gsap from 'gsap';
+
+
+
+class IndexPage extends Component {
+    render() {
+        barba.init({
+            transitions: [{
+                name: 'opacity-transition',
+                leave(data) {
+                    return gsap.to(data.current.container, {
+                        opacity: 0
+                    });
+                },
+                enter(data) {
+                    return gsap.from(data.next.container, {
+                        opacity: 0
+                    });
+                }
+            }]
+        });
+        return (
+            <div>
+                <NavBar />
+                <main data-barba='container' data-barba-namespace='home'>
+                    <div className={ 'container' }>
+                        <h3>Projects</h3>
+                        <h3>Technologies</h3>
+                        <h3>About Me</h3>
+                        <h3>Socials</h3>
+                    </div>
+                    <div>Icons made by <a href='https://www.flaticon.com/authors/freepik' title='Freepik'>Freepik</a> from <a href='https://www.flaticon.com/' title='Flaticon'>www.flaticon.com</a>
+                    </div>
+                </main>
+
+            </div>
+        );
+    }
+}
+
+export default IndexPage;
+qqqq
+gas

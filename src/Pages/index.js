@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import NavBar from '../js/modules/navBar';
 import '../scss/styles.scss';
 
+
 class IndexPage extends Component {
     render() {
         return (
