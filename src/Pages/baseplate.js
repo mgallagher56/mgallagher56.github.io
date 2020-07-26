@@ -945,7 +945,7 @@ export default class Baseplate extends Component {
                                 <h3>Testimonial</h3>
                             </div>
                         </div>
-                    </div>;
+                    </div>
                 </div>
             </div>
         );
