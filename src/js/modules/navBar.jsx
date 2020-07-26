@@ -19,7 +19,6 @@ export default class NavBar extends Component {
         // this.burgerMiddle = React.createRef()
         // this.burgerBottom = React.createRef()
         this.tl = new TimelineMax( { paused: true } );
-        this.tlInfinite = new TimelineMax({ paused: true, repeat: -1, delay: 0, onStart: function(){ console.log('timeline starting') }, onComplete:function(){ console.log('time line finished') }})
         this.handleClick = this.handleClick.bind( this );
     }
 
@@ -30,7 +29,7 @@ export default class NavBar extends Component {
         }) );
         if ( !this.state.menuToggle ) {
             this.navAnimation.play();
-            document.body.style.position = 'static';
+            document.body.style.position = 'fixed';
             this.bubbleAnimation('play')
 
         } else {
@@ -83,34 +82,39 @@ export default class NavBar extends Component {
         }
 
         this.bubbleAnimation = (control) => {
+            let timelineArray = [];
             setTimeout( () => {
                 let bubbles = document.querySelectorAll( '.bubble' );
                 Array.from( bubbles ).map( ( bubble ) => {
-                    this.tlInfinite.fromTo( bubble,
+                    timelineArray.push(new TimelineMax({ paused: true, repeat: -1, delay: 0 }).fromTo( bubble,
                         {
-                            x: '-10vw',
-                            y: '110vh',
-                            scale: '0.' + rand( 9, 1 )
+                            x: rand(100, 0) + 'vw',
+                            y: '130vh',
+                            scale: '0.' + rand( 9, 1 ),
                         },
                         {
-                            x: rand( 200, 50 ) + 'vw',
-                            y: rand( 100, -50 ) + 'vh',
-                            scale: rand( 2, 1 ) + '.' + rand( 9, 0 ),
-                            duration: rand( 10, 6 ),
-                            delay: rand( 10, 1 ),
+                            x: rand( 120, 100 ) + 'vw',
+                            y: rand( 75, -20 ) + 'vh',
+                            scale: rand( 3, 1 ) + '.' + rand( 9, 0 ),
+                            duration: rand( 12, 7 ),
+                            delay: rand( 3, 0 ),
                             ease: Linear.easeNone,
-                            stagger: 0.15,
-                            autoAlpha: 0
+                            stagger: 0.4,
+                            display: 'none'
                         }, 'bubbles'
-                    )
+                    ))
                 })
                 switch (control) {
                     case 'play' :
                     default:
-                        this.tlInfinite.play();
+                        timelineArray.map( (timeline) => {
+                        timeline.play();
+                        })
                         break;
                     case 'pause':
-                        this.tlInfinite.restart().pause()
+                        timelineArray.map( (timeline) => {
+                            timeline.pause(0);
+                        })
                         break;
                 }
             },1000 )

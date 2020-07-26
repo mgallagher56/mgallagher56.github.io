@@ -35,10 +35,15 @@ export default class Bubbles extends Component {
                     () => ( <div>
                             <img src={ bubbleImg } className={ 'bubble' } alt={ 'bubble' } />
                             <img src={ bubbleBlue } className={ 'bubble' } alt={ 'bubble' }/>
+                            <img src={ bubbleImg } className={ 'bubble' } alt={ 'bubble' } />
                             <img src={ bubbleMint } className={ 'bubble' } alt={ 'bubble' }/>
+                            <img src={ bubbleImg } className={ 'bubble' } alt={ 'bubble' } />
                             <img src={ bubbleOrange } className={ 'bubble' } alt={ 'bubble' }/>
+                            <img src={ bubbleImg } className={ 'bubble' } alt={ 'bubble' } />
                             <img src={ bubblePink } className={ 'bubble' } alt={ 'bubble' }/>
+                            <img src={ bubbleImg } className={ 'bubble' } alt={ 'bubble' } />
                             <img src={ bubbleYellow } className={ 'bubble' } alt={ 'bubble'} />
+                            <img src={ bubbleImg } className={ 'bubble' } alt={ 'bubble' } />
                         </div>
                     )
                 )

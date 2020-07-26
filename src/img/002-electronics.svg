@@ -1,55 +1,5 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="100.149" y1="303" x2="411.85" y2="303" gradientTransform="matrix(1 0 0 -1 0 514)">
-	<stop  offset="0" style="stop-color:#fff"/>
-	<stop  offset="0.16" style="stop-color:#fff"/>
-	<stop  offset="0.413" style="stop-color:#fff"/>
-	<stop  offset="0.725" style="stop-color:#fff"/>
-	<stop  offset="1" style="stop-color:#fff"/>
-</linearGradient>
-<path style="fill:#fff;" d="M391.851,121H120.149c-11.046,0-20,8.954-20,20v140c0,11.046,8.954,20,20,20H391.85
-	c11.046,0,20-8.954,20-20V141C411.851,129.954,402.896,121,391.851,121z M371.851,261H140.149V161H371.85v100H371.851z"/>
-<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="0" y1="258" x2="512" y2="258" gradientTransform="matrix(1 0 0 -1 0 514)">
-	<stop  offset="0" style="stop-color:#fff"/>
-	<stop  offset="0.16" style="stop-color:#fff"/>
-	<stop  offset="0.413" style="stop-color:#fff"/>
-	<stop  offset="0.725" style="stop-color:#fff"/>
-	<stop  offset="1" style="stop-color:#fff"/>
-</linearGradient>
-<path style="fill:#fff;" d="M492,321h-20.149V111c0-27.57-22.43-50-50-50H90.149c-27.57,0-50,22.43-50,50v210H20
-	c-11.046,0-20,8.954-20,20v60c0,27.57,22.43,50,50,50h412c27.57,0,50-22.43,50-50v-60C512,329.954,503.046,321,492,321z M80.149,111
-	c0-5.514,4.486-10,10-10H421.85c5.514,0,10,4.486,10,10v210H80.149V111z M472,401c0,5.514-4.486,10-10,10H50
-	c-5.514,0-10-4.486-10-10v-40c26.131,0,407.942,0,432,0V401z"/>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+	<defs/>
+	<path fill="#fff" d="M392 121H120c-11 0-20 9-20 20v140c0 11 9 20 20 20h272c11 0 20-9 20-20V141c0-11-9-20-20-20zm-20 140H140V161h232v100z"/>
+	<path fill="#fff" d="M492 321h-20V111c0-28-23-50-50-50H90c-27 0-50 22-50 50v210H20c-11 0-20 9-20 20v60c0 28 22 50 50 50h412c28 0 50-22 50-50v-60c0-11-9-20-20-20zM80 111c0-6 5-10 10-10h332c5 0 10 4 10 10v210H80V111zm392 290c0 6-4 10-10 10H50c-6 0-10-4-10-10v-40h432v40z"/>
 </svg>
