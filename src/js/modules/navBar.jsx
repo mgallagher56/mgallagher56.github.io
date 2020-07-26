@@ -1,14 +1,18 @@
-import React, { Component } from 'react';
-import { Link } from 'gatsby';
+import React, { Component, useRef, useEffect } from 'react';
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import  {TweenLite, TimelineMax, } from 'gsap';
 
 export default class NavBar extends Component {
     constructor( props ) {
         super( props );
+
         this.state = {
             menuToggle: false,
             navHeight: '',
+            clickCount: 0
         };
+        this.nav = React.createRef();
+        this.tl = new TimelineMax({paused: true});
         this.handleClick = this.handleClick.bind( this );
     }
 
@@ -17,18 +21,57 @@ export default class NavBar extends Component {
         this.setState( prevState => ({
             menuToggle: !prevState.menuToggle,
         }) );
+        if (this.state.clickCount === 0) {
+            this.navAnimation()
+            this.setState( ({
+                clickCount: 1,
+            }) );
+        } else {
+            this.setState( ({
+                clickCount: 0,
+            }) );
+        }
     }
+
+    navAnimation = () => {
+        this.tl.fromTo( this.listItems, { y: '100vh', }, {
+            y: 0,
+            duration: .5,
+            ease: 'ease',
+            stagger: 0.15
+        } ).play()
+        }
 
     componentDidMount() {
         this.setState( ({
             navHeight: document.getElementById( 'nav-toggle' ).offsetHeight.toString() + 'px',
         }) );
+
+        let navItems = this.nav.current.children;
+        this.listItems = [];
+        let listLength = navItems.length;
+
+        for (let i = 0; i < listLength; i++ ) {
+            let tempList = navItems[i];
+            let sublistLength = tempList.children.length;
+            for (let j = 0; j < sublistLength; j++ ) {
+                this.listItems.push( tempList.children[j] );
+            }
+        }
+
+        if (this.state.playNav) {
+
+        }
+
+        // this.tl.staggerTo(this.navItems, 0.5, {y: 0, autoAlpha: 1}, 0.1);
     }
 
     render() {
+
         let mobileNavStyle = {
             height: `calc(100vh - ${this.state.navHeight})`
         };
+
         return (
             <div>
                 <nav className={ 'nav-mobile d-lg-none position-relative w-100' }>
@@ -36,7 +79,7 @@ export default class NavBar extends Component {
                         <span onClick={ this.handleClick }>
                         </span>
                     </div>
-                    <ul style={ mobileNavStyle }
+                    <ul style={ mobileNavStyle } ref={this.nav}
                         className={ `navbar-mobile flex-row flex-wrap w-100 position-fixed ${ this.state.menuToggle ? 'open' : '' }` }>
                         <div className={ 'row w-100' }>
                             <li className={ 'menu-item col-6 home' }><AniLink fade duration={1} color="mediumspringgreen" to='/' className='nav-link'><p> Home </p>

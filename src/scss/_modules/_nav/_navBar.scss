@@ -20,11 +20,11 @@
 
     .navbar-mobile {
         display: none;
-        transition: all .5s linear;
+        transition: all 1s ease-in-out;
 
         &.open {
             display: flex;
-            z-index: 100;
+            z-index: 90;
 
             .row {
                 margin: 0;
@@ -58,6 +58,7 @@
                     display: flex;
                     justify-content: center;
                     margin: 0;
+                    position: relative;
 
                     a {
                         display: flex;
