@@ -59,17 +59,28 @@ export default class NavBar extends Component {
         // this.burgerAnimation = this.tl.fromTo(this.burgerTop, {}, {}).play()
 
         this.navBackground = this.navBar.current.nextSibling
-        this.navAnimation = this.tl.fromTo( [ this.navBackground, this.listItems ], { filter: '' }, {
-            filter: 'blur(8px)',
-            duration: 1
-        }, 'blur' )
-            .fromTo( this.listItems, { y: '100vh' }, {
+        this.navAnimation = this.tl.fromTo( [ this.navBackground, this.listItems ],
+            { filter: '' },
+            {
+                filter: 'blur(8px)',
+                duration: 1
+            }, 'blur' )
+            .fromTo( this.listItems,
+                {
+                    y: '100vh'
+                },
+                {
                 y: 0,
                 duration: .5,
                 ease: 'ease',
                 stagger: 0.10,
-            }, 'blur' )
-            .fromTo( this.listItems, { scale: .75, filter: 'blur(8px)' }, {
+                }, 'blur' )
+
+            .fromTo( this.listItems,
+                { scale: .75,
+                    filter: 'blur(8px)'
+                },
+                {
                 duration: .5,
                 scale: 1,
                 stagger: 0.10,
@@ -86,11 +97,23 @@ export default class NavBar extends Component {
             setTimeout( () => {
                 let bubbles = document.querySelectorAll( '.bubble' );
                 Array.from( bubbles ).map( ( bubble ) => {
+                    bubble.addEventListener('mouseenter', (e) => {
+                        new TimelineMax().fromTo(e.target,
+                            {
+                                x: 0,
+                                y: 0
+                            },
+                            {
+                                x: rand(5, 0),
+                                y: rand(5, 0), ease: 'ease'
+                            })
+                    })
                     timelineArray.push(new TimelineMax({ paused: true, repeat: -1, delay: 0 }).fromTo( bubble,
                         {
                             x: rand(100, 0) + 'vw',
                             y: '130vh',
                             scale: '0.' + rand( 9, 1 ),
+                            zIndex:100
                         },
                         {
                             x: rand( 120, 100 ) + 'vw',
@@ -100,7 +123,8 @@ export default class NavBar extends Component {
                             delay: rand( 3, 0 ),
                             ease: Linear.easeNone,
                             stagger: 0.4,
-                            display: 'none'
+                            display: 'none',
+                            zIndex:100
                         }, 'bubbles'
                     ))
                 })
