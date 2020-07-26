@@ -41,7 +41,7 @@ let watch = () => {
         open: false,
         proxy: 'localhost:63342/htdocs/mgallagher56.github.io/public/index.html',
     } );
-    gulp.watch( 'src/img/**/*', compressImages );
+    gulp.watch( 'src/img/**/*.*', compressImages );
     gulp.watch( 'src/scss/**/*.scss', styles );
     gulp.watch( 'src/**/*.html' ).on( 'change', html );
     gulp.watch( 'src/conf/**/*.json', jsonToScss );

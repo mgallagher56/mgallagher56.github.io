@@ -1,9 +1,9 @@
 .nav-mobile {
     .collapsable-nav {
         background: map-get($colors, grey-portfolio-light);
-        top: calc(100vh - 78px);
         padding: map-get($spacers, 3);
         position: fixed;
+        top: calc(100vh - 78px);
         width: 100%;
         z-index: 100;
 
@@ -20,36 +20,44 @@
         }
     }
 
+    .bubble {
+        display: none;
+        height: 50px;
+        width: 50px;
+        z-index: 90;
+    }
+
     .row {
         margin: 0;
 
         // set alternate pattern for mobile menu
-        &:nth-child(odd) {
-            li {
-                &:nth-child(odd) {
-                    background: map-get($colors, blue-portfolio);
-                }
-
-                &:nth-child(even) {
-                    background: map-get($colors, pink-portfolio);
-                }
-            }
-        }
-
-        &:nth-child(even) {
-            li {
-                &:nth-child(even) {
-                    background: map-get($colors, mint-portfolio-dark);
-                }
-
-                &:nth-child(odd) {
-                    background: map-get($colors, yellow-portfolio-light);
-                }
-            }
-        }
+        //&:nth-child(odd) {
+        //    li {
+        //        &:nth-child(odd) {
+        //            background: map-get($colors, blue-portfolio);
+        //        }
+        //
+        //        &:nth-child(even) {
+        //            background: map-get($colors, pink-portfolio);
+        //        }
+        //    }
+        //}
+        //
+        //&:nth-child(even) {
+        //    li {
+        //        &:nth-child(even) {
+        //            background: map-get($colors, mint-portfolio-dark);
+        //        }
+        //
+        //        &:nth-child(odd) {
+        //            background: map-get($colors, yellow-portfolio-light);
+        //        }
+        //    }
+        //}
 
         li {
             align-items: center;
+            background: transparent;
             display: flex;
             justify-content: center;
             margin: 0;
@@ -62,7 +70,7 @@
 
                 p {
                     bottom: 20%;
-                    color: map-get($colors, grey-portfolio-dark);
+                    color: map-get($colors, white-portfolio);
                     position: absolute;
                 }
             }
@@ -116,7 +124,6 @@
     }
 
 
-
     .navbar-mobile {
         display: block;
         transition: all 1s ease-in-out;
@@ -124,6 +131,11 @@
         &.open {
             display: flex;
             z-index: 90;
+
+            .bubble {
+                display: block;
+                position: absolute;
+            }
         }
     }
 }

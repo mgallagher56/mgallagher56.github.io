@@ -3,13 +3,13 @@
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="258" x2="512" y2="258" gradientTransform="matrix(1 0 0 -1 0 514)">
-	<stop  offset="0" style="stop-color:#80D8FF"/>
-	<stop  offset="0.16" style="stop-color:#88D1FF"/>
-	<stop  offset="0.413" style="stop-color:#9FBEFE"/>
-	<stop  offset="0.725" style="stop-color:#C4A0FD"/>
-	<stop  offset="1" style="stop-color:#EA80FC"/>
+	<stop  offset="0" style="stop-color:#fff"/>
+	<stop  offset="0.16" style="stop-color:#fff"/>
+	<stop  offset="0.413" style="stop-color:#fff"/>
+	<stop  offset="0.725" style="stop-color:#fff"/>
+	<stop  offset="1" style="stop-color:#fff"/>
 </linearGradient>
-<path style="fill:url(#SVGID_1_);" d="M304.959,107.429h-97.925c-11.046,0-20-8.954-20-20V20c0-11.046,8.954-20,20-20h97.925
+<path style="fill: #fff;" d="M304.959,107.429h-97.925c-11.046,0-20-8.954-20-20V20c0-11.046,8.954-20,20-20h97.925
 	c11.046,0,20,8.954,20,20v67.429C324.959,98.475,316.005,107.429,304.959,107.429z M227.034,67.429h57.925V40h-57.925
 	L227.034,67.429L227.034,67.429z M304.959,242.286h-97.925c-11.046,0-20-8.954-20-20v-67.429c0-11.046,8.954-20,20-20h97.925
 	c11.046,0,20,8.954,20,20v67.429C324.959,233.332,316.005,242.286,304.959,242.286z M227.034,202.286h57.925v-27.429h-57.925
